@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace DAO
+﻿namespace DAO
 {
-    internal class DAOShiftReportList
+    public class DAOShiftReportList : List<DAOShiftReport>
     {
     }
 }

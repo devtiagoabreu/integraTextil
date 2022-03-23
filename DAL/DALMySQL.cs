@@ -15,6 +15,8 @@ namespace DAL
         private MySqlConnection CriarConexao()
         {
             String connString = null;
+            //connString = "Persist Security  Info = False; server = 192.168.0.234; database = dbintegrafabric; uid = abreu; server = 192.168.0.234; database = dbintegrafabric; uid = abreu; pwd = dqgh3ffrdg";
+            //connString = "server=192.168.0.234;initial catalog=dbintegrafabric;uid=abreu;pwd=dqgh3ffrdg";
             StreamReader sr = File.OpenText("stringConexaoMySql.txt");
             string input = null;
             while ((input = sr.ReadLine()) != null)
