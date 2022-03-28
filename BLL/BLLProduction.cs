@@ -12,6 +12,8 @@ namespace BLL
 
         DALMySQL dalMySQL = new DALMySQL();
 
+        string data = DateTime.Now.ToString("dd-MM-yyyy HH:mm:ss");
+
         #endregion
 
         #region MÉTODOS
@@ -32,10 +34,105 @@ namespace BLL
             return table;
         }
 
-        public DAOProductionList LerProductionCSV()
+        public string PegarNomeArquivo(string pasta, string parteNomeArquivo)
+        {
+            string arquivoNome = "";
+
+            BLLFerramentas bllFerramentas = new BLLFerramentas();
+
+            try
+            {
+                // Take a snapshot of the file system.  
+                System.IO.DirectoryInfo dir = new System.IO.DirectoryInfo(pasta);
+
+                // This method assumes that the application has discovery permissions  
+                // for all folders under the specified path.  
+                IEnumerable<System.IO.FileInfo> fileList = dir.GetFiles("*.*", System.IO.SearchOption.AllDirectories);
+
+                //Create the query  
+                IEnumerable<System.IO.FileInfo> fileQuery =
+                    from file in fileList
+                    //where file.Extension == ".csv"
+                    where file.Name.Contains(parteNomeArquivo)
+                    orderby file.Name
+                    select file;
+
+                //Execute the query. This might write out a lot of files!  
+                foreach (System.IO.FileInfo fi in fileQuery)
+                {
+                    arquivoNome = fi.Name;
+                }
+
+                if (arquivoNome.Equals(""))
+                {
+                    Convert.ToInt32(arquivoNome);
+                }
+                else
+                {
+                    bllFerramentas.GravarLog(@"C:\Apache2\htdocs\integratextil\teares\logs\logs.txt", "Sucesso: production encontrado, nome: " + arquivoNome + ".  Detalhes: bllProduction.PegarNomeArquivo() linha 70 | " + data);
+                }
+                
+            }
+            catch (Exception ex)
+            {
+                bllFerramentas.GravarLog(@"C:\Apache2\htdocs\integratextil\teares\logs\logs.txt", "Erro: production não encontrado, nome: nulo. Detalhes: bllProduction.PegarNomeArquivo() linha 76 | " + ex.Message.ToString() + " | " + data);
+            }
+
+            return arquivoNome;
+
+        }
+
+        public string RenomearArquivo(string arquivoNome, string arquivoNomeFinal,string pastaOrigem, string pastaDestino)
+        {
+            BLLFerramentas bllFerramentas = new BLLFerramentas();
+            string retorno = "";
+
+            try
+            {
+                if (arquivoNome.Equals(""))
+                {
+                    Convert.ToInt32(arquivoNome);
+                    retorno = "Arquivo não foi encontrado na pasta Origem";
+                }
+                else
+                {
+                    string[] arquivos = Directory.GetFiles(pastaOrigem);
+                    string dirSaida = pastaDestino;
+
+                    if (!Directory.Exists(dirSaida))
+                        Directory.CreateDirectory(dirSaida);
+
+                    for (int i = 0; i < arquivos.Length; i++)
+                    {
+
+                        if (arquivos[i].Equals(pastaOrigem + arquivoNome))
+                        {
+                            var files = new FileInfo(arquivos[i]);
+                            files.MoveTo(Path.Combine(dirSaida, files.Name.Replace(arquivoNome, arquivoNomeFinal)));
+                        }
+
+                    }
+
+                    retorno = "ok";
+                    bllFerramentas.GravarLog(@"C:\Apache2\htdocs\integratextil\teares\logs\logs.txt", "Sucesso: production movido e renomeado para pasta destino. Detalhes: bllProduction.RenomearArquivo() linha 114 | " + retorno +  " | " + data);
+                }
+                
+            }
+            catch (Exception ex)
+            {
+                retorno = ex.Message;
+                bllFerramentas.GravarLog(@"C:\Apache2\htdocs\integratextil\teares\logs\logs.txt", "Erro: não foi possível mover e renomear production. Detalhes: bllProduction.RenomearArquivo() linha 121 | " + retorno + " | " + data);
+            }
+
+            return retorno;
+
+
+        }
+        
+        public DAOProductionList LerCSV(string path)
         {
             DAOProductionList daoProductionList = new DAOProductionList();
-            StreamReader csv = new StreamReader(@"X:\csv\Production.csv", Encoding.UTF8);
+            StreamReader csv = new StreamReader(path, Encoding.UTF8);
             string linha;
             string[] campo;
             int index = 0;
@@ -64,9 +161,11 @@ namespace BLL
 
         public string InserirProduction(DAOProductionList daoProductionList)
         {
+            BLLFerramentas bllFerramentas = new BLLFerramentas();
+            string retorno = "";
+
             try
             {
-                string retorno = "ok";
                 DataTable dataTableProductionList = ConvertToDataTable(daoProductionList);
                 foreach (DataRow linha in dataTableProductionList.Rows)
                 {
@@ -86,12 +185,49 @@ namespace BLL
                    
                     dalMySQL.ExecutarManipulacao(CommandType.StoredProcedure, "uspInsertProduction");
                 }
-                return retorno;
+
+                retorno = "ok";
+                bllFerramentas.GravarLog(@"C:\Apache2\htdocs\integratextil\teares\logs\logs.txt", "Sucesso: production inserido. Detalhes: bllProduction.InserirProduction() linha 190 | " + retorno + " | " + data);
+
             }
             catch (Exception ex)
             {
-                throw new Exception("Nao foi Possivel inserir dados de Production. Detalhes: " + ex.Message);
+                retorno = ex.Message;
+                bllFerramentas.GravarLog(@"C:\Apache2\htdocs\integratextil\teares\logs\logs.txt", "Erro: não foi possível inserir production. Detalhes: bllProduction.InserirProduction() linha 193 | " + retorno + " | " + data);
             }
+
+            return retorno;
+        }
+
+        public string DeletarArquivos(string path) 
+        {
+            BLLFerramentas bllFerramentas = new BLLFerramentas();
+            string retorno = "";
+            try
+            {
+                //System.IO.Directory.Delete(path, true);
+                System.IO.DirectoryInfo di = new DirectoryInfo(path);
+
+                foreach (FileInfo file in di.GetFiles())
+                {
+                    file.Delete();
+                }
+                foreach (DirectoryInfo dir in di.GetDirectories())
+                {
+                    dir.Delete(true);
+                }
+
+                retorno = "ok";
+                bllFerramentas.GravarLog(@"C:\Apache2\htdocs\integratextil\teares\logs\logs.txt", "Sucesso: production renomeada deletado. Detalhes: bllProduction.DeletarArquivos() linha 214 | " + retorno + " | " + data);
+
+            }
+            catch (Exception ex)
+            {
+                retorno = ex.Message;
+                bllFerramentas.GravarLog(@"C:\Apache2\htdocs\integratextil\teares\logs\logs.txt", "Erro: não foi possível deletar production renomeada. Detalhes: bllProduction.DeletarArquivos() linha 217 | " + retorno + " | " + data);
+            }
+
+            return retorno;
         }
 
         #endregion

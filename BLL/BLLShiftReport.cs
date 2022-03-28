@@ -32,10 +32,69 @@ namespace BLL
             return table;
         }
 
-        public DAOShiftReportList LerShiftReportCSV()
+        public string PegarNomeArquivo(string pasta, string parteNomeArquivo)
+        {
+            string arquivoNome = "";
+
+            // Take a snapshot of the file system.  
+            System.IO.DirectoryInfo dir = new System.IO.DirectoryInfo(pasta);
+
+            // This method assumes that the application has discovery permissions  
+            // for all folders under the specified path.  
+            IEnumerable<System.IO.FileInfo> fileList = dir.GetFiles("*.*", System.IO.SearchOption.AllDirectories);
+
+            //Create the query  
+            IEnumerable<System.IO.FileInfo> fileQuery =
+                from file in fileList
+                //where file.Extension == ".csv"
+                where file.Name.Contains(parteNomeArquivo)
+                orderby file.Name
+                select file;
+
+            //Execute the query. This might write out a lot of files!  
+            foreach (System.IO.FileInfo fi in fileQuery)
+            {
+                arquivoNome = fi.Name;
+            }
+
+            return arquivoNome;
+        }
+
+        public string RenomearArquivo(string arquivoNome, string arquivoNomeFinal, string pastaOrigem, string pastaDestino)
+        {
+            try
+            {
+                string[] arquivos = Directory.GetFiles(pastaOrigem);
+                string dirSaida = pastaDestino;
+
+                if (!Directory.Exists(dirSaida))
+                    Directory.CreateDirectory(dirSaida);
+
+                for (int i = 0; i < arquivos.Length; i++)
+                {
+
+                    if (arquivos[i].Equals(pastaOrigem + arquivoNome))
+                    {
+                        var files = new FileInfo(arquivos[i]);
+                        files.MoveTo(Path.Combine(dirSaida, files.Name.Replace(arquivoNome, arquivoNomeFinal)));
+                    }
+
+                }
+
+                return "OK";
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Nao foi Possivel mover production para pasta productionRenomeada. Detalhes: " + ex.Message);
+            }
+
+
+        }
+
+        public DAOShiftReportList LerCSV(string caminhoArquivo)
         {
             DAOShiftReportList daoShiftReportList = new DAOShiftReportList();
-            StreamReader csv = new StreamReader(@"X:\csv\ShiftReport.csv", Encoding.UTF8);
+            StreamReader csv = new StreamReader(caminhoArquivo, Encoding.UTF8);
             string linha;
             string[] campo;
             int index = 0;
