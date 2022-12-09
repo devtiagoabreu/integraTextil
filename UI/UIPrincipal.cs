@@ -62,7 +62,7 @@ namespace UI
         {
             BLLDisplayOperacao bllDisplayOperacao = new BLLDisplayOperacao();
 
-            bllDisplayOperacao.CopiarArquivo("displayOperacao.xlsx", @"D:\Teares\ods\", @"D:\Teares\ods\import\");
+            bllDisplayOperacao.CopiarArquivo("displayOperacao.xlsx", @"D:\Teares\ods\", @"D:\Teares\ods\import\");//
         }
 
         private void btnInsertDisplayOperacao_Click(object sender, EventArgs e)
