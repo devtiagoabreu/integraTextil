@@ -2,6 +2,10 @@
 using System.ComponentModel;
 using System.Data;
 using ClosedXML.Excel;
+using HtmlAgilityPack;
+using ScrapySharp.Extensions;
+using ScrapySharp.Network;
+using System.Net;
 using DAL;
 using DAO;
 
@@ -12,6 +16,8 @@ namespace BLL
         #region ATRIBUTOS | OBJETOS
 
         DALMySQL dalMySQL = new DALMySQL();
+
+        ScrapingBrowser scrapingBrowser = new ScrapingBrowser();
 
         string data = DateTime.Now.ToString("dd-MM-yyyy HH:mm:ss");
 
@@ -206,6 +212,61 @@ namespace BLL
                 
                 return daoDisplayOperacaoList;
             }
+        }
+
+        public DAODisplayOperacaoList WebScraping(string enderecoHtml) 
+        {
+            BLLFerramentas bllFerramentas = new BLLFerramentas();
+            DAODisplayOperacaoList daoDisplayOperacaoList = new DAODisplayOperacaoList();
+
+            try
+            {
+                var wc = new WebClient();
+
+                var page = wc.DownloadString(enderecoHtml);
+
+                var htmlDocument = new HtmlAgilityPack.HtmlDocument();
+
+                htmlDocument.LoadHtml(page);
+
+                foreach (HtmlNode node in htmlDocument.DocumentNode.SelectNodes("//table[3]/tr[th][td]"))
+                {
+                    if (node.Attributes.Count > 0)
+                    {
+                        DAODisplayOperacao daoDisplayOperacao = new DAODisplayOperacao();
+
+                        string[] linha = node.InnerText.ToString().Split("\n");
+
+                        daoDisplayOperacao.Tear = linha[1];
+                        daoDisplayOperacao.Artigo = linha[2];
+                        daoDisplayOperacao.TearStatus = linha[4];
+                        daoDisplayOperacao.Continuando = linha[5];
+                        daoDisplayOperacao.ParadasEficienciaTurnoAtual = linha[6];
+                        daoDisplayOperacao.ParadasEficiencia24h = linha[7];
+                        daoDisplayOperacao.RPM = linha[8];
+                        daoDisplayOperacao.PrevisaoTrocaRoloTecido = linha[9];
+                        daoDisplayOperacao.PrevisaoTrocaRoloUrdume = linha[11];
+
+                        daoDisplayOperacaoList.Add(daoDisplayOperacao);
+                    }
+                }
+                
+                bllFerramentas.GravarLog(@"C:\Apache2\htdocs\integratextil\teares\logs\logs.txt", "Sucesso: Web Scraping da página de Display de Operação do TMS efetuada. Detalhes: bllDisplayOperacao.WebScraping() linha 254 | " + " ok " + " | " + data);
+                return daoDisplayOperacaoList;
+            }
+            catch (Exception ex)
+            {
+                DAODisplayOperacao daoDisplayOperacao = new DAODisplayOperacao();
+
+                daoDisplayOperacao.Retorno = ex.Message;
+
+                daoDisplayOperacaoList.Add(daoDisplayOperacao);
+
+                bllFerramentas.GravarLog(@"C:\Apache2\htdocs\integratextil\teares\logs\logs.txt", "Erro: Nao foi Possivel Efetuar Web Scraping da página Display de Operação do TMS. Detalhes: bllDisplayOperacao.WebScraping() linha 265 | " + daoDisplayOperacao.Retorno + " | " + data);
+
+                return daoDisplayOperacaoList;
+            }
+            
         }
 
         public string InserirDisplayOperacao(DAODisplayOperacaoList daoDisplayOperacaoList)

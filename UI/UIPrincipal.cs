@@ -71,5 +71,31 @@ namespace UI
 
             bllDisplayOperacao.InserirDisplayOperacao(bllDisplayOperacao.LerXLSX(@"D:\Teares\ods\import\displayOperacao.xlsx"));
         }
+
+        private void btnDelShiftReport_Click(object sender, EventArgs e)
+        {
+            BLLShiftReport bllShiftReport = new BLLShiftReport();
+
+            bllShiftReport.DeletarArquivos(@"D:\Teares\shiftReportRenomeada\");
+        }
+
+        private void btnWebScrapingDisplayOperacao_Click(object sender, EventArgs e)
+        {
+            BLLDisplayOperacao bllDisplayOperacao = new BLLDisplayOperacao();
+
+            bllDisplayOperacao.InserirDisplayOperacao(bllDisplayOperacao.WebScraping("http://94550ac37bb5.sn.mynetname.net:20249/tms/loom/opestate.cgi"));
+
+        }
+
+        private void timerWebScrapingGeral_Tick(object sender, EventArgs e)
+        {
+            #region DISPLAY DE OPERAÇÃO
+
+            BLLDisplayOperacao bllDisplayOperacao = new BLLDisplayOperacao();
+
+            bllDisplayOperacao.InserirDisplayOperacao(bllDisplayOperacao.WebScraping("http://94550ac37bb5.sn.mynetname.net:20249/tms/loom/opestate.cgi"));
+
+            #endregion
+        }
     }
 }

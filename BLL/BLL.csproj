@@ -13,6 +13,8 @@
     <PackageReference Include="DotNetZip" Version="1.16.0" />
     <PackageReference Include="EPPlus" Version="5.8.8" />
     <PackageReference Include="GemBox.Spreadsheet" Version="47.0.1418" />
+    <PackageReference Include="HtmlAgilityPack" Version="1.11.42" />
+    <PackageReference Include="ScrapySharp" Version="3.0.0" />
     <PackageReference Include="System.Text.Encoding.CodePages" Version="6.0.0" />
   </ItemGroup>
 

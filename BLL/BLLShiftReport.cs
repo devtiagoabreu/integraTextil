@@ -11,7 +11,9 @@ namespace BLL
         #region ATRIBUTOS | OBJETOS
         
         DALMySQL dalMySQL = new DALMySQL();
-        
+
+        string data = DateTime.Now.ToString("dd-MM-yyyy HH:mm:ss");
+
         #endregion
 
         #region MÉTODOS
@@ -141,9 +143,20 @@ namespace BLL
                     daoShiftReport.TotalRatePH = campo[29].ToString();
                     daoShiftReport.TotalRatePDAY = campo[30].ToString();
                     daoShiftReport.TotalRatePP = campo[31].ToString();
-                   
-                    daoShiftReportList.Add(daoShiftReport);
 
+                    if (daoShiftReport.RunMinute != "0.0" || daoShiftReport.RunMinute != "")
+                    {
+                        decimal runMinute = Convert.ToDecimal(daoShiftReport.RunMinute.Replace(".", ","));
+                        decimal stopMinute = Convert.ToDecimal(daoShiftReport.StopMinute.Replace(".", ","));
+                        decimal efficPercent = runMinute * 100 / (runMinute + stopMinute);
+                        daoShiftReport.EfficPercent = efficPercent.ToString().Replace(",", ".");  
+                    }
+                    else
+                    {
+                        daoShiftReport.EfficPercent = "0.0";
+                    }
+
+                    daoShiftReportList.Add(daoShiftReport);
                 }
             }
 
@@ -236,6 +249,39 @@ namespace BLL
                 throw new Exception("Nao foi Possivel inserir dados de ShiftReport. Detalhes: " + ex.Message);
             }
         }
+
+        public string DeletarArquivos(string path)
+        {
+            BLLFerramentas bllFerramentas = new BLLFerramentas();
+            string retorno = "";
+            try
+            {
+                //System.IO.Directory.Delete(path, true);
+                System.IO.DirectoryInfo di = new DirectoryInfo(path);
+
+                foreach (FileInfo file in di.GetFiles())
+                {
+                    file.Delete();
+                }
+                foreach (DirectoryInfo dir in di.GetDirectories())
+                {
+                    dir.Delete(true);
+                }
+
+                retorno = "ok";
+                bllFerramentas.GravarLog(@"C:\Apache2\htdocs\integratextil\teares\logs\logs.txt", "Sucesso: shiftReport renomeada deletado. Detalhes: bllShiftReport.DeletarArquivos() linha 261 | " + retorno + " | " + data);
+
+            }
+            catch (Exception ex)
+            {
+                retorno = ex.Message;
+                bllFerramentas.GravarLog(@"C:\Apache2\htdocs\integratextil\teares\logs\logs.txt", "Erro: não foi possível deletar shiftreport renomeada. Detalhes: bllShiftReport.DeletarArquivos() linha 265 | " + retorno + " | " + data);
+            }
+
+            return retorno;
+        }
+
+
 
         #endregion
     }
