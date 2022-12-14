@@ -9,6 +9,7 @@
         public string DataVencto { get; set; }
         public string DataRecebido { get; set; }
         public string DataProrrogacao { get; set; }
+        public string DataInsert { get; set; }
         public string ValorDuplicata { get; set; }
         public string SaldoDuplicata { get; set; }
         public string Atraso { get; set; }
