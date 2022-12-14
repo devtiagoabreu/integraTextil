@@ -41,6 +41,9 @@
             this.btnDelShiftReport = new System.Windows.Forms.Button();
             this.btnWebScrapingDisplayOperacao = new System.Windows.Forms.Button();
             this.timerWebScrapingGeral = new System.Windows.Forms.Timer(this.components);
+            this.btnDelFaturamento = new System.Windows.Forms.Button();
+            this.btnRenFaturamento = new System.Windows.Forms.Button();
+            this.btnInsertFaturamento = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnShiftReport
@@ -176,11 +179,47 @@
             this.timerWebScrapingGeral.Interval = 60000;
             this.timerWebScrapingGeral.Tick += new System.EventHandler(this.timerWebScrapingGeral_Tick);
             // 
+            // btnDelFaturamento
+            // 
+            this.btnDelFaturamento.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnDelFaturamento.Location = new System.Drawing.Point(11, 272);
+            this.btnDelFaturamento.Margin = new System.Windows.Forms.Padding(2);
+            this.btnDelFaturamento.Name = "btnDelFaturamento";
+            this.btnDelFaturamento.Size = new System.Drawing.Size(160, 37);
+            this.btnDelFaturamento.TabIndex = 13;
+            this.btnDelFaturamento.Text = "Del Faturamento";
+            this.btnDelFaturamento.UseVisualStyleBackColor = false;
+            // 
+            // btnRenFaturamento
+            // 
+            this.btnRenFaturamento.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnRenFaturamento.Location = new System.Drawing.Point(11, 194);
+            this.btnRenFaturamento.Margin = new System.Windows.Forms.Padding(2);
+            this.btnRenFaturamento.Name = "btnRenFaturamento";
+            this.btnRenFaturamento.Size = new System.Drawing.Size(160, 35);
+            this.btnRenFaturamento.TabIndex = 12;
+            this.btnRenFaturamento.Text = "Ren Mov Faturamento";
+            this.btnRenFaturamento.UseVisualStyleBackColor = false;
+            // 
+            // btnInsertFaturamento
+            // 
+            this.btnInsertFaturamento.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnInsertFaturamento.Location = new System.Drawing.Point(11, 233);
+            this.btnInsertFaturamento.Margin = new System.Windows.Forms.Padding(2);
+            this.btnInsertFaturamento.Name = "btnInsertFaturamento";
+            this.btnInsertFaturamento.Size = new System.Drawing.Size(160, 35);
+            this.btnInsertFaturamento.TabIndex = 11;
+            this.btnInsertFaturamento.Text = "Insert Faturamento";
+            this.btnInsertFaturamento.UseVisualStyleBackColor = false;
+            // 
             // UIPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(491, 412);
+            this.Controls.Add(this.btnDelFaturamento);
+            this.Controls.Add(this.btnRenFaturamento);
+            this.Controls.Add(this.btnInsertFaturamento);
             this.Controls.Add(this.btnWebScrapingDisplayOperacao);
             this.Controls.Add(this.btnDelShiftReport);
             this.Controls.Add(this.btnInsertDisplayOperacao);
@@ -215,5 +254,8 @@
         private Button btnDelShiftReport;
         private Button btnWebScrapingDisplayOperacao;
         private System.Windows.Forms.Timer timerWebScrapingGeral;
+        private Button btnDelFaturamento;
+        private Button btnRenFaturamento;
+        private Button btnInsertFaturamento;
     }
 }
