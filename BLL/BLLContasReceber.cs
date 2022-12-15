@@ -69,13 +69,13 @@ namespace BLL
                 }
                 else
                 {
-                    bllFerramentas.GravarLog(@"C:\Apache2\htdocs\integratextil\teares\logs\logs.txt", "Sucesso: production encontrado, nome: " + arquivoNome + ".  Detalhes: bllProduction.PegarNomeArquivo() linha 70 | " + data);
+                    bllFerramentas.GravarLog(@"C:\Apache2\htdocs\integratextil\dashboard\logs\logs.txt", "Sucesso: Relatório de contas a receber encontrado, nome: " + arquivoNome + ".  Detalhes: Classe: BLLContasReceber.cs | Metodo: PegarNomeArquivo | " + data);
                 }
 
             }
             catch (Exception ex)
             {
-                bllFerramentas.GravarLog(@"C:\Apache2\htdocs\integratextil\teares\logs\logs.txt", "Erro: production não encontrado, nome: nulo. Detalhes: bllProduction.PegarNomeArquivo() linha 76 | " + ex.Message.ToString() + " | " + data);
+                bllFerramentas.GravarLog(@"C:\Apache2\htdocs\integratextil\dashboard\logs\logs.txt", "Erro: Relatório de contas a receber não encontrado, nome: nulo. Detalhes: Classe: BLLContasReceber.cs | Metodo: PegarNomeArquivo | " + ex.Message.ToString() + " | " + data);
             }
 
             return arquivoNome;
@@ -129,9 +129,9 @@ namespace BLL
 
         }
 
-        public DAOProductionList LerCSV(string path)
+        public DAOContasReceberList LerCSV(string path)
         {
-            DAOProductionList daoProductionList = new DAOProductionList();
+            DAOContasReceberList daoContasReceberList = new DAOContasReceberList();
             StreamReader csv = new StreamReader(path, Encoding.UTF8);
             string linha;
             string[] campo;
@@ -139,27 +139,34 @@ namespace BLL
 
             while ((linha = csv.ReadLine()) != null)
             {
-                DAOProduction daoProduction = new DAOProduction();
+                DAOContasReceber daoContasReceber = new DAOContasReceber();
                 campo = linha.Split(',');
                 index++;
 
-                if (index > 7)
+                if (index > 1)
                 {
-                    daoProduction.Date = campo[0].ToString().Replace("/", "-").Replace("=", "").Replace("''", "");
-                    daoProduction.Loom = campo[1].ToString().Replace("\"", "").Replace("=", "").Replace("''", "");
-                    daoProduction.Style = campo[2].ToString().Replace("\"", "").Replace("=", "").Replace("''", "");
-                    daoProduction.Product_Pick = campo[3].ToString().Replace("\"", "").Replace("=", "").Replace("''", "");
-
-                    daoProductionList.Add(daoProduction);
+                    daoContasReceber.Duplicata = campo[0].ToString().Replace("/", "-").Replace("=", "").Replace("''", "");
+                    daoContasReceber.Cliente = campo[1].ToString().Replace("\"", "").Replace("=", "").Replace("''", "");
+                    daoContasReceber.TipoTitulo = campo[2].ToString().Replace("\"", "").Replace("=", "").Replace("''", "");
+                    daoContasReceber.DataEmissao = campo[4].ToString().Replace("\"", "").Replace("=", "").Replace("''", "");
+                    daoContasReceber.DataVencto = campo[3].ToString().Replace("\"", "").Replace("=", "").Replace("''", "");
+                    daoContasReceber.DataRecebido = campo[3].ToString().Replace("\"", "").Replace("=", "").Replace("''", "");
+                    daoContasReceber.DataProrrogacao = campo[3].ToString().Replace("\"", "").Replace("=", "").Replace("''", "");
+                    daoContasReceber.ValorDuplicata = campo[3].ToString().Replace("\"", "").Replace("=", "").Replace("''", "");
+                    daoContasReceber.SaldoDuplicata = campo[3].ToString().Replace("\"", "").Replace("=", "").Replace("''", "");
+                    daoContasReceber.Atraso = campo[3].ToString().Replace("\"", "").Replace("=", "").Replace("''", "");
+                    daoContasReceber.ValorJuros = campo[3].ToString().Replace("\"", "").Replace("=", "").Replace("''", "");
+                    
+                    daoContasReceberList.Add(daoContasReceber);
 
                 }
             }
 
-            return daoProductionList;
+            return daoContasReceberList;
 
         }
 
-        public string InserirProduction(DAOProductionList daoProductionList)
+        public string InserirDadosBD(DAOProductionList daoProductionList)
         {
             BLLFerramentas bllFerramentas = new BLLFerramentas();
             string retorno = "";
@@ -169,31 +176,45 @@ namespace BLL
                 DataTable dataTableProductionList = ConvertToDataTable(daoProductionList);
                 foreach (DataRow linha in dataTableProductionList.Rows)
                 {
-                    DAOProduction daoProduction = new DAOProduction();
+                    DAOContasReceber daoContasReceber = new DAOContasReceber();
 
-                    daoProduction.Date = linha["Date"].ToString();
-                    daoProduction.Loom = linha["Loom"].ToString();
-                    daoProduction.Style = linha["Style"].ToString();
-                    daoProduction.Product_Pick = linha["Product_Pick"].ToString();
-
+                    daoContasReceber.Duplicata = linha["Duplicata"].ToString();
+                    daoContasReceber.Cliente = linha["Cliente"].ToString();
+                    daoContasReceber.TipoTitulo = linha["TipoTitulo"].ToString();
+                    daoContasReceber.DataEmissao = linha["DataEmissao"].ToString();
+                    daoContasReceber.DataVencto = linha["DataVencto"].ToString();
+                    daoContasReceber.DataRecebido = linha["DataRecebido"].ToString();
+                    daoContasReceber.DataProrrogacao = linha["DataProrrogacao"].ToString();
+                    daoContasReceber.ValorDuplicata = linha["ValorDuplicata"].ToString();
+                    daoContasReceber.SaldoDuplicata = linha["SaldoDuplicata"].ToString();
+                    daoContasReceber.Atraso = linha["Atraso"].ToString();
+                    daoContasReceber.ValorJuros = linha["ValorJuros"].ToString();
+                   
                     dalMySQL.LimparParametros();
 
-                    dalMySQL.AdicionaParametros("@Date", daoProduction.Date);
-                    dalMySQL.AdicionaParametros("@Loom", daoProduction.Loom);
-                    dalMySQL.AdicionaParametros("@Style", daoProduction.Style);
-                    dalMySQL.AdicionaParametros("@Product_Pick", daoProduction.Product_Pick);
-
-                    dalMySQL.ExecutarManipulacao(CommandType.StoredProcedure, "uspInsertProduction");
+                    dalMySQL.AdicionaParametros("@Duplicata", daoContasReceber.Duplicata);
+                    dalMySQL.AdicionaParametros("@Cliente", daoContasReceber.Cliente);
+                    dalMySQL.AdicionaParametros("@TipoTitulo", daoContasReceber.TipoTitulo);
+                    dalMySQL.AdicionaParametros("@DataEmissao", daoContasReceber.DataEmissao);
+                    dalMySQL.AdicionaParametros("@DataEmissao", daoContasReceber.DataVencto);
+                    dalMySQL.AdicionaParametros("@DataEmissao", daoContasReceber.DataRecebido);
+                    dalMySQL.AdicionaParametros("@DataEmissao", daoContasReceber.DataProrrogacao);
+                    dalMySQL.AdicionaParametros("@DataEmissao", daoContasReceber.ValorDuplicata);
+                    dalMySQL.AdicionaParametros("@DataEmissao", daoContasReceber.SaldoDuplicata);
+                    dalMySQL.AdicionaParametros("@DataEmissao", daoContasReceber.Atraso);
+                    dalMySQL.AdicionaParametros("@DataEmissao", daoContasReceber.ValorJuros);
+                    
+                    dalMySQL.ExecutarManipulacao(CommandType.StoredProcedure, "uspInsertContasReceber");
                 }
 
                 retorno = "ok";
-                bllFerramentas.GravarLog(@"C:\Apache2\htdocs\integratextil\teares\logs\logs.txt", "Sucesso: production inserido. Detalhes: bllProduction.InserirProduction() linha 190 | " + retorno + " | " + data);
+                bllFerramentas.GravarLog(@"C:\Apache2\htdocs\integratextil\dashboard\logs\logs.txt", "Sucesso: Contas Receber inserida. Detalhes: BLLContasReceber.InserirDadosBD() | " + retorno + " | " + data);
 
             }
             catch (Exception ex)
             {
                 retorno = ex.Message;
-                bllFerramentas.GravarLog(@"C:\Apache2\htdocs\integratextil\teares\logs\logs.txt", "Erro: não foi possível inserir production. Detalhes: bllProduction.InserirProduction() linha 193 | " + retorno + " | " + data);
+                bllFerramentas.GravarLog(@"C:\Apache2\htdocs\integratextil\dashboard\logs\logs.txt", "Erro: não foi possível inserir Contas Receber. Detalhes: BLLContasReceber.InserirDadosBD() | " + retorno + " | " + data);
             }
 
             return retorno;
@@ -218,13 +239,13 @@ namespace BLL
                 }
 
                 retorno = "ok";
-                bllFerramentas.GravarLog(@"C:\Apache2\htdocs\integratextil\teares\logs\logs.txt", "Sucesso: production renomeada deletado. Detalhes: bllProduction.DeletarArquivos() linha 214 | " + retorno + " | " + data);
+                bllFerramentas.GravarLog(@"C:\Apache2\htdocs\integratextil\teares\logs\logs.txt", "Sucesso: Relatório de Contas Receber deletadas. Detalhes: BLLContasReceber.DeletarArquivos() | " + retorno + " | " + data);
 
             }
             catch (Exception ex)
             {
                 retorno = ex.Message;
-                bllFerramentas.GravarLog(@"C:\Apache2\htdocs\integratextil\teares\logs\logs.txt", "Erro: não foi possível deletar production renomeada. Detalhes: bllProduction.DeletarArquivos() linha 217 | " + retorno + " | " + data);
+                bllFerramentas.GravarLog(@"C:\Apache2\htdocs\integratextil\teares\logs\logs.txt", "Erro: não foi possível deletar relatório de Contas Receber renomeada. Detalhes: BLLContasReceber.DeletarArquivos() | " + retorno + " | " + data);
             }
 
             return retorno;

@@ -54,8 +54,7 @@ namespace UI
         private void btnLerDisplayOperacao_Click(object sender, EventArgs e)
         {
             BLLDisplayOperacao bllDisplayOperacao = new BLLDisplayOperacao();
-
-            bllDisplayOperacao.LerXLSX(@"D:\Teares\ods\import\displayOperacao.xlsx");
+            
         }
 
         private void btnCopyDisplayOperacao_Click(object sender, EventArgs e)
@@ -69,7 +68,6 @@ namespace UI
         {
             BLLDisplayOperacao bllDisplayOperacao = new BLLDisplayOperacao();
 
-            bllDisplayOperacao.InserirDisplayOperacao(bllDisplayOperacao.LerXLSX(@"D:\Teares\ods\import\displayOperacao.xlsx"));
         }
 
         private void btnDelShiftReport_Click(object sender, EventArgs e)
@@ -82,9 +80,7 @@ namespace UI
         private void btnWebScrapingDisplayOperacao_Click(object sender, EventArgs e)
         {
             BLLDisplayOperacao bllDisplayOperacao = new BLLDisplayOperacao();
-
-            bllDisplayOperacao.InserirDisplayOperacao(bllDisplayOperacao.WebScraping("http://94550ac37bb5.sn.mynetname.net:20249/tms/loom/opestate.cgi"));
-
+            
         }
 
         private void timerWebScrapingGeral_Tick(object sender, EventArgs e)
@@ -92,8 +88,6 @@ namespace UI
             #region DISPLAY DE OPERAÇÃO
 
             BLLDisplayOperacao bllDisplayOperacao = new BLLDisplayOperacao();
-
-            bllDisplayOperacao.InserirDisplayOperacao(bllDisplayOperacao.WebScraping("http://94550ac37bb5.sn.mynetname.net:20249/tms/loom/opestate.cgi"));
 
             #endregion
         }

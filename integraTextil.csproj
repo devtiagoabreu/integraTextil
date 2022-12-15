@@ -8,4 +8,9 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Ionic.Zip-1.9.1.8" Version="1.9.1.8" />
+    <PackageReference Include="MySQLConnection" Version="1.0.1" />
+  </ItemGroup>
+
 </Project>

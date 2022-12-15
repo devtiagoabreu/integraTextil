@@ -1,10 +1,6 @@
 ﻿using System.Text;
 using System.ComponentModel;
 using System.Data;
-using ClosedXML.Excel;
-using HtmlAgilityPack;
-using ScrapySharp.Extensions;
-using ScrapySharp.Network;
 using System.Net;
 using DAL;
 using DAO;
@@ -16,8 +12,6 @@ namespace BLL
         #region ATRIBUTOS | OBJETOS
 
         DALMySQL dalMySQL = new DALMySQL();
-
-        ScrapingBrowser scrapingBrowser = new ScrapingBrowser();
 
         string data = DateTime.Now.ToString("dd-MM-yyyy HH:mm:ss");
 
@@ -164,109 +158,6 @@ namespace BLL
 
             return retorno;
 
-        }
-
-        public DAODisplayOperacaoList LerXLSX(string path)
-        {
-            BLLFerramentas bllFerramentas = new BLLFerramentas();
-            DAODisplayOperacaoList daoDisplayOperacaoList = new DAODisplayOperacaoList();
-                        
-            try
-            {
-                var linhaInicioLeitura = 7;
-                //Abrir arquivo Excel Exixtente
-                var wb = new XLWorkbook(path);
-                var planilha = wb.Worksheet(1);
-
-
-                while (linhaInicioLeitura <= 14) //até a linha de tear ativo na rede
-                {
-                    DAODisplayOperacao daoDisplayOperacao = new DAODisplayOperacao();
-                    daoDisplayOperacao.Tear = planilha.Cell("A" + linhaInicioLeitura.ToString()).Value.ToString();
-                    daoDisplayOperacao.Artigo = planilha.Cell("B" + linhaInicioLeitura.ToString()).Value.ToString();
-                    daoDisplayOperacao.TearStatus = planilha.Cell("C" + linhaInicioLeitura.ToString()).Value.ToString();
-                    daoDisplayOperacao.Continuando = planilha.Cell("D" + linhaInicioLeitura.ToString()).Value.ToString();
-                    daoDisplayOperacao.ParadasEficienciaTurnoAtual = planilha.Cell("E" + linhaInicioLeitura.ToString()).Value.ToString();
-                    daoDisplayOperacao.ParadasEficiencia24h = planilha.Cell("F" + linhaInicioLeitura.ToString()).Value.ToString();
-                    daoDisplayOperacao.RPM = planilha.Cell("G" + linhaInicioLeitura.ToString()).Value.ToString();
-                    daoDisplayOperacao.PrevisaoTrocaRoloTecido = planilha.Cell("H" + linhaInicioLeitura.ToString()).Value.ToString();
-                    daoDisplayOperacao.PrevisaoTrocaRoloUrdume = planilha.Cell("J" + linhaInicioLeitura.ToString()).Value.ToString();
-
-                    daoDisplayOperacaoList.Add(daoDisplayOperacao);
-
-                    linhaInicioLeitura++;
-                }
-                
-                bllFerramentas.GravarLog(@"C:\Apache2\htdocs\integratextil\teares\logs\logs.txt", "Sucesso: Leitura do arquivo xlsx efetuada. Detalhes: bllDisplayOperacao.LerXLSX() linha 165 | " + " ok " + " | " + data);
-                return daoDisplayOperacaoList;
-            }
-            catch (Exception ex)
-            {
-                DAODisplayOperacao daoDisplayOperacao = new DAODisplayOperacao();
-
-                daoDisplayOperacao.Retorno = ex.Message;
-
-                daoDisplayOperacaoList.Add(daoDisplayOperacao);
-
-                bllFerramentas.GravarLog(@"C:\Apache2\htdocs\integratextil\teares\logs\logs.txt", "Erro: Nao foi Possivel Ler Display de Operação. Detalhes: bllDisplayOperacao.LerXLSX() linha 176 | " + daoDisplayOperacao.Retorno + " | " + data);
-                
-                return daoDisplayOperacaoList;
-            }
-        }
-
-        public DAODisplayOperacaoList WebScraping(string enderecoHtml) 
-        {
-            BLLFerramentas bllFerramentas = new BLLFerramentas();
-            DAODisplayOperacaoList daoDisplayOperacaoList = new DAODisplayOperacaoList();
-
-            try
-            {
-                var wc = new WebClient();
-
-                var page = wc.DownloadString(enderecoHtml);
-
-                var htmlDocument = new HtmlAgilityPack.HtmlDocument();
-
-                htmlDocument.LoadHtml(page);
-
-                foreach (HtmlNode node in htmlDocument.DocumentNode.SelectNodes("//table[3]/tr[th][td]"))
-                {
-                    if (node.Attributes.Count > 0)
-                    {
-                        DAODisplayOperacao daoDisplayOperacao = new DAODisplayOperacao();
-
-                        string[] linha = node.InnerText.ToString().Split("\n");
-
-                        daoDisplayOperacao.Tear = linha[1];
-                        daoDisplayOperacao.Artigo = linha[2];
-                        daoDisplayOperacao.TearStatus = linha[4];
-                        daoDisplayOperacao.Continuando = linha[5];
-                        daoDisplayOperacao.ParadasEficienciaTurnoAtual = linha[6];
-                        daoDisplayOperacao.ParadasEficiencia24h = linha[7];
-                        daoDisplayOperacao.RPM = linha[8];
-                        daoDisplayOperacao.PrevisaoTrocaRoloTecido = linha[9];
-                        daoDisplayOperacao.PrevisaoTrocaRoloUrdume = linha[11];
-
-                        daoDisplayOperacaoList.Add(daoDisplayOperacao);
-                    }
-                }
-                
-                bllFerramentas.GravarLog(@"C:\Apache2\htdocs\integratextil\teares\logs\logs.txt", "Sucesso: Web Scraping da página de Display de Operação do TMS efetuada. Detalhes: bllDisplayOperacao.WebScraping() linha 254 | " + " ok " + " | " + data);
-                return daoDisplayOperacaoList;
-            }
-            catch (Exception ex)
-            {
-                DAODisplayOperacao daoDisplayOperacao = new DAODisplayOperacao();
-
-                daoDisplayOperacao.Retorno = ex.Message;
-
-                daoDisplayOperacaoList.Add(daoDisplayOperacao);
-
-                bllFerramentas.GravarLog(@"C:\Apache2\htdocs\integratextil\teares\logs\logs.txt", "Erro: Nao foi Possivel Efetuar Web Scraping da página Display de Operação do TMS. Detalhes: bllDisplayOperacao.WebScraping() linha 265 | " + daoDisplayOperacao.Retorno + " | " + data);
-
-                return daoDisplayOperacaoList;
-            }
-            
         }
 
         public string InserirDisplayOperacao(DAODisplayOperacaoList daoDisplayOperacaoList)
