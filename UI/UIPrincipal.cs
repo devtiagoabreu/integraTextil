@@ -41,7 +41,7 @@ namespace UI
         {
             string data = DateTime.Now.ToString("dd-MM-yyyy HH-mm-ss" );
             BLLFerramentas bllFerramentas = new BLLFerramentas();
-            bllFerramentas.CriarArquivoZip(bllFerramentas.PegarNomesArquivo(@"C:\Apache2\htdocs\tmsdata\xlsdata\", ".csv"), @"D:\Teares\coletas\" + data + ".zip");
+            //bllFerramentas.CriarArquivoZip(bllFerramentas.PegarNomesArquivo(@"C:\Apache2\htdocs\tmsdata\xlsdata\", ".csv"), @"D:\Teares\coletas\" + data + ".zip");
         }
 
         private void btnDelProduction_Click(object sender, EventArgs e)
@@ -90,6 +90,27 @@ namespace UI
             BLLDisplayOperacao bllDisplayOperacao = new BLLDisplayOperacao();
 
             #endregion
+        }
+
+        private void btnRenContasReceber_Click(object sender, EventArgs e)
+        {
+            BLLContasReceber bllContasReceber = new BLLContasReceber();
+
+            bllContasReceber.RenomearArquivo(bllContasReceber.PegarNomeArquivo(@"C:\integraTextil\relatorios\contas_receber\", "ROD"), "contas_receber.csv", @"C:\integraTextil\relatorios\contas_receber\", @"C:\integraTextil\relatorios\contas_receber\ren");
+        }
+
+        private void btnInsertContasReceber_Click(object sender, EventArgs e)
+        {
+            BLLContasReceber bllContasReceber = new BLLContasReceber();
+
+            bllContasReceber.InserirDadosBD(bllContasReceber.LerCsvContasReceber(@"C:\integraTextil\relatorios\contas_receber\ren\contas_receber.csv"));
+        }
+
+        private void btnDelContasReceber_Click(object sender, EventArgs e)
+        {
+            BLLContasReceber bllContasReceber = new BLLContasReceber();
+
+            bllContasReceber.DeletarArquivos(@"C:\integraTextil\relatorios\contas_receber\ren\");
         }
     }
 }

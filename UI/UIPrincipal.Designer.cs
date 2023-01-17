@@ -41,18 +41,18 @@
             this.btnDelShiftReport = new System.Windows.Forms.Button();
             this.btnWebScrapingDisplayOperacao = new System.Windows.Forms.Button();
             this.timerWebScrapingGeral = new System.Windows.Forms.Timer(this.components);
-            this.btnDelFaturamento = new System.Windows.Forms.Button();
-            this.btnRenFaturamento = new System.Windows.Forms.Button();
-            this.btnInsertFaturamento = new System.Windows.Forms.Button();
+            this.btnDelContasReceber = new System.Windows.Forms.Button();
+            this.btnRenContasReceber = new System.Windows.Forms.Button();
+            this.btnInsertContasReceber = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnShiftReport
             // 
             this.btnShiftReport.BackColor = System.Drawing.Color.SeaGreen;
-            this.btnShiftReport.Location = new System.Drawing.Point(154, 89);
-            this.btnShiftReport.Margin = new System.Windows.Forms.Padding(2);
+            this.btnShiftReport.Location = new System.Drawing.Point(176, 119);
+            this.btnShiftReport.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.btnShiftReport.Name = "btnShiftReport";
-            this.btnShiftReport.Size = new System.Drawing.Size(131, 35);
+            this.btnShiftReport.Size = new System.Drawing.Size(150, 47);
             this.btnShiftReport.TabIndex = 0;
             this.btnShiftReport.Text = "Insert ShiftReport";
             this.btnShiftReport.UseVisualStyleBackColor = false;
@@ -61,10 +61,10 @@
             // btnProduction
             // 
             this.btnProduction.BackColor = System.Drawing.Color.DodgerBlue;
-            this.btnProduction.Location = new System.Drawing.Point(11, 89);
-            this.btnProduction.Margin = new System.Windows.Forms.Padding(2);
+            this.btnProduction.Location = new System.Drawing.Point(13, 119);
+            this.btnProduction.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.btnProduction.Name = "btnProduction";
-            this.btnProduction.Size = new System.Drawing.Size(131, 35);
+            this.btnProduction.Size = new System.Drawing.Size(150, 47);
             this.btnProduction.TabIndex = 1;
             this.btnProduction.Text = "Insert Production";
             this.btnProduction.UseVisualStyleBackColor = false;
@@ -73,10 +73,10 @@
             // btnRenProduction
             // 
             this.btnRenProduction.BackColor = System.Drawing.Color.DodgerBlue;
-            this.btnRenProduction.Location = new System.Drawing.Point(11, 50);
-            this.btnRenProduction.Margin = new System.Windows.Forms.Padding(2);
+            this.btnRenProduction.Location = new System.Drawing.Point(13, 67);
+            this.btnRenProduction.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.btnRenProduction.Name = "btnRenProduction";
-            this.btnRenProduction.Size = new System.Drawing.Size(131, 35);
+            this.btnRenProduction.Size = new System.Drawing.Size(150, 47);
             this.btnRenProduction.TabIndex = 2;
             this.btnRenProduction.Text = "Ren Mov Production";
             this.btnRenProduction.UseVisualStyleBackColor = false;
@@ -85,10 +85,10 @@
             // btnRenShiftReport
             // 
             this.btnRenShiftReport.BackColor = System.Drawing.Color.SeaGreen;
-            this.btnRenShiftReport.Location = new System.Drawing.Point(154, 50);
-            this.btnRenShiftReport.Margin = new System.Windows.Forms.Padding(2);
+            this.btnRenShiftReport.Location = new System.Drawing.Point(176, 67);
+            this.btnRenShiftReport.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.btnRenShiftReport.Name = "btnRenShiftReport";
-            this.btnRenShiftReport.Size = new System.Drawing.Size(131, 35);
+            this.btnRenShiftReport.Size = new System.Drawing.Size(150, 47);
             this.btnRenShiftReport.TabIndex = 3;
             this.btnRenShiftReport.Text = "Ren Mov ShiftReport";
             this.btnRenShiftReport.UseVisualStyleBackColor = false;
@@ -97,10 +97,10 @@
             // btnZipCsv
             // 
             this.btnZipCsv.BackColor = System.Drawing.Color.MediumSlateBlue;
-            this.btnZipCsv.Location = new System.Drawing.Point(11, 11);
-            this.btnZipCsv.Margin = new System.Windows.Forms.Padding(2);
+            this.btnZipCsv.Location = new System.Drawing.Point(13, 15);
+            this.btnZipCsv.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.btnZipCsv.Name = "btnZipCsv";
-            this.btnZipCsv.Size = new System.Drawing.Size(274, 35);
+            this.btnZipCsv.Size = new System.Drawing.Size(313, 47);
             this.btnZipCsv.TabIndex = 4;
             this.btnZipCsv.Text = "BKP ZIP CSV";
             this.btnZipCsv.UseVisualStyleBackColor = false;
@@ -109,10 +109,10 @@
             // btnDelProduction
             // 
             this.btnDelProduction.BackColor = System.Drawing.Color.DodgerBlue;
-            this.btnDelProduction.Location = new System.Drawing.Point(11, 128);
-            this.btnDelProduction.Margin = new System.Windows.Forms.Padding(2);
+            this.btnDelProduction.Location = new System.Drawing.Point(13, 171);
+            this.btnDelProduction.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.btnDelProduction.Name = "btnDelProduction";
-            this.btnDelProduction.Size = new System.Drawing.Size(131, 37);
+            this.btnDelProduction.Size = new System.Drawing.Size(150, 49);
             this.btnDelProduction.TabIndex = 5;
             this.btnDelProduction.Text = "Del Production";
             this.btnDelProduction.UseVisualStyleBackColor = false;
@@ -121,9 +121,10 @@
             // btnLerDisplayOperacao
             // 
             this.btnLerDisplayOperacao.BackColor = System.Drawing.Color.OrangeRed;
-            this.btnLerDisplayOperacao.Location = new System.Drawing.Point(290, 89);
+            this.btnLerDisplayOperacao.Location = new System.Drawing.Point(331, 119);
+            this.btnLerDisplayOperacao.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnLerDisplayOperacao.Name = "btnLerDisplayOperacao";
-            this.btnLerDisplayOperacao.Size = new System.Drawing.Size(192, 35);
+            this.btnLerDisplayOperacao.Size = new System.Drawing.Size(219, 47);
             this.btnLerDisplayOperacao.TabIndex = 6;
             this.btnLerDisplayOperacao.Text = "Ler DisplayOperacao";
             this.btnLerDisplayOperacao.UseVisualStyleBackColor = false;
@@ -132,9 +133,10 @@
             // btnCopyDisplayOperacao
             // 
             this.btnCopyDisplayOperacao.BackColor = System.Drawing.Color.OrangeRed;
-            this.btnCopyDisplayOperacao.Location = new System.Drawing.Point(290, 51);
+            this.btnCopyDisplayOperacao.Location = new System.Drawing.Point(331, 68);
+            this.btnCopyDisplayOperacao.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnCopyDisplayOperacao.Name = "btnCopyDisplayOperacao";
-            this.btnCopyDisplayOperacao.Size = new System.Drawing.Size(192, 35);
+            this.btnCopyDisplayOperacao.Size = new System.Drawing.Size(219, 47);
             this.btnCopyDisplayOperacao.TabIndex = 7;
             this.btnCopyDisplayOperacao.Text = "Copiar DisplayOperacao";
             this.btnCopyDisplayOperacao.UseVisualStyleBackColor = false;
@@ -143,9 +145,10 @@
             // btnInsertDisplayOperacao
             // 
             this.btnInsertDisplayOperacao.BackColor = System.Drawing.Color.OrangeRed;
-            this.btnInsertDisplayOperacao.Location = new System.Drawing.Point(290, 130);
+            this.btnInsertDisplayOperacao.Location = new System.Drawing.Point(331, 173);
+            this.btnInsertDisplayOperacao.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnInsertDisplayOperacao.Name = "btnInsertDisplayOperacao";
-            this.btnInsertDisplayOperacao.Size = new System.Drawing.Size(192, 35);
+            this.btnInsertDisplayOperacao.Size = new System.Drawing.Size(219, 47);
             this.btnInsertDisplayOperacao.TabIndex = 8;
             this.btnInsertDisplayOperacao.Text = "Insert DisplayOperacao";
             this.btnInsertDisplayOperacao.UseVisualStyleBackColor = false;
@@ -154,10 +157,10 @@
             // btnDelShiftReport
             // 
             this.btnDelShiftReport.BackColor = System.Drawing.Color.SeaGreen;
-            this.btnDelShiftReport.Location = new System.Drawing.Point(154, 128);
-            this.btnDelShiftReport.Margin = new System.Windows.Forms.Padding(2);
+            this.btnDelShiftReport.Location = new System.Drawing.Point(176, 171);
+            this.btnDelShiftReport.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.btnDelShiftReport.Name = "btnDelShiftReport";
-            this.btnDelShiftReport.Size = new System.Drawing.Size(131, 35);
+            this.btnDelShiftReport.Size = new System.Drawing.Size(150, 47);
             this.btnDelShiftReport.TabIndex = 9;
             this.btnDelShiftReport.Text = "Del ShiftReport";
             this.btnDelShiftReport.UseVisualStyleBackColor = false;
@@ -166,9 +169,10 @@
             // btnWebScrapingDisplayOperacao
             // 
             this.btnWebScrapingDisplayOperacao.BackColor = System.Drawing.Color.OrangeRed;
-            this.btnWebScrapingDisplayOperacao.Location = new System.Drawing.Point(290, 11);
+            this.btnWebScrapingDisplayOperacao.Location = new System.Drawing.Point(331, 15);
+            this.btnWebScrapingDisplayOperacao.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnWebScrapingDisplayOperacao.Name = "btnWebScrapingDisplayOperacao";
-            this.btnWebScrapingDisplayOperacao.Size = new System.Drawing.Size(192, 35);
+            this.btnWebScrapingDisplayOperacao.Size = new System.Drawing.Size(219, 47);
             this.btnWebScrapingDisplayOperacao.TabIndex = 10;
             this.btnWebScrapingDisplayOperacao.Text = "WebScraping DisplayOperacao";
             this.btnWebScrapingDisplayOperacao.UseVisualStyleBackColor = false;
@@ -179,47 +183,50 @@
             this.timerWebScrapingGeral.Interval = 60000;
             this.timerWebScrapingGeral.Tick += new System.EventHandler(this.timerWebScrapingGeral_Tick);
             // 
-            // btnDelFaturamento
+            // btnDelContasReceber
             // 
-            this.btnDelFaturamento.BackColor = System.Drawing.Color.DodgerBlue;
-            this.btnDelFaturamento.Location = new System.Drawing.Point(11, 272);
-            this.btnDelFaturamento.Margin = new System.Windows.Forms.Padding(2);
-            this.btnDelFaturamento.Name = "btnDelFaturamento";
-            this.btnDelFaturamento.Size = new System.Drawing.Size(160, 37);
-            this.btnDelFaturamento.TabIndex = 13;
-            this.btnDelFaturamento.Text = "Del Faturamento";
-            this.btnDelFaturamento.UseVisualStyleBackColor = false;
+            this.btnDelContasReceber.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnDelContasReceber.Location = new System.Drawing.Point(13, 363);
+            this.btnDelContasReceber.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.btnDelContasReceber.Name = "btnDelContasReceber";
+            this.btnDelContasReceber.Size = new System.Drawing.Size(183, 49);
+            this.btnDelContasReceber.TabIndex = 13;
+            this.btnDelContasReceber.Text = "Del Contas a Receber";
+            this.btnDelContasReceber.UseVisualStyleBackColor = false;
+            this.btnDelContasReceber.Click += new System.EventHandler(this.btnDelContasReceber_Click);
             // 
-            // btnRenFaturamento
+            // btnRenContasReceber
             // 
-            this.btnRenFaturamento.BackColor = System.Drawing.Color.DodgerBlue;
-            this.btnRenFaturamento.Location = new System.Drawing.Point(11, 194);
-            this.btnRenFaturamento.Margin = new System.Windows.Forms.Padding(2);
-            this.btnRenFaturamento.Name = "btnRenFaturamento";
-            this.btnRenFaturamento.Size = new System.Drawing.Size(160, 35);
-            this.btnRenFaturamento.TabIndex = 12;
-            this.btnRenFaturamento.Text = "Ren Mov Faturamento";
-            this.btnRenFaturamento.UseVisualStyleBackColor = false;
+            this.btnRenContasReceber.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnRenContasReceber.Location = new System.Drawing.Point(13, 259);
+            this.btnRenContasReceber.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.btnRenContasReceber.Name = "btnRenContasReceber";
+            this.btnRenContasReceber.Size = new System.Drawing.Size(183, 47);
+            this.btnRenContasReceber.TabIndex = 12;
+            this.btnRenContasReceber.Text = "Ren Mov Contas a Receber";
+            this.btnRenContasReceber.UseVisualStyleBackColor = false;
+            this.btnRenContasReceber.Click += new System.EventHandler(this.btnRenContasReceber_Click);
             // 
-            // btnInsertFaturamento
+            // btnInsertContasReceber
             // 
-            this.btnInsertFaturamento.BackColor = System.Drawing.Color.DodgerBlue;
-            this.btnInsertFaturamento.Location = new System.Drawing.Point(11, 233);
-            this.btnInsertFaturamento.Margin = new System.Windows.Forms.Padding(2);
-            this.btnInsertFaturamento.Name = "btnInsertFaturamento";
-            this.btnInsertFaturamento.Size = new System.Drawing.Size(160, 35);
-            this.btnInsertFaturamento.TabIndex = 11;
-            this.btnInsertFaturamento.Text = "Insert Faturamento";
-            this.btnInsertFaturamento.UseVisualStyleBackColor = false;
+            this.btnInsertContasReceber.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnInsertContasReceber.Location = new System.Drawing.Point(13, 311);
+            this.btnInsertContasReceber.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.btnInsertContasReceber.Name = "btnInsertContasReceber";
+            this.btnInsertContasReceber.Size = new System.Drawing.Size(183, 47);
+            this.btnInsertContasReceber.TabIndex = 11;
+            this.btnInsertContasReceber.Text = "Insert Contas a Receber";
+            this.btnInsertContasReceber.UseVisualStyleBackColor = false;
+            this.btnInsertContasReceber.Click += new System.EventHandler(this.btnInsertContasReceber_Click);
             // 
             // UIPrincipal
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(491, 412);
-            this.Controls.Add(this.btnDelFaturamento);
-            this.Controls.Add(this.btnRenFaturamento);
-            this.Controls.Add(this.btnInsertFaturamento);
+            this.ClientSize = new System.Drawing.Size(561, 549);
+            this.Controls.Add(this.btnDelContasReceber);
+            this.Controls.Add(this.btnRenContasReceber);
+            this.Controls.Add(this.btnInsertContasReceber);
             this.Controls.Add(this.btnWebScrapingDisplayOperacao);
             this.Controls.Add(this.btnDelShiftReport);
             this.Controls.Add(this.btnInsertDisplayOperacao);
@@ -232,7 +239,7 @@
             this.Controls.Add(this.btnProduction);
             this.Controls.Add(this.btnShiftReport);
             this.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.Name = "UIPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "IntegraTêxtil";
@@ -254,8 +261,8 @@
         private Button btnDelShiftReport;
         private Button btnWebScrapingDisplayOperacao;
         private System.Windows.Forms.Timer timerWebScrapingGeral;
-        private Button btnDelFaturamento;
-        private Button btnRenFaturamento;
-        private Button btnInsertFaturamento;
+        private Button btnDelContasReceber;
+        private Button btnRenContasReceber;
+        private Button btnInsertContasReceber;
     }
 }

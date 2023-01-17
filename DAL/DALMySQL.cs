@@ -15,7 +15,7 @@ namespace DAL
         private MySqlConnection CriarConexao()
         {
             String connString = null;
-            StreamReader sr = File.OpenText("stringConexaoMySql.txt");
+            var sr = File.OpenText("stringConexaoMySql.txt");
             string input = null;
             while ((input = sr.ReadLine()) != null)
             {
