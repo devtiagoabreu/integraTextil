@@ -112,5 +112,33 @@ namespace UI
 
             bllContasReceber.DeletarArquivos(@"C:\integraTextil\relatorios\contas_receber\ren\");
         }
+
+        private void btnRenContasPagar_Click(object sender, EventArgs e)
+        {
+            BLLContasPagar bllContasPagar = new BLLContasPagar();
+
+            bllContasPagar.RenomearArquivo(bllContasPagar.PegarNomeArquivo(@"C:\integraTextil\relatorios\contas_pagar\", "ROD"), "contas_pagar.csv", @"C:\integraTextil\relatorios\contas_pagar\", @"C:\integraTextil\relatorios\contas_pagar\ren");
+        }
+
+        private void btnInsertContasPagar_Click(object sender, EventArgs e)
+        {
+            BLLContasPagar bllContasPagar = new BLLContasPagar();
+
+            bllContasPagar.InserirDadosBD(bllContasPagar.LerCsv(@"C:\integraTextil\relatorios\contas_pagar\ren\contas_pagar.csv"));
+        }
+
+        private void btnRenContasPagas_Click(object sender, EventArgs e)
+        {
+            BLLContasPagas bllContasPagas = new BLLContasPagas();
+
+            bllContasPagas.RenomearArquivo(bllContasPagas.PegarNomeArquivo(@"C:\integraTextil\relatorios\contas_pagas\", "ROD"), "contas_pagas.csv", @"C:\integraTextil\relatorios\contas_pagas\", @"C:\integraTextil\relatorios\contas_pagas\ren");
+        }
+
+        private void btnInsertContasPagas_Click(object sender, EventArgs e)
+        {
+            BLLContasPagas bllContasPagas = new BLLContasPagas();
+
+            bllContasPagas.InserirDadosBD(bllContasPagas.LerCsv(@"C:\integraTextil\relatorios\contas_pagas\ren\contas_pagas.csv"));
+        }
     }
 }
