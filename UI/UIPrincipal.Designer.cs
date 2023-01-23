@@ -48,6 +48,9 @@
             this.btnDelContasPagas = new System.Windows.Forms.Button();
             this.btnRenContasPagas = new System.Windows.Forms.Button();
             this.btnInsertContasPagas = new System.Windows.Forms.Button();
+            this.btnDelCaixasFios = new System.Windows.Forms.Button();
+            this.btnRenCaixasFios = new System.Windows.Forms.Button();
+            this.btnInsertCaixasFios = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnShiftReport
@@ -209,6 +212,7 @@
             this.btnDelContasPagar.TabIndex = 16;
             this.btnDelContasPagar.Text = "Del Contas a Pagar";
             this.btnDelContasPagar.UseVisualStyleBackColor = false;
+            this.btnDelContasPagar.Click += new System.EventHandler(this.btnDelContasPagar_Click);
             // 
             // btnRenContasPagar
             // 
@@ -244,6 +248,7 @@
             this.btnDelContasPagas.TabIndex = 19;
             this.btnDelContasPagas.Text = "Del Contas a Pagas";
             this.btnDelContasPagas.UseVisualStyleBackColor = false;
+            this.btnDelContasPagas.Click += new System.EventHandler(this.btnDelContasPagas_Click);
             // 
             // btnRenContasPagas
             // 
@@ -269,11 +274,49 @@
             this.btnInsertContasPagas.UseVisualStyleBackColor = false;
             this.btnInsertContasPagas.Click += new System.EventHandler(this.btnInsertContasPagas_Click);
             // 
+            // btnDelCaixasFios
+            // 
+            this.btnDelCaixasFios.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnDelCaixasFios.Location = new System.Drawing.Point(655, 363);
+            this.btnDelCaixasFios.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.btnDelCaixasFios.Name = "btnDelCaixasFios";
+            this.btnDelCaixasFios.Size = new System.Drawing.Size(210, 49);
+            this.btnDelCaixasFios.TabIndex = 22;
+            this.btnDelCaixasFios.Text = "Del Caixas fios";
+            this.btnDelCaixasFios.UseVisualStyleBackColor = false;
+            this.btnDelCaixasFios.Click += new System.EventHandler(this.btnDelCaixasFios_Click);
+            // 
+            // btnRenCaixasFios
+            // 
+            this.btnRenCaixasFios.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnRenCaixasFios.Location = new System.Drawing.Point(655, 259);
+            this.btnRenCaixasFios.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.btnRenCaixasFios.Name = "btnRenCaixasFios";
+            this.btnRenCaixasFios.Size = new System.Drawing.Size(210, 47);
+            this.btnRenCaixasFios.TabIndex = 21;
+            this.btnRenCaixasFios.Text = "Ren Mov Caixas fios";
+            this.btnRenCaixasFios.UseVisualStyleBackColor = false;
+            this.btnRenCaixasFios.Click += new System.EventHandler(this.btnRenCaixasFios_Click);
+            // 
+            // btnInsertCaixasFios
+            // 
+            this.btnInsertCaixasFios.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnInsertCaixasFios.Location = new System.Drawing.Point(655, 312);
+            this.btnInsertCaixasFios.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.btnInsertCaixasFios.Name = "btnInsertCaixasFios";
+            this.btnInsertCaixasFios.Size = new System.Drawing.Size(210, 47);
+            this.btnInsertCaixasFios.TabIndex = 20;
+            this.btnInsertCaixasFios.Text = "Insert Caixas fios";
+            this.btnInsertCaixasFios.UseVisualStyleBackColor = false;
+            // 
             // UIPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1206, 549);
+            this.Controls.Add(this.btnDelCaixasFios);
+            this.Controls.Add(this.btnRenCaixasFios);
+            this.Controls.Add(this.btnInsertCaixasFios);
             this.Controls.Add(this.btnDelContasPagas);
             this.Controls.Add(this.btnRenContasPagas);
             this.Controls.Add(this.btnInsertContasPagas);
@@ -322,5 +365,8 @@
         private Button btnDelContasPagas;
         private Button btnRenContasPagas;
         private Button btnInsertContasPagas;
+        private Button btnDelCaixasFios;
+        private Button btnRenCaixasFios;
+        private Button btnInsertCaixasFios;
     }
 }

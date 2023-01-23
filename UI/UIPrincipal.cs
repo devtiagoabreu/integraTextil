@@ -127,6 +127,13 @@ namespace UI
             bllContasPagar.InserirDadosBD(bllContasPagar.LerCsv(@"C:\integraTextil\relatorios\contas_pagar\ren\contas_pagar.csv"));
         }
 
+        private void btnDelContasPagar_Click(object sender, EventArgs e)
+        {
+            BLLContasPagar bllContasPagar = new BLLContasPagar();
+
+            bllContasPagar.DeletarArquivos(@"C:\integraTextil\relatorios\contas_pagar\ren\");
+        }
+
         private void btnRenContasPagas_Click(object sender, EventArgs e)
         {
             BLLContasPagas bllContasPagas = new BLLContasPagas();
@@ -140,5 +147,35 @@ namespace UI
 
             bllContasPagas.InserirDadosBD(bllContasPagas.LerCsv(@"C:\integraTextil\relatorios\contas_pagas\ren\contas_pagas.csv"));
         }
+
+        private void btnDelContasPagas_Click(object sender, EventArgs e)
+        {
+            BLLContasPagas bllContasPagas = new BLLContasPagas();
+
+            bllContasPagas.DeletarArquivos(@"C:\integraTextil\relatorios\contas_pagas\ren\");
+        }
+
+        private void btnRenCaixasFios_Click(object sender, EventArgs e)
+        {
+            BLLCaixasFios bllCaixasFios = new BLLCaixasFios();
+
+            bllCaixasFios.RenomearArquivo(bllCaixasFios.PegarNomeArquivo(@"C:\integraTextil\relatorios\caixas_fios\", "ROD"), "caixas_fios.csv", @"C:\integraTextil\relatorios\caixas_fios\", @"C:\integraTextil\relatorios\caixas_fios\ren");
+        }
+
+        private void btnInsertCaixasFios_Click(object sender, EventArgs e)
+        {
+            BLLCaixasFios bllCaixasFios = new BLLCaixasFios();
+
+            bllCaixasFios.InserirDadosBD(bllCaixasFios.LerCsv(@"C:\integraTextil\relatorios\caixas_fios\ren\caixas_fios.csv"));
+        }
+
+        private void btnDelCaixasFios_Click(object sender, EventArgs e)
+        {
+            BLLCaixasFios bllCaixasFios = new BLLCaixasFios();
+
+            bllCaixasFios.DeletarArquivos(@"C:\integraTextil\relatorios\caixas_fios\ren\");
+        }
+
+        
     }
 }
