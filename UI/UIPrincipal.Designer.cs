@@ -308,6 +308,7 @@
             this.btnInsertCaixasFios.TabIndex = 20;
             this.btnInsertCaixasFios.Text = "Insert Caixas fios";
             this.btnInsertCaixasFios.UseVisualStyleBackColor = false;
+            this.btnInsertCaixasFios.Click += new System.EventHandler(this.btnInsertCaixasFios_Click);
             // 
             // UIPrincipal
             // 

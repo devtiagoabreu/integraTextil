@@ -132,7 +132,7 @@ namespace BLL
         public DAOContasReceberList LerCsvContasReceber(string path)
         {
             DAOContasReceberList daoContasReceberList = new DAOContasReceberList();
-            var csv = new StreamReader(File.OpenRead(path));
+            var csv = new StreamReader(File.OpenRead(path), Encoding.UTF7);
             string linha;
             string[] campo;
             int index = 0;

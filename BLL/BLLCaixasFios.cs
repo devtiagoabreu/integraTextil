@@ -132,7 +132,7 @@ namespace BLL
         public DAOCaixasFiosList LerCsv(string path)
         {
             DAOCaixasFiosList daoCaixasFiosList = new DAOCaixasFiosList();
-            var csv = new StreamReader(File.OpenRead(path));
+            var csv = new StreamReader(File.OpenRead(path), Encoding.UTF7);
             string linha;
             string[] campo;
             int index = 0;
@@ -169,6 +169,8 @@ namespace BLL
                     daoCaixasFios.NumeroOrigem = campo[21].ToString();
                     daoCaixasFios.Situacao = campo[22].ToString();
                     daoCaixasFios.DataEntrada = Convert.ToDateTime(campo[23].ToString());
+                    //se a máquina estiver no idioma Inglês
+                    //daoCaixasFios.DataEntrada = DateTime.ParseExact(campo[23].ToString(), "dd/MM/yyyy", null);
                     daoCaixasFios.Nf = campo[24].ToString();
                     daoCaixasFios.Serie = campo[25].ToString();
                     daoCaixasFios.seqNf = campo[26].ToString();
