@@ -51,6 +51,9 @@
             this.btnDelCaixasFios = new System.Windows.Forms.Button();
             this.btnRenCaixasFios = new System.Windows.Forms.Button();
             this.btnInsertCaixasFios = new System.Windows.Forms.Button();
+            this.btnDelNotasFiscais = new System.Windows.Forms.Button();
+            this.btnRenNotasFiscais = new System.Windows.Forms.Button();
+            this.btnInsertNotasFiscais = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnShiftReport
@@ -310,11 +313,50 @@
             this.btnInsertCaixasFios.UseVisualStyleBackColor = false;
             this.btnInsertCaixasFios.Click += new System.EventHandler(this.btnInsertCaixasFios_Click);
             // 
+            // btnDelNotasFiscais
+            // 
+            this.btnDelNotasFiscais.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnDelNotasFiscais.Location = new System.Drawing.Point(869, 363);
+            this.btnDelNotasFiscais.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.btnDelNotasFiscais.Name = "btnDelNotasFiscais";
+            this.btnDelNotasFiscais.Size = new System.Drawing.Size(210, 49);
+            this.btnDelNotasFiscais.TabIndex = 25;
+            this.btnDelNotasFiscais.Text = "Del Notas Fiscais";
+            this.btnDelNotasFiscais.UseVisualStyleBackColor = false;
+            this.btnDelNotasFiscais.Click += new System.EventHandler(this.btnDelNotasFiscais_Click);
+            // 
+            // btnRenNotasFiscais
+            // 
+            this.btnRenNotasFiscais.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnRenNotasFiscais.Location = new System.Drawing.Point(869, 259);
+            this.btnRenNotasFiscais.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.btnRenNotasFiscais.Name = "btnRenNotasFiscais";
+            this.btnRenNotasFiscais.Size = new System.Drawing.Size(210, 47);
+            this.btnRenNotasFiscais.TabIndex = 24;
+            this.btnRenNotasFiscais.Text = "Ren Mov Notas Ficais";
+            this.btnRenNotasFiscais.UseVisualStyleBackColor = false;
+            this.btnRenNotasFiscais.Click += new System.EventHandler(this.btnRenNotasFiscais_Click);
+            // 
+            // btnInsertNotasFiscais
+            // 
+            this.btnInsertNotasFiscais.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnInsertNotasFiscais.Location = new System.Drawing.Point(869, 312);
+            this.btnInsertNotasFiscais.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.btnInsertNotasFiscais.Name = "btnInsertNotasFiscais";
+            this.btnInsertNotasFiscais.Size = new System.Drawing.Size(210, 47);
+            this.btnInsertNotasFiscais.TabIndex = 23;
+            this.btnInsertNotasFiscais.Text = "Insert Notas Fiscais";
+            this.btnInsertNotasFiscais.UseVisualStyleBackColor = false;
+            this.btnInsertNotasFiscais.Click += new System.EventHandler(this.btnInsertNotasFiscais_Click);
+            // 
             // UIPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1206, 549);
+            this.Controls.Add(this.btnDelNotasFiscais);
+            this.Controls.Add(this.btnRenNotasFiscais);
+            this.Controls.Add(this.btnInsertNotasFiscais);
             this.Controls.Add(this.btnDelCaixasFios);
             this.Controls.Add(this.btnRenCaixasFios);
             this.Controls.Add(this.btnInsertCaixasFios);
@@ -369,5 +411,8 @@
         private Button btnDelCaixasFios;
         private Button btnRenCaixasFios;
         private Button btnInsertCaixasFios;
+        private Button btnDelNotasFiscais;
+        private Button btnRenNotasFiscais;
+        private Button btnInsertNotasFiscais;
     }
 }
