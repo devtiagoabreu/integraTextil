@@ -47,12 +47,14 @@ namespace DAOs
         public decimal ValorIpi { get; set; }
         public decimal CvfIpi { get; set; }
         public decimal BaseIcms { get; set; }
+        public decimal PercIcms { get; set; }
         public decimal ValorIcms { get; set; }
         public decimal CvfIcms { get; set; }
         public decimal Procedencia { get; set; }
         public decimal BaseDiferenca { get; set; }
         public decimal CvfPis { get; set; }
         public decimal CvfCofins { get; set; }
+        public decimal PercPis { get; set; }
         public decimal PercCofins { get; set; }
         public decimal BasePisCofins { get; set; }
         public decimal ValorPis { get; set; }

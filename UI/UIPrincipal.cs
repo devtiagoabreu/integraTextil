@@ -180,7 +180,7 @@ namespace UI
         {
             BLLNotasFiscais bllNotasFiscais = new BLLNotasFiscais();
 
-            bllNotasFiscais.RenomearArquivo(bllNotasFiscais.PegarNomeArquivo(@"C:\integraTextil\relatorios\notas_fiscais\", "ROD"), "notas_fiscais.csv", @"C:\integraTextil\relatorios\nostas_fiscais\", @"C:\integraTextil\relatorios\notas_fiscais\ren");
+            bllNotasFiscais.RenomearArquivo(bllNotasFiscais.PegarNomeArquivo(@"C:\integraTextil\relatorios\notas_fiscais\", "ROD"), "notas_fiscais.csv", @"C:\integraTextil\relatorios\notas_fiscais\", @"C:\integraTextil\relatorios\notas_fiscais\ren");
         }
 
         private void btnInsertNotasFiscais_Click(object sender, EventArgs e)

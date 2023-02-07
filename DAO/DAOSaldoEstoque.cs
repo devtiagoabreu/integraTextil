@@ -70,8 +70,8 @@ namespace DAO
         public int Volumes { get; set; }
         public decimal QtEstqInicioMes { get; set; }
         public decimal QtEstqFinalMes { get; set; }
-        public datetime UltimaEntrada { get; set; }
-        public datetime UltimaSaida { get; set; }
+        public DateTime UltimaEntrada { get; set; }
+        public DateTime UltimaSaida { get; set; }
         public decimal QtSugerida { get; set; }
         public decimal QtEmpenhada { get; set; }
         public string CnpjFornecedor { get; set; }

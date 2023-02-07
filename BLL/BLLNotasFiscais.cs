@@ -185,20 +185,38 @@ namespace BLL
                     daoNotasFiscais.ValorIpi = Convert.ToDecimal(campo[36].ToString());
                     daoNotasFiscais.CvfIpi = Convert.ToDecimal(campo[37].ToString());
                     daoNotasFiscais.BaseIcms = Convert.ToDecimal(campo[38].ToString());
-                    daoNotasFiscais.ValorIcms = Convert.ToDecimal(campo[39].ToString());
-                    daoNotasFiscais.CvfIcms = Convert.ToDecimal(campo[40].ToString());
-                    daoNotasFiscais.Procedencia = Convert.ToDecimal(campo[41].ToString());
-                    daoNotasFiscais.BaseDiferenca = Convert.ToDecimal(campo[42].ToString());
-                    daoNotasFiscais.CvfPis = Convert.ToDecimal(campo[43].ToString());
-                    daoNotasFiscais.CvfCofins = Convert.ToDecimal(campo[44].ToString());
-                    daoNotasFiscais.PercCofins = Convert.ToDecimal(campo[45].ToString());
-                    daoNotasFiscais.BasePisCofins = Convert.ToDecimal(campo[46].ToString());
-                    daoNotasFiscais.ValorPis = Convert.ToDecimal(campo[47].ToString());
-                    daoNotasFiscais.ValorCofins = Convert.ToDecimal(campo[48].ToString());
-                    daoNotasFiscais.PercSubtituicao = Convert.ToDecimal(campo[49].ToString());
-                    daoNotasFiscais.BaseSubtituicao = Convert.ToDecimal(campo[50].ToString());
-                    daoNotasFiscais.ValorSubtituicao = Convert.ToDecimal(campo[51].ToString());
-                    daoNotasFiscais.Projeto = campo[52].ToString();
+                    daoNotasFiscais.PercIcms = Convert.ToDecimal(campo[39].ToString());
+                    daoNotasFiscais.ValorIcms = Convert.ToDecimal(campo[40].ToString());
+                    daoNotasFiscais.CvfIcms = Convert.ToDecimal(campo[41].ToString());
+                    daoNotasFiscais.Procedencia = Convert.ToDecimal(campo[42].ToString());
+                    daoNotasFiscais.BaseDiferenca = Convert.ToDecimal(campo[43].ToString());
+                    daoNotasFiscais.CvfPis = Convert.ToDecimal(campo[44].ToString());
+                    daoNotasFiscais.CvfCofins = Convert.ToDecimal(campo[45].ToString());
+                    daoNotasFiscais.PercPis = Convert.ToDecimal(campo[46].ToString());
+                    daoNotasFiscais.PercCofins = Convert.ToDecimal(campo[47].ToString());
+                    daoNotasFiscais.BasePisCofins = Convert.ToDecimal(campo[48].ToString());
+                    daoNotasFiscais.ValorPis = Convert.ToDecimal(campo[49].ToString());
+                    daoNotasFiscais.ValorCofins = Convert.ToDecimal(campo[50].ToString());
+                    try
+                    {
+                        daoNotasFiscais.PercSubtituicao = Convert.ToDecimal(campo[51].ToString());
+                    }
+                    catch 
+                    {
+                        daoNotasFiscais.PercSubtituicao = 0;
+                    }
+                    
+                    daoNotasFiscais.BaseSubtituicao = Convert.ToDecimal(campo[52].ToString());
+                    try
+                    {
+                        daoNotasFiscais.ValorSubtituicao = Convert.ToDecimal(campo[53].ToString());
+                    }
+                    catch
+                    {
+                        daoNotasFiscais.ValorSubtituicao = 0;
+                    }
+                    
+                    daoNotasFiscais.Projeto = campo[54].ToString();
 
                     daoNotasFiscaisList.Add(daoNotasFiscais);
 
@@ -232,7 +250,7 @@ namespace BLL
                     daoNotasFiscais.DescNatureza = linha["DescNatureza"].ToString();
                     daoNotasFiscais.DataMovto = Convert.ToDateTime(linha["DataMovto"].ToString());
                     daoNotasFiscais.EntradaSaida = linha["EntradaSaida"].ToString();
-                    daoNotasFiscais.FaturamentoSimNao = linha["FaturamentoSimNao "].ToString();
+                    daoNotasFiscais.FaturamentoSimNao = linha["FaturamentoSimNao"].ToString();
                     daoNotasFiscais.ParametroNatFat = linha["ParametroNatFat"].ToString();
                     daoNotasFiscais.TipoTransacao = linha["TipoTransacao"].ToString();
                     daoNotasFiscais.CodCanc = linha["CodCanc"].ToString();
@@ -253,20 +271,22 @@ namespace BLL
                     daoNotasFiscais.CentroCusto = linha["CentroCusto"].ToString();
                     daoNotasFiscais.Transacao = linha["Transacao"].ToString();
                     daoNotasFiscais.ClassificFiscal = linha["ClassificFiscal"].ToString();
-                    daoNotasFiscais.ClassifContabil = linha["ClassifContabil "].ToString();
+                    daoNotasFiscais.ClassifContabil = linha["ClassifContabil"].ToString();
                     daoNotasFiscais.CodigoContabil = linha["CodigoContabil"].ToString();
                     daoNotasFiscais.BaseIpi = Convert.ToDecimal(linha["BaseIpi"].ToString());
                     daoNotasFiscais.PercIpi = Convert.ToDecimal(linha["PercIpi"].ToString());
-                    daoNotasFiscais.ValorIpi = Convert.ToDecimal(linha["ValorIpi "].ToString());
+                    daoNotasFiscais.ValorIpi = Convert.ToDecimal(linha["ValorIpi"].ToString());
                     daoNotasFiscais.CvfIpi = Convert.ToDecimal(linha["CvfIpi"].ToString());
                     daoNotasFiscais.BaseIcms = Convert.ToDecimal(linha["BaseIcms"].ToString());
+                    daoNotasFiscais.PercIcms = Convert.ToDecimal(linha["PercIcms"].ToString());
                     daoNotasFiscais.ValorIcms = Convert.ToDecimal(linha["ValorIcms"].ToString());
                     daoNotasFiscais.CvfIcms = Convert.ToDecimal(linha["CvfIcms"].ToString());
                     daoNotasFiscais.Procedencia = Convert.ToDecimal(linha["Procedencia"].ToString());
-                    daoNotasFiscais.BaseDiferenca = Convert.ToDecimal(linha["BaseDiferencia"].ToString());
+                    daoNotasFiscais.BaseDiferenca = Convert.ToDecimal(linha["BaseDiferenca"].ToString());
                     daoNotasFiscais.CvfPis = Convert.ToDecimal(linha["CvfPis"].ToString());
-                    daoNotasFiscais.CvfCofins = Convert.ToDecimal(linha["CvfConfins"].ToString());
-                    daoNotasFiscais.PercCofins = Convert.ToDecimal(linha["PercConfins"].ToString());
+                    daoNotasFiscais.CvfCofins = Convert.ToDecimal(linha["CvfCofins"].ToString());
+                    daoNotasFiscais.PercPis = Convert.ToDecimal(linha["PercPis"].ToString());
+                    daoNotasFiscais.PercCofins = Convert.ToDecimal(linha["PercCofins"].ToString());
                     daoNotasFiscais.BasePisCofins = Convert.ToDecimal(linha["BasePisCofins"].ToString());
                     daoNotasFiscais.ValorPis = Convert.ToDecimal(linha["ValorPis"].ToString());
                     daoNotasFiscais.ValorCofins = Convert.ToDecimal(linha["ValorCofins"].ToString());
@@ -316,12 +336,14 @@ namespace BLL
                     dalMySQL.AdicionaParametros("@ValorIpi", daoNotasFiscais.ValorIpi);
                     dalMySQL.AdicionaParametros("@CvfIpi", daoNotasFiscais.CvfIpi);
                     dalMySQL.AdicionaParametros("@BaseIcms", daoNotasFiscais.BaseIcms);
+                    dalMySQL.AdicionaParametros("@PercIcms", daoNotasFiscais.PercIcms);
                     dalMySQL.AdicionaParametros("@ValorIcms", daoNotasFiscais.ValorIcms);
                     dalMySQL.AdicionaParametros("@CvfIcms", daoNotasFiscais.CvfIcms);
                     dalMySQL.AdicionaParametros("@Procedencia", daoNotasFiscais.Procedencia);
                     dalMySQL.AdicionaParametros("@BaseDiferenca", daoNotasFiscais.BaseDiferenca);
                     dalMySQL.AdicionaParametros("@CvfPis", daoNotasFiscais.CvfPis);
                     dalMySQL.AdicionaParametros("@CvfCofins", daoNotasFiscais.CvfCofins);
+                    dalMySQL.AdicionaParametros("@PercPis", daoNotasFiscais.PercPis);
                     dalMySQL.AdicionaParametros("@PercCofins", daoNotasFiscais.PercCofins);
                     dalMySQL.AdicionaParametros("@BasePisCofins", daoNotasFiscais.BasePisCofins);
                     dalMySQL.AdicionaParametros("@ValorPis", daoNotasFiscais.ValorPis);
