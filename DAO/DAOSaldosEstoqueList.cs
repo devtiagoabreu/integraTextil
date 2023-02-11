@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DAO
 {
-    public class DAOSaldoEstoqueList : List<DAOSaldoEstoque>
+    public class DAOSaldosEstoqueList : List<DAOSaldosEstoque>
     {
     }
 }

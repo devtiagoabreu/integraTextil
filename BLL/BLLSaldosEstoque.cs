@@ -3,10 +3,11 @@ using System.ComponentModel;
 using System.Data;
 using DAL;
 using DAO;
+using System;
 
 namespace BLL
 {
-    public class BLLSaldoEstoque
+    public class BLLSaldosEstoque
     {
         #region ATRIBUTOS | OBJETOS
 
@@ -129,9 +130,9 @@ namespace BLL
 
         }
 
-        public DAOSaldoEstoqueList LerCsv(string path)
+        public DAOSaldosEstoqueList LerCsv(string path)
         {
-            DAOSaldoEstoqueList daoSaldoEstoqueList = new DAOSaldoEstoqueList();
+            DAOSaldosEstoqueList daoSaldoEstoqueList = new DAOSaldosEstoqueList();
             var csv = new StreamReader(File.OpenRead(path));
             string linha;
             string[] campo;
@@ -139,7 +140,7 @@ namespace BLL
 
             while ((linha = csv.ReadLine()) != null)
             {
-                DAOSaldoEstoque daoSaldoEstoque = new DAOSaldoEstoque();
+                DAOSaldosEstoque daoSaldoEstoque = new DAOSaldosEstoque();
                 campo = linha.Split(';');
                 index++;
 
@@ -163,58 +164,121 @@ namespace BLL
                     daoSaldoEstoque.Narrativa = campo[15].ToString();
                     daoSaldoEstoque.Cf = campo[16].ToString();
                     daoSaldoEstoque.Col = campo[17].ToString();
-                    daoSaldoEstoque.Lin = campo[18].ToString();
-                    daoSaldoEstoque.Linha = campo[19].ToString();
-                    daoSaldoEstoque.Art = campo[20].ToString();
-                    daoSaldoEstoque.Cota = campo[21].ToString();
-                    daoSaldoEstoque.ArtigoCotas = campo[22].ToString();
-                    daoSaldoEstoque.Ces = campo[23].ToString();
-                    daoSaldoEstoque.ContaEstoque = campo[24].ToString();
-                    daoSaldoEstoque.Tpg = campo[25].ToString();
-                    daoSaldoEstoque.TipoProdutoGlobal = campo[26].ToString();
-                    daoSaldoEstoque.TprogTpg = campo[27].ToString();
-                    daoSaldoEstoque.NivTpg = campo[28].ToString();
-                    daoSaldoEstoque.EstTpg = campo[29].ToString();
-                    daoSaldoEstoque.Cliente = campo[30].ToString();
-                    daoSaldoEstoque.NomeCliente = campo[31].ToString();
-                    daoSaldoEstoque.Marca = campo[32].ToString();
-                    daoSaldoEstoque.NomeMarca = campo[33].ToString();
-                    daoSaldoEstoque.TipoTecido = campo[34].ToString();
-                    daoSaldoEstoque.Tpm = campo[35].ToString();
-                    daoSaldoEstoque.Ncm = campo[36].ToString();
-                    daoSaldoEstoque.Altp = campo[37].ToString();
-                    daoSaldoEstoque.Rotp = campo[38].ToString();
-                    daoSaldoEstoque.Antc = campo[39].ToString();
-                    daoSaldoEstoque.Rotc = campo[40].ToString();
-                    daoSaldoEstoque.ValorMedioEstoque = Convert.ToDecimal(campo[41].ToString());
-                    daoSaldoEstoque.ValorUltimaCopmpra = Convert.ToDecimal(campo[42].ToString());
-                    daoSaldoEstoque.Custo = Convert.ToDecimal(campo[43].ToString());
-                    daoSaldoEstoque.CustoInformado = Convert.ToDecimal(campo[44].ToString());
-                    daoSaldoEstoque.Lead = campo[45].ToString();
-                    daoSaldoEstoque.FamiliaTear = campo[46].ToString();
-                    daoSaldoEstoque.LoteTam = campo[47].ToString();
-                    daoSaldoEstoque.PesoLiquido = Convert.ToDecimal(campo[48].ToString());
-                    daoSaldoEstoque.PesoRolo = Convert.ToDecimal(campo[49].ToString());
-                    daoSaldoEstoque.PesoMinRolo = Convert.ToDecimal(campo[50].ToString());
-                    daoSaldoEstoque.DescTamFicha = campo[51].ToString();
-                    daoSaldoEstoque.TipoProdQuimico = campo[52].ToString();
-                    daoSaldoEstoque.ItemAtivo = campo[53].ToString();
-                    daoSaldoEstoque.CodigoContabil = campo[54].ToString();
-                    daoSaldoEstoque.CodProcesso = campo[55].ToString();
-                    daoSaldoEstoque.Lote = campo[56].ToString();
-                    daoSaldoEstoque.LoteProduto = campo[57].ToString();
-                    daoSaldoEstoque.SaldoAtual = campo[58].ToString();
-                    daoSaldoEstoque.Volumes = Convert.ToInt32(campo[59].ToString());
-                    daoSaldoEstoque.QtEstqInicioMes = Convert.ToDecimal(campo[60].ToString());
-                    daoSaldoEstoque.QtEstqFinalMes = Convert.ToDecimal(campo[61].ToString());
-                    daoSaldoEstoque.UltimaEntrada = Convert.ToDateTime(campo[62].ToString());
-                    daoSaldoEstoque.UltimaSaida = Convert.ToDateTime(campo[63].ToString());
-                    daoSaldoEstoque.QtSugerida = Convert.ToDecimal(campo[64].ToString());
-                    daoSaldoEstoque.QtEmpenhada = Convert.ToDecimal(campo[65].ToString());
-                    daoSaldoEstoque.CnpjFornecedor = campo[66].ToString();
-                    daoSaldoEstoque.NotaFiscal = campo[67].ToString();
-                    daoSaldoEstoque.PeriodoEstoque = campo[68].ToString();
+                    daoSaldoEstoque.Colecao = campo[18].ToString();
+                    daoSaldoEstoque.Lin = campo[19].ToString();
+                    daoSaldoEstoque.Linha = campo[20].ToString();
+                    daoSaldoEstoque.Art = campo[21].ToString();
+                    daoSaldoEstoque.Artigo = campo[22].ToString();
+                    daoSaldoEstoque.Cota = campo[23].ToString();
+                    daoSaldoEstoque.ArtigoCotas = campo[24].ToString();
+                    daoSaldoEstoque.Ces = campo[25].ToString();
+                    daoSaldoEstoque.ContaEstoque = campo[26].ToString();
+                    daoSaldoEstoque.Tpg = campo[27].ToString();
+                    daoSaldoEstoque.TipoProdutoGlobal = campo[28].ToString();
+                    daoSaldoEstoque.TprogTpg = campo[29].ToString();
+                    daoSaldoEstoque.NivTpg = campo[30].ToString();
+                    daoSaldoEstoque.EstTpg = campo[31].ToString();
+                    daoSaldoEstoque.DepTpg = campo[32].ToString();
+                    daoSaldoEstoque.Cliente = campo[33].ToString();
+                    daoSaldoEstoque.NomeCliente = campo[34].ToString();
+                    daoSaldoEstoque.Marca = campo[35].ToString();
+                    daoSaldoEstoque.NomeMarca = campo[36].ToString();
+                    daoSaldoEstoque.TipoTecido = campo[37].ToString();
+                    daoSaldoEstoque.Tpm = campo[38].ToString();
+                    daoSaldoEstoque.Ncm = campo[39].ToString();
+                    daoSaldoEstoque.Altp = campo[40].ToString();
+                    daoSaldoEstoque.Rotp = campo[41].ToString();
+                    daoSaldoEstoque.Antc = campo[42].ToString();
+                    daoSaldoEstoque.Rotc = campo[43].ToString();
+                    daoSaldoEstoque.ValorMedioEstoque = Convert.ToDecimal(campo[44].ToString());
+                    daoSaldoEstoque.ValorUltimaCompra = Convert.ToDecimal(campo[45].ToString());
+                    daoSaldoEstoque.Custo = Convert.ToDecimal(campo[46].ToString());
+                    daoSaldoEstoque.CustoInformado = Convert.ToDecimal(campo[47].ToString());
+                    daoSaldoEstoque.Lead = campo[48].ToString();
+                    daoSaldoEstoque.FamiliaTear = campo[49].ToString();
+                    daoSaldoEstoque.LoteTam = campo[50].ToString();
+                    daoSaldoEstoque.PesoLiquido = Convert.ToDecimal(campo[51].ToString());
+                    daoSaldoEstoque.PesoRolo = Convert.ToDecimal(campo[52].ToString());
+                    daoSaldoEstoque.PesoMiniRolo = Convert.ToDecimal(campo[53].ToString());
+                    daoSaldoEstoque.DescTamFicha = campo[54].ToString();
+                    daoSaldoEstoque.TipoProdQuimico = campo[55].ToString();
+                    daoSaldoEstoque.ItemAtivo = campo[56].ToString();
+                    daoSaldoEstoque.CodigoContabil = campo[57].ToString();
+                    daoSaldoEstoque.CodProcesso = campo[58].ToString();
+                    daoSaldoEstoque.Lote = campo[59].ToString();
+                    daoSaldoEstoque.LoteProduto = campo[60].ToString();
+                    daoSaldoEstoque.SaldoAtual = campo[61].ToString();
+                    daoSaldoEstoque.Volumes = Convert.ToInt32(campo[62].ToString());
+                    try
+                    {
+                        daoSaldoEstoque.QtEstqInicioMes = Convert.ToDecimal(campo[63].ToString());
+                    }
+                    catch 
+                    {
+                        daoSaldoEstoque.QtEstqInicioMes = 0;
+                    }
+                    try
+                    {
+                        daoSaldoEstoque.QtEstqFinalMes = Convert.ToDecimal(campo[64].ToString());
+                    }
+                    catch
+                    {
+                        daoSaldoEstoque.QtEstqFinalMes = 0;
+                    }
+                    try
+                    {
+                        if (campo[65].ToString().Equals(""))
+                            daoSaldoEstoque.UltimaEntrada = null;
+                        else
+                            daoSaldoEstoque.UltimaEntrada = campo[65].ToString();
+                    }
+                    catch 
+                    {
 
+                    }
+                    try
+                    {
+                        if (campo[66].ToString().Equals(""))
+                            daoSaldoEstoque.UltimaSaida = null;
+                        else
+                            daoSaldoEstoque.UltimaSaida = campo[66].ToString(); 
+                        
+                    }
+                    catch 
+                    {
+
+                    }
+                    try
+                    {
+                        daoSaldoEstoque.QtSugerida = Convert.ToDecimal(campo[67].ToString());
+                    }
+                    catch 
+                    {
+                        daoSaldoEstoque.QtSugerida = 0;
+                    }
+                    try
+                    {
+                        daoSaldoEstoque.QtEmpenhada = Convert.ToDecimal(campo[68].ToString());
+                    }
+                    catch 
+                    {
+                        daoSaldoEstoque.QtEmpenhada = 0;
+                    }                    
+                    daoSaldoEstoque.CnpjFornecedor = campo[69].ToString();
+                    daoSaldoEstoque.NotaFiscal = campo[70].ToString();
+                    try
+                    {
+                        if (campo[71].ToString().Equals(""))
+                            daoSaldoEstoque.PeriodoEstoque = null;
+                        else
+                            daoSaldoEstoque.PeriodoEstoque = campo[71].ToString();
+                    }
+                    catch (Exception)
+                    {
+
+                        throw;
+                    }
+                    
 
                     daoSaldoEstoqueList.Add(daoSaldoEstoque);
 
@@ -223,19 +287,19 @@ namespace BLL
             return daoSaldoEstoqueList;
         }
 
-        public string InserirDadosBD(DAOSaldoEstoqueList daoSaldoEstoqueList)
+        public string InserirDadosBD(DAOSaldosEstoqueList daoSaldoEstoqueList)
         {
             BLLFerramentas bllFerramentas = new BLLFerramentas();
             string retorno = "";
             dalMySQL.LimparParametros();
-            dalMySQL.ExecutarManipulacao(CommandType.StoredProcedure, "uspSaldoEstoqueDeletar");
+            dalMySQL.ExecutarManipulacao(CommandType.StoredProcedure, "uspSaldosEstoqueDeletar");
 
             try
             {
                 DataTable dataTableSaldoEstoqueList = ConvertToDataTable(daoSaldoEstoqueList);
                 foreach (DataRow linha in dataTableSaldoEstoqueList.Rows)
                 {
-                    DAOSaldoEstoque daoSaldoEstoque = new DAOSaldoEstoque();
+                    DAOSaldosEstoque daoSaldoEstoque = new DAOSaldosEstoque();
 
                     daoSaldoEstoque.Emp = linha["Emp"].ToString();
                     daoSaldoEstoque.Empresa = linha["Empresa"].ToString();
@@ -248,15 +312,17 @@ namespace BLL
                     daoSaldoEstoque.Produto = linha["Produto"].ToString();
                     daoSaldoEstoque.Um = linha["Um"].ToString();
                     daoSaldoEstoque.CodigoBarras = linha["CodigoBarras"].ToString();
-                    daoSaldoEstoque.CodigoVelho = linha["CodigoVelho "].ToString();
+                    daoSaldoEstoque.CodigoVelho = linha["CodigoVelho"].ToString();
                     daoSaldoEstoque.NomeGrupo = linha["NomeGrupo"].ToString();
                     daoSaldoEstoque.NomeSub = linha["NomeSub"].ToString();
                     daoSaldoEstoque.NomeCor = linha["NomeCor"].ToString();
                     daoSaldoEstoque.Narrativa = linha["Narrativa"].ToString();
                     daoSaldoEstoque.Col = linha["Col"].ToString();
+                    daoSaldoEstoque.Colecao = linha["Colecao"].ToString();
                     daoSaldoEstoque.Lin = linha["Lin"].ToString();
                     daoSaldoEstoque.Linha = linha["Linha"].ToString();
                     daoSaldoEstoque.Art = linha["Art"].ToString();
+                    daoSaldoEstoque.Artigo = linha["Art"].ToString();
                     daoSaldoEstoque.Cota = linha["Cota"].ToString();
                     daoSaldoEstoque.ArtigoCotas = linha["ArtigoCotas"].ToString();
                     daoSaldoEstoque.Ces = linha["Ces"].ToString();
@@ -266,10 +332,11 @@ namespace BLL
                     daoSaldoEstoque.TprogTpg = linha["TprogTpg"].ToString();
                     daoSaldoEstoque.NivTpg = linha["NivTpg"].ToString();
                     daoSaldoEstoque.EstTpg = linha["EstTpg"].ToString();
+                    daoSaldoEstoque.DepTpg = linha["DepTpg"].ToString();
                     daoSaldoEstoque.Cliente = linha["Cliente"].ToString();
                     daoSaldoEstoque.NomeCliente = linha["NomeCliente"].ToString();
                     daoSaldoEstoque.Marca = linha["Marca"].ToString();
-                    daoSaldoEstoque.NomeMarca = linha["NomeMarca "].ToString();
+                    daoSaldoEstoque.NomeMarca = linha["NomeMarca"].ToString();
                     daoSaldoEstoque.TipoTecido = linha["TipoTecido"].ToString();
                     daoSaldoEstoque.Tpm = linha["Tpm"].ToString();
                     daoSaldoEstoque.Ncm = linha["Ncm"].ToString();
@@ -278,7 +345,7 @@ namespace BLL
                     daoSaldoEstoque.Antc = linha["Antc"].ToString();
                     daoSaldoEstoque.Rotc = linha["Rotc"].ToString();
                     daoSaldoEstoque.ValorMedioEstoque = Convert.ToDecimal(linha["ValorMedioEstoque"].ToString());
-                    daoSaldoEstoque.ValorUltimaCopmpra = Convert.ToDecimal(linha["ValorUltimaCopmpra"].ToString());
+                    daoSaldoEstoque.ValorUltimaCompra = Convert.ToDecimal(linha["ValorUltimaCompra"].ToString());
                     daoSaldoEstoque.Custo = Convert.ToDecimal(linha["Custo"].ToString());
                     daoSaldoEstoque.CustoInformado = Convert.ToDecimal(linha["CustoInformado"].ToString());
                     daoSaldoEstoque.Lead = linha["Lead"].ToString();
@@ -286,7 +353,7 @@ namespace BLL
                     daoSaldoEstoque.LoteTam = linha["LoteTam"].ToString();
                     daoSaldoEstoque.PesoLiquido = Convert.ToDecimal(linha["PesoLiquido"].ToString());
                     daoSaldoEstoque.PesoRolo = Convert.ToDecimal(linha["PesoRolo"].ToString());
-                    daoSaldoEstoque.PesoMinRolo = Convert.ToDecimal(linha["PesoMinRolo"].ToString());
+                    daoSaldoEstoque.PesoMiniRolo = Convert.ToDecimal(linha["PesoMiniRolo"].ToString());
                     daoSaldoEstoque.DescTamFicha = linha["DescTamFicha"].ToString();
                     daoSaldoEstoque.TipoProdQuimico = linha["TipoProdQuimico"].ToString();
                     daoSaldoEstoque.ItemAtivo = linha["ItemAtivo"].ToString();
@@ -298,8 +365,8 @@ namespace BLL
                     daoSaldoEstoque.Volumes = Convert.ToInt32(linha["Volumes"].ToString());
                     daoSaldoEstoque.QtEstqInicioMes = Convert.ToDecimal(linha["QtEstqInicioMes"].ToString());
                     daoSaldoEstoque.QtEstqFinalMes = Convert.ToDecimal(linha["QtEstqFinalMes"].ToString());
-                    daoSaldoEstoque.UltimaEntrada = Convert.ToDateTime(linha["UltimaEntrada"].ToString());
-                    daoSaldoEstoque.UltimaSaida = Convert.ToDateTime(linha["UltimaSaida"].ToString());
+                    daoSaldoEstoque.UltimaEntrada = linha["UltimaEntrada"].ToString();
+                    daoSaldoEstoque.UltimaSaida = linha["UltimaSaida"].ToString();
                     daoSaldoEstoque.QtSugerida = Convert.ToDecimal(linha["QtSugerida"].ToString());
                     daoSaldoEstoque.QtEmpenhada = Convert.ToDecimal(linha["QtEmpenhada"].ToString());
                     daoSaldoEstoque.CnpjFornecedor = linha["CnpjFornecedor"].ToString();
@@ -315,7 +382,6 @@ namespace BLL
                     dalMySQL.AdicionaParametros("@Nivel", daoSaldoEstoque.Nivel);
                     dalMySQL.AdicionaParametros("@Grupo", daoSaldoEstoque.Grupo);
                     dalMySQL.AdicionaParametros("@Sub", daoSaldoEstoque.Sub);
-                    dalMySQL.AdicionaParametros("@Nivel", daoSaldoEstoque.Nivel);
                     dalMySQL.AdicionaParametros("@Cor", daoSaldoEstoque.Cor);
                     dalMySQL.AdicionaParametros("@Produto", daoSaldoEstoque.Produto);
                     dalMySQL.AdicionaParametros("@Um", daoSaldoEstoque.Um);
@@ -327,9 +393,11 @@ namespace BLL
                     dalMySQL.AdicionaParametros("@Narrativa", daoSaldoEstoque.Narrativa);
                     dalMySQL.AdicionaParametros("@Cf", daoSaldoEstoque.Cf);
                     dalMySQL.AdicionaParametros("@Col", daoSaldoEstoque.Col);
+                    dalMySQL.AdicionaParametros("@Colecao", daoSaldoEstoque.Colecao);
                     dalMySQL.AdicionaParametros("@Lin", daoSaldoEstoque.Lin);
                     dalMySQL.AdicionaParametros("@Linha", daoSaldoEstoque.Linha);
                     dalMySQL.AdicionaParametros("@Art", daoSaldoEstoque.Art);
+                    dalMySQL.AdicionaParametros("@Artigo", daoSaldoEstoque.Artigo);
                     dalMySQL.AdicionaParametros("@Cota", daoSaldoEstoque.Cota);
                     dalMySQL.AdicionaParametros("@ArtigoCotas", daoSaldoEstoque.ArtigoCotas);
                     dalMySQL.AdicionaParametros("@Ces", daoSaldoEstoque.Ces);
@@ -339,6 +407,7 @@ namespace BLL
                     dalMySQL.AdicionaParametros("@TprogTpg", daoSaldoEstoque.TprogTpg);
                     dalMySQL.AdicionaParametros("@NivTpg", daoSaldoEstoque.NivTpg);
                     dalMySQL.AdicionaParametros("@EstTpg", daoSaldoEstoque.EstTpg);
+                    dalMySQL.AdicionaParametros("@DepTpg", daoSaldoEstoque.DepTpg);
                     dalMySQL.AdicionaParametros("@Cliente", daoSaldoEstoque.Cliente);
                     dalMySQL.AdicionaParametros("@NomeCliente", daoSaldoEstoque.NomeCliente);
                     dalMySQL.AdicionaParametros("@Marca", daoSaldoEstoque.Marca);
@@ -351,7 +420,7 @@ namespace BLL
                     dalMySQL.AdicionaParametros("@Antc", daoSaldoEstoque.Antc);
                     dalMySQL.AdicionaParametros("@Rotc", daoSaldoEstoque.Rotc);
                     dalMySQL.AdicionaParametros("@ValorMedioEstoque", daoSaldoEstoque.ValorMedioEstoque);
-                    dalMySQL.AdicionaParametros("@ValorUltimaCopmpra", daoSaldoEstoque.ValorUltimaCopmpra);
+                    dalMySQL.AdicionaParametros("@ValorUltimaCompra", daoSaldoEstoque.ValorUltimaCompra);
                     dalMySQL.AdicionaParametros("@Custo", daoSaldoEstoque.Custo);
                     dalMySQL.AdicionaParametros("@CustoInformado", daoSaldoEstoque.CustoInformado);
                     dalMySQL.AdicionaParametros("@Lead", daoSaldoEstoque.Lead);
@@ -359,7 +428,7 @@ namespace BLL
                     dalMySQL.AdicionaParametros("@LoteTam", daoSaldoEstoque.LoteTam);
                     dalMySQL.AdicionaParametros("@PesoLiquido", daoSaldoEstoque.PesoLiquido);
                     dalMySQL.AdicionaParametros("@PesoRolo", daoSaldoEstoque.PesoRolo);
-                    dalMySQL.AdicionaParametros("@PesoMinRolo", daoSaldoEstoque.PesoMinRolo);
+                    dalMySQL.AdicionaParametros("@PesoMiniRolo", daoSaldoEstoque.PesoMiniRolo);
                     dalMySQL.AdicionaParametros("@DescTamFicha", daoSaldoEstoque.DescTamFicha);
                     dalMySQL.AdicionaParametros("@TipoProdQuimico", daoSaldoEstoque.TipoProdQuimico);
                     dalMySQL.AdicionaParametros("@ItemAtivo", daoSaldoEstoque.ItemAtivo);
@@ -371,14 +440,27 @@ namespace BLL
                     dalMySQL.AdicionaParametros("@Volumes", daoSaldoEstoque.Volumes);
                     dalMySQL.AdicionaParametros("@QtEstqInicioMes", daoSaldoEstoque.QtEstqInicioMes);
                     dalMySQL.AdicionaParametros("@QtEstqFinalMes", daoSaldoEstoque.QtEstqFinalMes);
-                    dalMySQL.AdicionaParametros("@UltimaEntrada", daoSaldoEstoque.UltimaEntrada);
-                    dalMySQL.AdicionaParametros("@UltimaSaida", daoSaldoEstoque.UltimaSaida);
+
+                    if (daoSaldoEstoque.UltimaEntrada.Equals(""))
+                        dalMySQL.AdicionaParametros("@UltimaEntrada", null);
+                    else
+                        dalMySQL.AdicionaParametros("@UltimaEntrada", Convert.ToDateTime(daoSaldoEstoque.UltimaEntrada));
+                    
+                    if (daoSaldoEstoque.UltimaSaida.Equals(""))
+                        dalMySQL.AdicionaParametros("@UltimaSaida", null);
+                    else
+                        dalMySQL.AdicionaParametros("@UltimaSaida", Convert.ToDateTime(daoSaldoEstoque.UltimaSaida));
+
                     dalMySQL.AdicionaParametros("@QtSugerida", daoSaldoEstoque.QtSugerida);
                     dalMySQL.AdicionaParametros("@QtEmpenhada", daoSaldoEstoque.QtEmpenhada);
                     dalMySQL.AdicionaParametros("@CnpjFornecedor", daoSaldoEstoque.CnpjFornecedor);
                     dalMySQL.AdicionaParametros("@NotaFiscal", daoSaldoEstoque.NotaFiscal);
-                    dalMySQL.AdicionaParametros("@PeriodoEstoque", daoSaldoEstoque.PeriodoEstoque);
-                    dalMySQL.ExecutarManipulacao(CommandType.StoredProcedure, "uspSaldoEstoqueInserir");
+                    if (daoSaldoEstoque.PeriodoEstoque.Equals(""))
+                        dalMySQL.AdicionaParametros("@PeriodoEstoque", null);
+                    else
+                      dalMySQL.AdicionaParametros("@PeriodoEstoque", Convert.ToDateTime(daoSaldoEstoque.PeriodoEstoque));
+
+                    dalMySQL.ExecutarManipulacao(CommandType.StoredProcedure, "uspSaldosEstoqueInserir");
                 }
 
                 retorno = "ok";

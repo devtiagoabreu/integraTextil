@@ -54,6 +54,9 @@
             this.btnDelNotasFiscais = new System.Windows.Forms.Button();
             this.btnRenNotasFiscais = new System.Windows.Forms.Button();
             this.btnInsertNotasFiscais = new System.Windows.Forms.Button();
+            this.btnDelSaldosEstoque = new System.Windows.Forms.Button();
+            this.btnRenSaldosEstoque = new System.Windows.Forms.Button();
+            this.btnInsertSaldosEstoque = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnShiftReport
@@ -349,11 +352,49 @@
             this.btnInsertNotasFiscais.UseVisualStyleBackColor = false;
             this.btnInsertNotasFiscais.Click += new System.EventHandler(this.btnInsertNotasFiscais_Click);
             // 
+            // btnDelSaldosEstoque
+            // 
+            this.btnDelSaldosEstoque.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnDelSaldosEstoque.Location = new System.Drawing.Point(1083, 363);
+            this.btnDelSaldosEstoque.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.btnDelSaldosEstoque.Name = "btnDelSaldosEstoque";
+            this.btnDelSaldosEstoque.Size = new System.Drawing.Size(210, 49);
+            this.btnDelSaldosEstoque.TabIndex = 28;
+            this.btnDelSaldosEstoque.Text = "Del Saldos Estoque";
+            this.btnDelSaldosEstoque.UseVisualStyleBackColor = false;
+            // 
+            // btnRenSaldosEstoque
+            // 
+            this.btnRenSaldosEstoque.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnRenSaldosEstoque.Location = new System.Drawing.Point(1083, 259);
+            this.btnRenSaldosEstoque.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.btnRenSaldosEstoque.Name = "btnRenSaldosEstoque";
+            this.btnRenSaldosEstoque.Size = new System.Drawing.Size(210, 47);
+            this.btnRenSaldosEstoque.TabIndex = 27;
+            this.btnRenSaldosEstoque.Text = "Ren Mov Saldos Estoque ";
+            this.btnRenSaldosEstoque.UseVisualStyleBackColor = false;
+            this.btnRenSaldosEstoque.Click += new System.EventHandler(this.btnRenSaldosEstoque_Click);
+            // 
+            // btnInsertSaldosEstoque
+            // 
+            this.btnInsertSaldosEstoque.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnInsertSaldosEstoque.Location = new System.Drawing.Point(1083, 312);
+            this.btnInsertSaldosEstoque.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.btnInsertSaldosEstoque.Name = "btnInsertSaldosEstoque";
+            this.btnInsertSaldosEstoque.Size = new System.Drawing.Size(210, 47);
+            this.btnInsertSaldosEstoque.TabIndex = 26;
+            this.btnInsertSaldosEstoque.Text = "Insert Saldos Estoque";
+            this.btnInsertSaldosEstoque.UseVisualStyleBackColor = false;
+            this.btnInsertSaldosEstoque.Click += new System.EventHandler(this.btnInsertSaldosEstoque_Click);
+            // 
             // UIPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1206, 549);
+            this.ClientSize = new System.Drawing.Size(1466, 476);
+            this.Controls.Add(this.btnDelSaldosEstoque);
+            this.Controls.Add(this.btnRenSaldosEstoque);
+            this.Controls.Add(this.btnInsertSaldosEstoque);
             this.Controls.Add(this.btnDelNotasFiscais);
             this.Controls.Add(this.btnRenNotasFiscais);
             this.Controls.Add(this.btnInsertNotasFiscais);
@@ -414,5 +455,8 @@
         private Button btnDelNotasFiscais;
         private Button btnRenNotasFiscais;
         private Button btnInsertNotasFiscais;
+        private Button btnDelSaldosEstoque;
+        private Button btnRenSaldosEstoque;
+        private Button btnInsertSaldosEstoque;
     }
 }

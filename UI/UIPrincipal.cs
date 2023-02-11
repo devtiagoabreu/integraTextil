@@ -196,5 +196,26 @@ namespace UI
 
             bllNotasFiscais.DeletarArquivos(@"C:\integraTextil\relatorios\notas_fiscais\ren\");
         }
+
+        private void btnRenSaldosEstoque_Click(object sender, EventArgs e)
+        {
+            BLLSaldosEstoque bllSaldosEstoque = new BLLSaldosEstoque();
+
+            bllSaldosEstoque.RenomearArquivo(bllSaldosEstoque.PegarNomeArquivo(@"C:\integraTextil\relatorios\saldos_estoque\", "ROD"), "saldos_estoque.csv", @"C:\integraTextil\relatorios\saldos_estoque\", @"C:\integraTextil\relatorios\saldos_estoque\ren");
+        }
+
+        private void btnInsertSaldosEstoque_Click(object sender, EventArgs e)
+        {
+            BLLSaldosEstoque bllSaldosEstoque = new BLLSaldosEstoque();
+
+            bllSaldosEstoque.InserirDadosBD(bllSaldosEstoque.LerCsv(@"C:\integraTextil\relatorios\saldos_estoque\ren\saldos_estoque.csv"));
+        }
+
+        private void btnDelSaldosEstoque_Click(object sender, EventArgs e)
+        {
+            BLLSaldosEstoque bllSaldosEstoque = new BLLSaldosEstoque();
+
+            bllSaldosEstoque.DeletarArquivos(@"C:\integraTextil\relatorios\saldos_estoque\ren\");
+        }
     }
 }

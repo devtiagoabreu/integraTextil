@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DAO
 {
-    public class DAOSaldoEstoque
+    public class DAOSaldosEstoque
     {   
         public string Emp { get; set; }
         public string Empresa { get; set; }
@@ -26,9 +26,11 @@ namespace DAO
         public string Narrativa { get; set; }
         public string Cf { get; set; }
         public string Col { get; set; }
+        public string Colecao { get; set; }
         public string Lin { get; set; }
         public string Linha { get; set; }
         public string Art { get; set; }
+        public string Artigo { get; set; }
         public string Cota { get; set; }
         public string ArtigoCotas { get; set; }
         public string Ces { get; set; }
@@ -38,6 +40,7 @@ namespace DAO
         public string TprogTpg { get; set; }
         public string NivTpg { get; set; }
         public string EstTpg { get; set; }
+        public string DepTpg { get; set; }
         public string Cliente { get; set; }
         public string NomeCliente { get; set; }
         public string Marca { get; set; }
@@ -50,7 +53,7 @@ namespace DAO
         public string Antc { get; set; }
         public string Rotc { get; set; }
         public decimal ValorMedioEstoque { get; set; }
-        public decimal ValorUltimaCopmpra { get; set; }
+        public decimal ValorUltimaCompra { get; set; }
         public decimal Custo { get; set; }
         public decimal CustoInformado { get; set; }
         public string Lead { get; set; }
@@ -58,7 +61,7 @@ namespace DAO
         public string LoteTam { get; set; }
         public decimal PesoLiquido { get; set; }
         public decimal PesoRolo { get; set; }
-        public decimal PesoMinRolo { get; set; }
+        public decimal PesoMiniRolo { get; set; }
         public string DescTamFicha { get; set; }
         public string TipoProdQuimico { get; set; }
         public string ItemAtivo { get; set; }
@@ -70,8 +73,8 @@ namespace DAO
         public int Volumes { get; set; }
         public decimal QtEstqInicioMes { get; set; }
         public decimal QtEstqFinalMes { get; set; }
-        public DateTime UltimaEntrada { get; set; }
-        public DateTime UltimaSaida { get; set; }
+        public string UltimaEntrada { get; set; }
+        public string UltimaSaida { get; set; }
         public decimal QtSugerida { get; set; }
         public decimal QtEmpenhada { get; set; }
         public string CnpjFornecedor { get; set; }
