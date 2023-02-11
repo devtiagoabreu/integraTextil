@@ -133,7 +133,7 @@ namespace BLL
         public DAOSaldosEstoqueList LerCsv(string path)
         {
             DAOSaldosEstoqueList daoSaldoEstoqueList = new DAOSaldosEstoqueList();
-            var csv = new StreamReader(File.OpenRead(path));
+            var csv = new StreamReader(File.OpenRead(path), Encoding.UTF7);
             string linha;
             string[] campo;
             int index = 0;
