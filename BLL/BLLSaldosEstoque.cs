@@ -132,7 +132,7 @@ namespace BLL
 
         public DAOSaldosEstoqueList LerCsv(string path)
         {
-            DAOSaldosEstoqueList daoSaldoEstoqueList = new DAOSaldosEstoqueList();
+            DAOSaldosEstoqueList daoSaldosEstoqueList = new DAOSaldosEstoqueList();
             var csv = new StreamReader(File.OpenRead(path), Encoding.UTF7);
             string linha;
             string[] campo;
@@ -140,97 +140,156 @@ namespace BLL
 
             while ((linha = csv.ReadLine()) != null)
             {
-                DAOSaldosEstoque daoSaldoEstoque = new DAOSaldosEstoque();
+                DAOSaldosEstoque daoSaldosEstoque = new DAOSaldosEstoque();
                 campo = linha.Split(';');
                 index++;
 
                 if (index > 1)
                 {
-                    daoSaldoEstoque.Emp = campo[0].ToString();
-                    daoSaldoEstoque.Empresa = campo[1].ToString();
-                    daoSaldoEstoque.Dep = campo[2].ToString();
-                    daoSaldoEstoque.Deposito = campo[3].ToString();
-                    daoSaldoEstoque.Nivel = campo[4].ToString();
-                    daoSaldoEstoque.Grupo = campo[5].ToString();
-                    daoSaldoEstoque.Sub = campo[6].ToString();
-                    daoSaldoEstoque.Cor = campo[7].ToString();
-                    daoSaldoEstoque.Produto = campo[8].ToString();
-                    daoSaldoEstoque.Um = campo[9].ToString();
-                    daoSaldoEstoque.CodigoBarras = campo[10].ToString();
-                    daoSaldoEstoque.CodigoVelho = campo[11].ToString();
-                    daoSaldoEstoque.NomeGrupo = campo[12].ToString();
-                    daoSaldoEstoque.NomeSub = campo[13].ToString();
-                    daoSaldoEstoque.NomeCor = campo[14].ToString();
-                    daoSaldoEstoque.Narrativa = campo[15].ToString();
-                    daoSaldoEstoque.Cf = campo[16].ToString();
-                    daoSaldoEstoque.Col = campo[17].ToString();
-                    daoSaldoEstoque.Colecao = campo[18].ToString();
-                    daoSaldoEstoque.Lin = campo[19].ToString();
-                    daoSaldoEstoque.Linha = campo[20].ToString();
-                    daoSaldoEstoque.Art = campo[21].ToString();
-                    daoSaldoEstoque.Artigo = campo[22].ToString();
-                    daoSaldoEstoque.Cota = campo[23].ToString();
-                    daoSaldoEstoque.ArtigoCotas = campo[24].ToString();
-                    daoSaldoEstoque.Ces = campo[25].ToString();
-                    daoSaldoEstoque.ContaEstoque = campo[26].ToString();
-                    daoSaldoEstoque.Tpg = campo[27].ToString();
-                    daoSaldoEstoque.TipoProdutoGlobal = campo[28].ToString();
-                    daoSaldoEstoque.TprogTpg = campo[29].ToString();
-                    daoSaldoEstoque.NivTpg = campo[30].ToString();
-                    daoSaldoEstoque.EstTpg = campo[31].ToString();
-                    daoSaldoEstoque.DepTpg = campo[32].ToString();
-                    daoSaldoEstoque.Cliente = campo[33].ToString();
-                    daoSaldoEstoque.NomeCliente = campo[34].ToString();
-                    daoSaldoEstoque.Marca = campo[35].ToString();
-                    daoSaldoEstoque.NomeMarca = campo[36].ToString();
-                    daoSaldoEstoque.TipoTecido = campo[37].ToString();
-                    daoSaldoEstoque.Tpm = campo[38].ToString();
-                    daoSaldoEstoque.Ncm = campo[39].ToString();
-                    daoSaldoEstoque.Altp = campo[40].ToString();
-                    daoSaldoEstoque.Rotp = campo[41].ToString();
-                    daoSaldoEstoque.Antc = campo[42].ToString();
-                    daoSaldoEstoque.Rotc = campo[43].ToString();
-                    daoSaldoEstoque.ValorMedioEstoque = Convert.ToDecimal(campo[44].ToString());
-                    daoSaldoEstoque.ValorUltimaCompra = Convert.ToDecimal(campo[45].ToString());
-                    daoSaldoEstoque.Custo = Convert.ToDecimal(campo[46].ToString());
-                    daoSaldoEstoque.CustoInformado = Convert.ToDecimal(campo[47].ToString());
-                    daoSaldoEstoque.Lead = campo[48].ToString();
-                    daoSaldoEstoque.FamiliaTear = campo[49].ToString();
-                    daoSaldoEstoque.LoteTam = campo[50].ToString();
-                    daoSaldoEstoque.PesoLiquido = Convert.ToDecimal(campo[51].ToString());
-                    daoSaldoEstoque.PesoRolo = Convert.ToDecimal(campo[52].ToString());
-                    daoSaldoEstoque.PesoMiniRolo = Convert.ToDecimal(campo[53].ToString());
-                    daoSaldoEstoque.DescTamFicha = campo[54].ToString();
-                    daoSaldoEstoque.TipoProdQuimico = campo[55].ToString();
-                    daoSaldoEstoque.ItemAtivo = campo[56].ToString();
-                    daoSaldoEstoque.CodigoContabil = campo[57].ToString();
-                    daoSaldoEstoque.CodProcesso = campo[58].ToString();
-                    daoSaldoEstoque.Lote = campo[59].ToString();
-                    daoSaldoEstoque.LoteProduto = campo[60].ToString();
-                    daoSaldoEstoque.SaldoAtual = campo[61].ToString();
-                    daoSaldoEstoque.Volumes = Convert.ToInt32(campo[62].ToString());
+                    daoSaldosEstoque.Emp = campo[0].ToString();
+                    daoSaldosEstoque.Empresa = campo[1].ToString();
+                    daoSaldosEstoque.Dep = campo[2].ToString();
+                    daoSaldosEstoque.Deposito = campo[3].ToString();
+                    daoSaldosEstoque.Nivel = campo[4].ToString();
+                    daoSaldosEstoque.Grupo = campo[5].ToString();
+                    daoSaldosEstoque.Sub = campo[6].ToString();
+                    daoSaldosEstoque.Cor = campo[7].ToString();
+                    daoSaldosEstoque.Produto = campo[8].ToString();
+                    daoSaldosEstoque.Um = campo[9].ToString();
+                    daoSaldosEstoque.CodigoBarras = campo[10].ToString();
+                    daoSaldosEstoque.CodigoVelho = campo[11].ToString();
+                    daoSaldosEstoque.NomeGrupo = campo[12].ToString();
+                    daoSaldosEstoque.NomeSub = campo[13].ToString();
+                    daoSaldosEstoque.NomeCor = campo[14].ToString();
+                    daoSaldosEstoque.Narrativa = campo[15].ToString();
+                    daoSaldosEstoque.Cf = campo[16].ToString();
+                    daoSaldosEstoque.Col = campo[17].ToString();
+                    daoSaldosEstoque.Colecao = campo[18].ToString();
+                    daoSaldosEstoque.Lin = campo[19].ToString();
+                    daoSaldosEstoque.Linha = campo[20].ToString();
+                    daoSaldosEstoque.Art = campo[21].ToString();
+                    daoSaldosEstoque.Artigo = campo[22].ToString();
+                    daoSaldosEstoque.Cota = campo[23].ToString();
+                    daoSaldosEstoque.ArtigoCotas = campo[24].ToString();
+                    daoSaldosEstoque.Ces = campo[25].ToString();
+                    daoSaldosEstoque.ContaEstoque = campo[26].ToString();
+                    daoSaldosEstoque.Tpg = campo[27].ToString();
+                    daoSaldosEstoque.TipoProdutoGlobal = campo[28].ToString();
+                    daoSaldosEstoque.TprogTpg = campo[29].ToString();
+                    daoSaldosEstoque.NivTpg = campo[30].ToString();
+                    daoSaldosEstoque.EstTpg = campo[31].ToString();
+                    daoSaldosEstoque.DepTpg = campo[32].ToString();
+                    daoSaldosEstoque.Cliente = campo[33].ToString();
+                    daoSaldosEstoque.NomeCliente = campo[34].ToString();
+                    daoSaldosEstoque.Marca = campo[35].ToString();
+                    daoSaldosEstoque.NomeMarca = campo[36].ToString();
+                    daoSaldosEstoque.TipoTecido = campo[37].ToString();
+                    daoSaldosEstoque.Tpm = campo[38].ToString();
+                    daoSaldosEstoque.Ncm = campo[39].ToString();
+                    daoSaldosEstoque.Altp = campo[40].ToString();
+                    daoSaldosEstoque.Rotp = campo[41].ToString();
+                    daoSaldosEstoque.Antc = campo[42].ToString();
+                    daoSaldosEstoque.Rotc = campo[43].ToString();
                     try
                     {
-                        daoSaldoEstoque.QtEstqInicioMes = Convert.ToDecimal(campo[63].ToString());
+                        daoSaldosEstoque.ValorMedioEstoque = Convert.ToDecimal(campo[44].ToString());
                     }
                     catch 
                     {
-                        daoSaldoEstoque.QtEstqInicioMes = 0;
+                        daoSaldosEstoque.ValorMedioEstoque = 0;
                     }
                     try
                     {
-                        daoSaldoEstoque.QtEstqFinalMes = Convert.ToDecimal(campo[64].ToString());
+                        daoSaldosEstoque.ValorUltimaCompra = Convert.ToDecimal(campo[45].ToString());
                     }
                     catch
                     {
-                        daoSaldoEstoque.QtEstqFinalMes = 0;
+                        daoSaldosEstoque.ValorUltimaCompra = 0;
+                    }
+                    try
+                    {
+                        daoSaldosEstoque.Custo = Convert.ToDecimal(campo[46].ToString());
+                    }
+                    catch 
+                    {
+                        daoSaldosEstoque.Custo = 0;
+                    }
+                    try
+                    {
+                        daoSaldosEstoque.CustoInformado = Convert.ToDecimal(campo[47].ToString());
+                    }
+                    catch 
+                    {
+                        daoSaldosEstoque.CustoInformado = 0;
+                    }
+                    
+                    daoSaldosEstoque.Lead = campo[48].ToString();
+                    daoSaldosEstoque.FamiliaTear = campo[49].ToString();
+                    daoSaldosEstoque.LoteTam = campo[50].ToString();
+                    try
+                    {
+                        daoSaldosEstoque.PesoLiquido = Convert.ToDecimal(campo[51].ToString());
+                    }
+                    catch 
+                    {
+                        daoSaldosEstoque.PesoLiquido = 0;
+                    }
+                    try
+                    {
+                        daoSaldosEstoque.PesoRolo = Convert.ToDecimal(campo[52].ToString());
+                    }
+                    catch 
+                    {
+                        daoSaldosEstoque.PesoRolo = 0;
+                    }
+                    try
+                    {
+                        daoSaldosEstoque.PesoMiniRolo = Convert.ToDecimal(campo[53].ToString());
+                    }
+                    catch 
+                    {
+                        daoSaldosEstoque.PesoMiniRolo = 0;
+                    }
+                    
+                    daoSaldosEstoque.DescTamFicha = campo[54].ToString();
+                    daoSaldosEstoque.TipoProdQuimico = campo[55].ToString();
+                    daoSaldosEstoque.ItemAtivo = campo[56].ToString();
+                    daoSaldosEstoque.CodigoContabil = campo[57].ToString();
+                    daoSaldosEstoque.CodProcesso = campo[58].ToString();
+                    daoSaldosEstoque.Lote = campo[59].ToString();
+                    daoSaldosEstoque.LoteProduto = campo[60].ToString();
+                    daoSaldosEstoque.SaldoAtual = campo[61].ToString();
+                    try
+                    {
+                        daoSaldosEstoque.Volumes = Convert.ToInt32(campo[62].ToString());
+                    }
+                    catch
+                    {
+                        daoSaldosEstoque.Volumes = 0;
+                    }
+                    
+                    try
+                    {
+                        daoSaldosEstoque.QtEstqInicioMes = Convert.ToDecimal(campo[63].ToString());
+                    }
+                    catch 
+                    {
+                        daoSaldosEstoque.QtEstqInicioMes = 0;
+                    }
+                    try
+                    {
+                        daoSaldosEstoque.QtEstqFinalMes = Convert.ToDecimal(campo[64].ToString());
+                    }
+                    catch
+                    {
+                        daoSaldosEstoque.QtEstqFinalMes = 0;
                     }
                     try
                     {
                         if (campo[65].ToString().Equals(""))
-                            daoSaldoEstoque.UltimaEntrada = null;
+                            daoSaldosEstoque.UltimaEntrada = null;
                         else
-                            daoSaldoEstoque.UltimaEntrada = campo[65].ToString();
+                            daoSaldosEstoque.UltimaEntrada = campo[65].ToString();
                     }
                     catch 
                     {
@@ -239,9 +298,9 @@ namespace BLL
                     try
                     {
                         if (campo[66].ToString().Equals(""))
-                            daoSaldoEstoque.UltimaSaida = null;
+                            daoSaldosEstoque.UltimaSaida = null;
                         else
-                            daoSaldoEstoque.UltimaSaida = campo[66].ToString(); 
+                            daoSaldosEstoque.UltimaSaida = campo[66].ToString(); 
                         
                     }
                     catch 
@@ -250,41 +309,41 @@ namespace BLL
                     }
                     try
                     {
-                        daoSaldoEstoque.QtSugerida = Convert.ToDecimal(campo[67].ToString());
+                        daoSaldosEstoque.QtSugerida = Convert.ToDecimal(campo[67].ToString());
                     }
                     catch 
                     {
-                        daoSaldoEstoque.QtSugerida = 0;
+                        daoSaldosEstoque.QtSugerida = 0;
                     }
                     try
                     {
-                        daoSaldoEstoque.QtEmpenhada = Convert.ToDecimal(campo[68].ToString());
+                        daoSaldosEstoque.QtEmpenhada = Convert.ToDecimal(campo[68].ToString());
                     }
                     catch 
                     {
-                        daoSaldoEstoque.QtEmpenhada = 0;
-                    }                    
-                    daoSaldoEstoque.CnpjFornecedor = campo[69].ToString();
-                    daoSaldoEstoque.NotaFiscal = campo[70].ToString();
+                        daoSaldosEstoque.QtEmpenhada = 0;
+                    }
+                    daoSaldosEstoque.CnpjFornecedor = campo[69].ToString();
+                    daoSaldosEstoque.NotaFiscal = campo[70].ToString();
                     try
                     {
                         if (campo[71].ToString().Equals(""))
-                            daoSaldoEstoque.PeriodoEstoque = null;
+                            daoSaldosEstoque.PeriodoEstoque = null;
                         else
-                            daoSaldoEstoque.PeriodoEstoque = campo[71].ToString();
+                            daoSaldosEstoque.PeriodoEstoque = campo[71].ToString();
                     }
                     catch (Exception)
                     {
 
                         throw;
                     }
-                    
 
-                    daoSaldoEstoqueList.Add(daoSaldoEstoque);
+
+                    daoSaldosEstoqueList.Add(daoSaldosEstoque);
 
                 }
             }
-            return daoSaldoEstoqueList;
+            return daoSaldosEstoqueList;
         }
 
         public string InserirDadosBD(DAOSaldosEstoqueList daoSaldoEstoqueList)

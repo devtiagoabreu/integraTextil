@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace DAO
 {
-    public class DAOEstoquesRolosList : List<DAOEstoquesRolos>
+    public class DAOEstoqueRolosList : List<DAOEstoqueRolos>
     {
     }
 }

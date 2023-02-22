@@ -57,6 +57,9 @@
             this.btnDelSaldosEstoque = new System.Windows.Forms.Button();
             this.btnRenSaldosEstoque = new System.Windows.Forms.Button();
             this.btnInsertSaldosEstoque = new System.Windows.Forms.Button();
+            this.btnDelEstoqueRolos = new System.Windows.Forms.Button();
+            this.btnRenEstoqueRolos = new System.Windows.Forms.Button();
+            this.btnInsertEstoqueRolos = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnShiftReport
@@ -387,11 +390,50 @@
             this.btnInsertSaldosEstoque.UseVisualStyleBackColor = false;
             this.btnInsertSaldosEstoque.Click += new System.EventHandler(this.btnInsertSaldosEstoque_Click);
             // 
+            // btnDelEstoqueRolos
+            // 
+            this.btnDelEstoqueRolos.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnDelEstoqueRolos.Location = new System.Drawing.Point(1297, 363);
+            this.btnDelEstoqueRolos.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.btnDelEstoqueRolos.Name = "btnDelEstoqueRolos";
+            this.btnDelEstoqueRolos.Size = new System.Drawing.Size(210, 49);
+            this.btnDelEstoqueRolos.TabIndex = 31;
+            this.btnDelEstoqueRolos.Text = "Del Estoque Rolos";
+            this.btnDelEstoqueRolos.UseVisualStyleBackColor = false;
+            this.btnDelEstoqueRolos.Click += new System.EventHandler(this.btnDelEstoqueRolos_Click);
+            // 
+            // btnRenEstoqueRolos
+            // 
+            this.btnRenEstoqueRolos.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnRenEstoqueRolos.Location = new System.Drawing.Point(1297, 259);
+            this.btnRenEstoqueRolos.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.btnRenEstoqueRolos.Name = "btnRenEstoqueRolos";
+            this.btnRenEstoqueRolos.Size = new System.Drawing.Size(210, 47);
+            this.btnRenEstoqueRolos.TabIndex = 30;
+            this.btnRenEstoqueRolos.Text = "Ren Mov Estoque Rolos";
+            this.btnRenEstoqueRolos.UseVisualStyleBackColor = false;
+            this.btnRenEstoqueRolos.Click += new System.EventHandler(this.btnRenEstoqueRolos_Click);
+            // 
+            // btnInsertEstoqueRolos
+            // 
+            this.btnInsertEstoqueRolos.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnInsertEstoqueRolos.Location = new System.Drawing.Point(1297, 312);
+            this.btnInsertEstoqueRolos.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.btnInsertEstoqueRolos.Name = "btnInsertEstoqueRolos";
+            this.btnInsertEstoqueRolos.Size = new System.Drawing.Size(210, 47);
+            this.btnInsertEstoqueRolos.TabIndex = 29;
+            this.btnInsertEstoqueRolos.Text = "Insert Estoque Rolos";
+            this.btnInsertEstoqueRolos.UseVisualStyleBackColor = false;
+            this.btnInsertEstoqueRolos.Click += new System.EventHandler(this.btnInsertEstoqueRolos_Click);
+            // 
             // UIPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1466, 476);
+            this.ClientSize = new System.Drawing.Size(1569, 476);
+            this.Controls.Add(this.btnDelEstoqueRolos);
+            this.Controls.Add(this.btnRenEstoqueRolos);
+            this.Controls.Add(this.btnInsertEstoqueRolos);
             this.Controls.Add(this.btnDelSaldosEstoque);
             this.Controls.Add(this.btnRenSaldosEstoque);
             this.Controls.Add(this.btnInsertSaldosEstoque);
@@ -458,5 +500,8 @@
         private Button btnDelSaldosEstoque;
         private Button btnRenSaldosEstoque;
         private Button btnInsertSaldosEstoque;
+        private Button btnDelEstoqueRolos;
+        private Button btnRenEstoqueRolos;
+        private Button btnInsertEstoqueRolos;
     }
 }
