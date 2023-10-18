@@ -8,5 +8,6 @@ namespace DAO
 {
     public class DAOContasPagarList : List<DAOContasPagar>
     {
+
     }
 }

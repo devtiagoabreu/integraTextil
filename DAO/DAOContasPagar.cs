@@ -8,6 +8,8 @@ namespace DAO
 {
     public class DAOContasPagar
     {
+        #region ATRIBUTOS | OBJETOS
+
         public string Fornecedor { get; set; }
         public string Duplicata { get; set; }
         public string TipoTitulo { get; set; }
@@ -19,6 +21,8 @@ namespace DAO
         public DateTime DataVencto { get; set; }
         public decimal ValorParcela { get; set; }
         public decimal SaldoParcela { get; set; }
-        
+
+        #endregion
+
     }
 }

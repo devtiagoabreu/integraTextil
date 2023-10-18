@@ -10,10 +10,12 @@ namespace BLL
     {
         #region ATRIBUTOS | OBJETOS
 
+        
         DALMySQL dalMySQL = new DALMySQL();
 
         string data = DateTime.Now.ToString("dd-MM-yyyy HH:mm:ss");
 
+        
         #endregion
 
         #region MÉTODOS

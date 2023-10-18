@@ -348,7 +348,8 @@ namespace UI
 
             //bllComercialVendas.DeletarArquivos(@"C:\integraTextil\relatorios\comercial_vendas\ren\");
 
-            //PEDIDO COMPRA
+            //PEDIDO COMPRA - EXECUTA AUTOMATICAMENTE OS METODOS SEM EXIBIR NADA NA TELA
+            
             BLLPedidoCompra bllPedidoCompra = new BLLPedidoCompra();
 
             bllPedidoCompra.RenomearArquivo(bllPedidoCompra.PegarNomeArquivo(@"C:\integraTextil\relatorios\", "ROD"), "pedido_compra.csv", @"C:\integraTextil\relatorios\", @"C:\integraTextil\relatorios\pedido_compra\ren");
