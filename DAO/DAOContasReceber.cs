@@ -6,7 +6,7 @@
         public string Representante { get; set; }
         public string Duplicata { get; set; }
         public string TipoTitulo { get; set; }
-        public string Portador { get; set; }
+        public string Portador { get; set; } //UTILIZADO PARA O CAMPO SITUACAO_DUPLIC
         public string Posicao { get; set; }
         public DateTime DataEmissao { get; set; }
         public DateTime DataVencto { get; set; }

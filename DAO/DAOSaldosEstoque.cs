@@ -69,7 +69,7 @@ namespace DAO
         public string CodProcesso { get; set; }
         public string Lote { get; set; }
         public string LoteProduto { get; set; }
-        public string SaldoAtual { get; set; }
+        public decimal SaldoAtual { get; set; }
         public int Volumes { get; set; }
         public decimal QtEstqInicioMes { get; set; }
         public decimal QtEstqFinalMes { get; set; }

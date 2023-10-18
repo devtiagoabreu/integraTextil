@@ -162,9 +162,30 @@ namespace BLL
                     daoCaixasFios.TipoGlobal = campo[14].ToString();
                     daoCaixasFios.Lote = campo[15].ToString();
                     daoCaixasFios.LoteProduto = campo[16].ToString();
-                    daoCaixasFios.Quantidade = Convert.ToDecimal(campo[17].ToString());
-                    daoCaixasFios.PesoBruto = Convert.ToDecimal(campo[18].ToString());
-                    daoCaixasFios.PesoLiquido = Convert.ToDecimal(campo[19].ToString());
+                    try
+                    {
+                        daoCaixasFios.Quantidade = Convert.ToDecimal(campo[17].ToString());
+                    }
+                    catch 
+                    {
+                        daoCaixasFios.Quantidade = 0;
+                    }
+                    try
+                    {
+                        daoCaixasFios.PesoBruto = Convert.ToDecimal(campo[18].ToString());
+                    }
+                    catch 
+                    {
+                        daoCaixasFios.PesoBruto = 0;
+                    }
+                    try
+                    {
+                        daoCaixasFios.PesoLiquido = Convert.ToDecimal(campo[19].ToString());
+                    }
+                    catch
+                    {
+                        daoCaixasFios.PesoLiquido = 0;
+                    }                    
                     daoCaixasFios.NumeroVolume = campo[20].ToString();
                     daoCaixasFios.NumeroOrigem = campo[21].ToString();
                     daoCaixasFios.Situacao = campo[22].ToString();

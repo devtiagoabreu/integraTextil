@@ -133,6 +133,7 @@ namespace BLL
         public DAOEstoqueRolosList LerCsv(string path)
         {
             DAOEstoqueRolosList daoEstoqueRolosList = new DAOEstoqueRolosList();
+            //var csv = new StreamReader(File.OpenRead(path));
             var csv = new StreamReader(File.OpenRead(path), Encoding.UTF7);
             string linha;
             string[] campo;
@@ -150,7 +151,7 @@ namespace BLL
                     daoEstoqueRolos.Empresa = campo[1].ToString();
                     daoEstoqueRolos.Dep = campo[2].ToString();
                     daoEstoqueRolos.Deposito = campo[3].ToString();
-                    daoEstoqueRolos.Dep = campo[4].ToString();
+                    daoEstoqueRolos.DepO = campo[4].ToString();
                     daoEstoqueRolos.DepositoOriginal = campo[5].ToString();
                     daoEstoqueRolos.Tpg = campo[6].ToString();
                     daoEstoqueRolos.TipoProduto = campo[7].ToString();

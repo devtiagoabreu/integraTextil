@@ -60,6 +60,18 @@
             this.btnDelEstoqueRolos = new System.Windows.Forms.Button();
             this.btnRenEstoqueRolos = new System.Windows.Forms.Button();
             this.btnInsertEstoqueRolos = new System.Windows.Forms.Button();
+            this.btnDelComercialVendas = new System.Windows.Forms.Button();
+            this.btnRenComercialVendas = new System.Windows.Forms.Button();
+            this.btnInsertComercialVendas = new System.Windows.Forms.Button();
+            this.btnDelPosicaoOps = new System.Windows.Forms.Button();
+            this.btnRenPosicaoOps = new System.Windows.Forms.Button();
+            this.btnInsertPosicaoOps = new System.Windows.Forms.Button();
+            this.btnDelRecebimentos = new System.Windows.Forms.Button();
+            this.btnRenRecebimentos = new System.Windows.Forms.Button();
+            this.btnInsertRecebimentos = new System.Windows.Forms.Button();
+            this.btnDelPedidoCompra = new System.Windows.Forms.Button();
+            this.btnRenPedidoCompra = new System.Windows.Forms.Button();
+            this.btnInsertPedidoCompra = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnShiftReport
@@ -365,6 +377,7 @@
             this.btnDelSaldosEstoque.TabIndex = 28;
             this.btnDelSaldosEstoque.Text = "Del Saldos Estoque";
             this.btnDelSaldosEstoque.UseVisualStyleBackColor = false;
+            this.btnDelSaldosEstoque.Click += new System.EventHandler(this.btnDelSaldosEstoque_Click);
             // 
             // btnRenSaldosEstoque
             // 
@@ -426,11 +439,167 @@
             this.btnInsertEstoqueRolos.UseVisualStyleBackColor = false;
             this.btnInsertEstoqueRolos.Click += new System.EventHandler(this.btnInsertEstoqueRolos_Click);
             // 
+            // btnDelComercialVendas
+            // 
+            this.btnDelComercialVendas.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnDelComercialVendas.Location = new System.Drawing.Point(14, 561);
+            this.btnDelComercialVendas.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.btnDelComercialVendas.Name = "btnDelComercialVendas";
+            this.btnDelComercialVendas.Size = new System.Drawing.Size(210, 49);
+            this.btnDelComercialVendas.TabIndex = 34;
+            this.btnDelComercialVendas.Text = "Del Comercial Vendas";
+            this.btnDelComercialVendas.UseVisualStyleBackColor = false;
+            this.btnDelComercialVendas.Click += new System.EventHandler(this.btnDelComercialVendas_Click);
+            // 
+            // btnRenComercialVendas
+            // 
+            this.btnRenComercialVendas.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnRenComercialVendas.Location = new System.Drawing.Point(14, 457);
+            this.btnRenComercialVendas.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.btnRenComercialVendas.Name = "btnRenComercialVendas";
+            this.btnRenComercialVendas.Size = new System.Drawing.Size(210, 47);
+            this.btnRenComercialVendas.TabIndex = 33;
+            this.btnRenComercialVendas.Text = "Ren Mov Comercial Vendas";
+            this.btnRenComercialVendas.UseVisualStyleBackColor = false;
+            this.btnRenComercialVendas.Click += new System.EventHandler(this.btnRenComercialVendas_Click);
+            // 
+            // btnInsertComercialVendas
+            // 
+            this.btnInsertComercialVendas.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnInsertComercialVendas.Location = new System.Drawing.Point(14, 510);
+            this.btnInsertComercialVendas.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.btnInsertComercialVendas.Name = "btnInsertComercialVendas";
+            this.btnInsertComercialVendas.Size = new System.Drawing.Size(210, 47);
+            this.btnInsertComercialVendas.TabIndex = 32;
+            this.btnInsertComercialVendas.Text = "Insert Comercial Vendas";
+            this.btnInsertComercialVendas.UseVisualStyleBackColor = false;
+            this.btnInsertComercialVendas.Click += new System.EventHandler(this.btnInsertComercialVendas_Click);
+            // 
+            // btnDelPosicaoOps
+            // 
+            this.btnDelPosicaoOps.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnDelPosicaoOps.Location = new System.Drawing.Point(228, 561);
+            this.btnDelPosicaoOps.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.btnDelPosicaoOps.Name = "btnDelPosicaoOps";
+            this.btnDelPosicaoOps.Size = new System.Drawing.Size(210, 49);
+            this.btnDelPosicaoOps.TabIndex = 37;
+            this.btnDelPosicaoOps.Text = "Del Posicao OPs";
+            this.btnDelPosicaoOps.UseVisualStyleBackColor = false;
+            this.btnDelPosicaoOps.Click += new System.EventHandler(this.btnDelPosicaoOps_Click);
+            // 
+            // btnRenPosicaoOps
+            // 
+            this.btnRenPosicaoOps.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnRenPosicaoOps.Location = new System.Drawing.Point(228, 457);
+            this.btnRenPosicaoOps.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.btnRenPosicaoOps.Name = "btnRenPosicaoOps";
+            this.btnRenPosicaoOps.Size = new System.Drawing.Size(210, 47);
+            this.btnRenPosicaoOps.TabIndex = 36;
+            this.btnRenPosicaoOps.Text = "Ren Mov Posicao OPs";
+            this.btnRenPosicaoOps.UseVisualStyleBackColor = false;
+            this.btnRenPosicaoOps.Click += new System.EventHandler(this.btnRenPosicaoOps_Click);
+            // 
+            // btnInsertPosicaoOps
+            // 
+            this.btnInsertPosicaoOps.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnInsertPosicaoOps.Location = new System.Drawing.Point(228, 510);
+            this.btnInsertPosicaoOps.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.btnInsertPosicaoOps.Name = "btnInsertPosicaoOps";
+            this.btnInsertPosicaoOps.Size = new System.Drawing.Size(210, 47);
+            this.btnInsertPosicaoOps.TabIndex = 35;
+            this.btnInsertPosicaoOps.Text = "Insert Posicao OPs";
+            this.btnInsertPosicaoOps.UseVisualStyleBackColor = false;
+            this.btnInsertPosicaoOps.Click += new System.EventHandler(this.btnInsertPosicaoOps_Click);
+            // 
+            // btnDelRecebimentos
+            // 
+            this.btnDelRecebimentos.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnDelRecebimentos.Location = new System.Drawing.Point(442, 561);
+            this.btnDelRecebimentos.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.btnDelRecebimentos.Name = "btnDelRecebimentos";
+            this.btnDelRecebimentos.Size = new System.Drawing.Size(210, 49);
+            this.btnDelRecebimentos.TabIndex = 40;
+            this.btnDelRecebimentos.Text = "Del recebimentos";
+            this.btnDelRecebimentos.UseVisualStyleBackColor = false;
+            this.btnDelRecebimentos.Click += new System.EventHandler(this.btnDelRecebimentos_Click);
+            // 
+            // btnRenRecebimentos
+            // 
+            this.btnRenRecebimentos.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnRenRecebimentos.Location = new System.Drawing.Point(442, 457);
+            this.btnRenRecebimentos.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.btnRenRecebimentos.Name = "btnRenRecebimentos";
+            this.btnRenRecebimentos.Size = new System.Drawing.Size(210, 47);
+            this.btnRenRecebimentos.TabIndex = 39;
+            this.btnRenRecebimentos.Text = "Ren Mov recebimentos";
+            this.btnRenRecebimentos.UseVisualStyleBackColor = false;
+            this.btnRenRecebimentos.Click += new System.EventHandler(this.btnRenRecebimentos_Click);
+            // 
+            // btnInsertRecebimentos
+            // 
+            this.btnInsertRecebimentos.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnInsertRecebimentos.Location = new System.Drawing.Point(442, 510);
+            this.btnInsertRecebimentos.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.btnInsertRecebimentos.Name = "btnInsertRecebimentos";
+            this.btnInsertRecebimentos.Size = new System.Drawing.Size(210, 47);
+            this.btnInsertRecebimentos.TabIndex = 38;
+            this.btnInsertRecebimentos.Text = "Insert recebimentos";
+            this.btnInsertRecebimentos.UseVisualStyleBackColor = false;
+            this.btnInsertRecebimentos.Click += new System.EventHandler(this.btnInsertRecebimentos_Click);
+            // 
+            // btnDelPedidoCompra
+            // 
+            this.btnDelPedidoCompra.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnDelPedidoCompra.Location = new System.Drawing.Point(656, 561);
+            this.btnDelPedidoCompra.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.btnDelPedidoCompra.Name = "btnDelPedidoCompra";
+            this.btnDelPedidoCompra.Size = new System.Drawing.Size(210, 49);
+            this.btnDelPedidoCompra.TabIndex = 43;
+            this.btnDelPedidoCompra.Text = "Del Pedido Compra";
+            this.btnDelPedidoCompra.UseVisualStyleBackColor = false;
+            this.btnDelPedidoCompra.Click += new System.EventHandler(this.btnDelPedidoCompra_Click);
+            // 
+            // btnRenPedidoCompra
+            // 
+            this.btnRenPedidoCompra.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnRenPedidoCompra.Location = new System.Drawing.Point(656, 457);
+            this.btnRenPedidoCompra.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.btnRenPedidoCompra.Name = "btnRenPedidoCompra";
+            this.btnRenPedidoCompra.Size = new System.Drawing.Size(210, 47);
+            this.btnRenPedidoCompra.TabIndex = 42;
+            this.btnRenPedidoCompra.Text = "Ren Pedido Compra";
+            this.btnRenPedidoCompra.UseVisualStyleBackColor = false;
+            this.btnRenPedidoCompra.Click += new System.EventHandler(this.btnRenPedidoCompra_Click);
+            // 
+            // btnInsertPedidoCompra
+            // 
+            this.btnInsertPedidoCompra.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnInsertPedidoCompra.Location = new System.Drawing.Point(656, 510);
+            this.btnInsertPedidoCompra.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.btnInsertPedidoCompra.Name = "btnInsertPedidoCompra";
+            this.btnInsertPedidoCompra.Size = new System.Drawing.Size(210, 47);
+            this.btnInsertPedidoCompra.TabIndex = 41;
+            this.btnInsertPedidoCompra.Text = "Insert Pedido Compra";
+            this.btnInsertPedidoCompra.UseVisualStyleBackColor = false;
+            this.btnInsertPedidoCompra.Click += new System.EventHandler(this.btnInsertPedidoCompra_Click);
+            // 
             // UIPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1569, 476);
+            this.ClientSize = new System.Drawing.Size(1569, 1035);
+            this.Controls.Add(this.btnDelPedidoCompra);
+            this.Controls.Add(this.btnRenPedidoCompra);
+            this.Controls.Add(this.btnInsertPedidoCompra);
+            this.Controls.Add(this.btnDelRecebimentos);
+            this.Controls.Add(this.btnRenRecebimentos);
+            this.Controls.Add(this.btnInsertRecebimentos);
+            this.Controls.Add(this.btnDelPosicaoOps);
+            this.Controls.Add(this.btnRenPosicaoOps);
+            this.Controls.Add(this.btnInsertPosicaoOps);
+            this.Controls.Add(this.btnDelComercialVendas);
+            this.Controls.Add(this.btnRenComercialVendas);
+            this.Controls.Add(this.btnInsertComercialVendas);
             this.Controls.Add(this.btnDelEstoqueRolos);
             this.Controls.Add(this.btnRenEstoqueRolos);
             this.Controls.Add(this.btnInsertEstoqueRolos);
@@ -466,6 +635,7 @@
             this.Name = "UIPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "IntegraTêxtil";
+            this.Load += new System.EventHandler(this.UIPrincipal_Load);
             this.ResumeLayout(false);
 
         }
@@ -503,5 +673,17 @@
         private Button btnDelEstoqueRolos;
         private Button btnRenEstoqueRolos;
         private Button btnInsertEstoqueRolos;
+        private Button btnDelComercialVendas;
+        private Button btnRenComercialVendas;
+        private Button btnInsertComercialVendas;
+        private Button btnDelPosicaoOps;
+        private Button btnRenPosicaoOps;
+        private Button btnInsertPosicaoOps;
+        private Button btnDelRecebimentos;
+        private Button btnRenRecebimentos;
+        private Button btnInsertRecebimentos;
+        private Button btnDelPedidoCompra;
+        private Button btnRenPedidoCompra;
+        private Button btnInsertPedidoCompra;
     }
 }

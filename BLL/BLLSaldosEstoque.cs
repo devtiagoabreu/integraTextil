@@ -258,7 +258,16 @@ namespace BLL
                     daoSaldosEstoque.CodProcesso = campo[58].ToString();
                     daoSaldosEstoque.Lote = campo[59].ToString();
                     daoSaldosEstoque.LoteProduto = campo[60].ToString();
-                    daoSaldosEstoque.SaldoAtual = campo[61].ToString();
+                    
+                    
+                    try
+                    {
+                        daoSaldosEstoque.SaldoAtual = Convert.ToInt32(campo[61].ToString());
+                    }
+                    catch
+                    {
+                        daoSaldosEstoque.SaldoAtual = 0;
+                    }
                     try
                     {
                         daoSaldosEstoque.Volumes = Convert.ToInt32(campo[62].ToString());
@@ -420,7 +429,7 @@ namespace BLL
                     daoSaldoEstoque.CodProcesso = linha["CodProcesso"].ToString();
                     daoSaldoEstoque.Lote = linha["Lote"].ToString();
                     daoSaldoEstoque.LoteProduto = linha["LoteProduto"].ToString();
-                    daoSaldoEstoque.SaldoAtual = linha["SaldoAtual"].ToString();
+                    daoSaldoEstoque.SaldoAtual = Convert.ToDecimal(linha["SaldoAtual"].ToString());
                     daoSaldoEstoque.Volumes = Convert.ToInt32(linha["Volumes"].ToString());
                     daoSaldoEstoque.QtEstqInicioMes = Convert.ToDecimal(linha["QtEstqInicioMes"].ToString());
                     daoSaldoEstoque.QtEstqFinalMes = Convert.ToDecimal(linha["QtEstqFinalMes"].ToString());
