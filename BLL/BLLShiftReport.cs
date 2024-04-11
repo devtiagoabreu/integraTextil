@@ -100,9 +100,11 @@ namespace BLL
             string linha;
             string[] campo;
             int index = 0;
+            string lixo = "";
 
             while ((linha = csv.ReadLine()) != null)
             {
+                
                 DAOShiftReport daoShiftReport = new DAOShiftReport();
                 campo = linha.Split(',');
                 index++;
@@ -113,6 +115,7 @@ namespace BLL
                         daoShiftReport.Sortkey = "1";
                     else
                         daoShiftReport.Sortkey = campo[0].ToString().Replace("/", "").Replace("=", "").Replace("''", "");
+                    
                     daoShiftReport.Date = campo[1].ToString().Replace("/", "-").Replace("=", "").Replace("''", "");
                     daoShiftReport.Loom = campo[2].ToString().Replace("\"" , "").Replace("=", "").Replace("''", "");
                     daoShiftReport.Style = campo[3].ToString().Replace("\"", "").Replace("=", "").Replace("''", "");
@@ -120,10 +123,11 @@ namespace BLL
                     daoShiftReport.EfficPercent = campo[5].ToString().Replace("\"", "").Replace("=", "").Replace("''", "");
                     daoShiftReport.RunMinute = campo[6].ToString();
                     daoShiftReport.StopMinute = campo[7].ToString();
-                    daoShiftReport.ProductPick = campo[8].ToString();
-                    daoShiftReport.WarpCount = campo[9].ToString();
-                    daoShiftReport.WarpMinute = campo[10].ToString();
-                    daoShiftReport.WarpRatePH = campo[11].ToString();
+                    daoShiftReport.ProductPick = campo[8].ToString();// valor * 1000 batidas 
+                    lixo = campo[9].ToString();
+                    daoShiftReport.WarpCount = campo[10].ToString();
+                    daoShiftReport.WarpMinute = campo[11].ToString();
+                    daoShiftReport.WarpRatePH = campo[12].ToString();
                     daoShiftReport.WarpRatePDAY = campo[13].ToString();                    
                     daoShiftReport.WarpRatePP = campo[14].ToString();
                     daoShiftReport.Weft_Count = campo[15].ToString();
@@ -148,8 +152,21 @@ namespace BLL
                     {
                         decimal runMinute = Convert.ToDecimal(daoShiftReport.RunMinute.Replace(".", ","));
                         decimal stopMinute = Convert.ToDecimal(daoShiftReport.StopMinute.Replace(".", ","));
+                        decimal ProductPick = Convert.ToDecimal(daoShiftReport.ProductPick.Replace(".", ","));
+                        decimal rpm = ProductPick * 1000 / (runMinute);
+                        daoShiftReport.RPM = Math.Round(rpm).ToString().Replace(",", ".");
+                    }
+                    else
+                    {
+                        daoShiftReport.RPM = "0.0";
+                    }
+
+                    if (daoShiftReport.RunMinute != "0.0" || daoShiftReport.RunMinute != "")
+                    {
+                        decimal runMinute = Convert.ToDecimal(daoShiftReport.RunMinute.Replace(".", ","));
+                        decimal stopMinute = Convert.ToDecimal(daoShiftReport.StopMinute.Replace(".", ","));
                         decimal efficPercent = runMinute * 100 / (runMinute + stopMinute);
-                        daoShiftReport.EfficPercent = efficPercent.ToString().Replace(",", ".");  
+                        daoShiftReport.EfficPercent = Math.Round(efficPercent).ToString().Replace(",", ".");  
                     }
                     else
                     {

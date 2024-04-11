@@ -72,15 +72,23 @@
             this.btnDelPedidoCompra = new System.Windows.Forms.Button();
             this.btnRenPedidoCompra = new System.Windows.Forms.Button();
             this.btnInsertPedidoCompra = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnShiftReport
             // 
-            this.btnShiftReport.BackColor = System.Drawing.Color.SeaGreen;
-            this.btnShiftReport.Location = new System.Drawing.Point(177, 64);
+            this.btnShiftReport.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.btnShiftReport.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnShiftReport.ForeColor = System.Drawing.Color.DimGray;
+            this.btnShiftReport.Location = new System.Drawing.Point(13, 87);
             this.btnShiftReport.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.btnShiftReport.Name = "btnShiftReport";
-            this.btnShiftReport.Size = new System.Drawing.Size(150, 47);
+            this.btnShiftReport.Size = new System.Drawing.Size(211, 47);
             this.btnShiftReport.TabIndex = 0;
             this.btnShiftReport.Text = "Insert ShiftReport";
             this.btnShiftReport.UseVisualStyleBackColor = false;
@@ -88,11 +96,13 @@
             // 
             // btnProduction
             // 
-            this.btnProduction.BackColor = System.Drawing.Color.DodgerBlue;
-            this.btnProduction.Location = new System.Drawing.Point(14, 64);
+            this.btnProduction.BackColor = System.Drawing.Color.Tan;
+            this.btnProduction.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnProduction.ForeColor = System.Drawing.Color.DimGray;
+            this.btnProduction.Location = new System.Drawing.Point(228, 87);
             this.btnProduction.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.btnProduction.Name = "btnProduction";
-            this.btnProduction.Size = new System.Drawing.Size(150, 47);
+            this.btnProduction.Size = new System.Drawing.Size(209, 47);
             this.btnProduction.TabIndex = 1;
             this.btnProduction.Text = "Insert Production";
             this.btnProduction.UseVisualStyleBackColor = false;
@@ -100,11 +110,13 @@
             // 
             // btnRenProduction
             // 
-            this.btnRenProduction.BackColor = System.Drawing.Color.DodgerBlue;
-            this.btnRenProduction.Location = new System.Drawing.Point(14, 12);
+            this.btnRenProduction.BackColor = System.Drawing.Color.Tan;
+            this.btnRenProduction.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnRenProduction.ForeColor = System.Drawing.Color.DimGray;
+            this.btnRenProduction.Location = new System.Drawing.Point(228, 35);
             this.btnRenProduction.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.btnRenProduction.Name = "btnRenProduction";
-            this.btnRenProduction.Size = new System.Drawing.Size(150, 47);
+            this.btnRenProduction.Size = new System.Drawing.Size(209, 47);
             this.btnRenProduction.TabIndex = 2;
             this.btnRenProduction.Text = "Ren Mov Production";
             this.btnRenProduction.UseVisualStyleBackColor = false;
@@ -112,11 +124,13 @@
             // 
             // btnRenShiftReport
             // 
-            this.btnRenShiftReport.BackColor = System.Drawing.Color.SeaGreen;
-            this.btnRenShiftReport.Location = new System.Drawing.Point(177, 12);
+            this.btnRenShiftReport.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.btnRenShiftReport.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnRenShiftReport.ForeColor = System.Drawing.Color.DimGray;
+            this.btnRenShiftReport.Location = new System.Drawing.Point(13, 35);
             this.btnRenShiftReport.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.btnRenShiftReport.Name = "btnRenShiftReport";
-            this.btnRenShiftReport.Size = new System.Drawing.Size(150, 47);
+            this.btnRenShiftReport.Size = new System.Drawing.Size(211, 47);
             this.btnRenShiftReport.TabIndex = 3;
             this.btnRenShiftReport.Text = "Ren Mov ShiftReport";
             this.btnRenShiftReport.UseVisualStyleBackColor = false;
@@ -124,11 +138,13 @@
             // 
             // btnDelProduction
             // 
-            this.btnDelProduction.BackColor = System.Drawing.Color.DodgerBlue;
-            this.btnDelProduction.Location = new System.Drawing.Point(14, 116);
+            this.btnDelProduction.BackColor = System.Drawing.Color.Tan;
+            this.btnDelProduction.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnDelProduction.ForeColor = System.Drawing.Color.DimGray;
+            this.btnDelProduction.Location = new System.Drawing.Point(228, 139);
             this.btnDelProduction.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.btnDelProduction.Name = "btnDelProduction";
-            this.btnDelProduction.Size = new System.Drawing.Size(150, 49);
+            this.btnDelProduction.Size = new System.Drawing.Size(209, 49);
             this.btnDelProduction.TabIndex = 5;
             this.btnDelProduction.Text = "Del Production";
             this.btnDelProduction.UseVisualStyleBackColor = false;
@@ -136,11 +152,13 @@
             // 
             // btnLerDisplayOperacao
             // 
-            this.btnLerDisplayOperacao.BackColor = System.Drawing.Color.OrangeRed;
-            this.btnLerDisplayOperacao.Location = new System.Drawing.Point(332, 64);
+            this.btnLerDisplayOperacao.BackColor = System.Drawing.Color.Salmon;
+            this.btnLerDisplayOperacao.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnLerDisplayOperacao.ForeColor = System.Drawing.Color.DimGray;
+            this.btnLerDisplayOperacao.Location = new System.Drawing.Point(443, 86);
             this.btnLerDisplayOperacao.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnLerDisplayOperacao.Name = "btnLerDisplayOperacao";
-            this.btnLerDisplayOperacao.Size = new System.Drawing.Size(219, 47);
+            this.btnLerDisplayOperacao.Size = new System.Drawing.Size(208, 47);
             this.btnLerDisplayOperacao.TabIndex = 6;
             this.btnLerDisplayOperacao.Text = "Ler DisplayOperacao";
             this.btnLerDisplayOperacao.UseVisualStyleBackColor = false;
@@ -148,11 +166,13 @@
             // 
             // btnCopyDisplayOperacao
             // 
-            this.btnCopyDisplayOperacao.BackColor = System.Drawing.Color.OrangeRed;
-            this.btnCopyDisplayOperacao.Location = new System.Drawing.Point(332, 13);
+            this.btnCopyDisplayOperacao.BackColor = System.Drawing.Color.Salmon;
+            this.btnCopyDisplayOperacao.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnCopyDisplayOperacao.ForeColor = System.Drawing.Color.DimGray;
+            this.btnCopyDisplayOperacao.Location = new System.Drawing.Point(443, 35);
             this.btnCopyDisplayOperacao.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnCopyDisplayOperacao.Name = "btnCopyDisplayOperacao";
-            this.btnCopyDisplayOperacao.Size = new System.Drawing.Size(219, 47);
+            this.btnCopyDisplayOperacao.Size = new System.Drawing.Size(208, 47);
             this.btnCopyDisplayOperacao.TabIndex = 7;
             this.btnCopyDisplayOperacao.Text = "Copiar DisplayOperacao";
             this.btnCopyDisplayOperacao.UseVisualStyleBackColor = false;
@@ -160,11 +180,13 @@
             // 
             // btnInsertDisplayOperacao
             // 
-            this.btnInsertDisplayOperacao.BackColor = System.Drawing.Color.OrangeRed;
-            this.btnInsertDisplayOperacao.Location = new System.Drawing.Point(332, 118);
+            this.btnInsertDisplayOperacao.BackColor = System.Drawing.Color.Salmon;
+            this.btnInsertDisplayOperacao.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnInsertDisplayOperacao.ForeColor = System.Drawing.Color.DimGray;
+            this.btnInsertDisplayOperacao.Location = new System.Drawing.Point(443, 140);
             this.btnInsertDisplayOperacao.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnInsertDisplayOperacao.Name = "btnInsertDisplayOperacao";
-            this.btnInsertDisplayOperacao.Size = new System.Drawing.Size(219, 47);
+            this.btnInsertDisplayOperacao.Size = new System.Drawing.Size(208, 47);
             this.btnInsertDisplayOperacao.TabIndex = 8;
             this.btnInsertDisplayOperacao.Text = "Insert DisplayOperacao";
             this.btnInsertDisplayOperacao.UseVisualStyleBackColor = false;
@@ -172,11 +194,13 @@
             // 
             // btnDelShiftReport
             // 
-            this.btnDelShiftReport.BackColor = System.Drawing.Color.SeaGreen;
-            this.btnDelShiftReport.Location = new System.Drawing.Point(177, 116);
+            this.btnDelShiftReport.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.btnDelShiftReport.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnDelShiftReport.ForeColor = System.Drawing.Color.DimGray;
+            this.btnDelShiftReport.Location = new System.Drawing.Point(13, 139);
             this.btnDelShiftReport.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.btnDelShiftReport.Name = "btnDelShiftReport";
-            this.btnDelShiftReport.Size = new System.Drawing.Size(150, 47);
+            this.btnDelShiftReport.Size = new System.Drawing.Size(211, 47);
             this.btnDelShiftReport.TabIndex = 9;
             this.btnDelShiftReport.Text = "Del ShiftReport";
             this.btnDelShiftReport.UseVisualStyleBackColor = false;
@@ -189,8 +213,10 @@
             // 
             // btnDelContasReceber
             // 
-            this.btnDelContasReceber.BackColor = System.Drawing.Color.DodgerBlue;
-            this.btnDelContasReceber.Location = new System.Drawing.Point(13, 363);
+            this.btnDelContasReceber.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.btnDelContasReceber.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnDelContasReceber.ForeColor = System.Drawing.Color.DimGray;
+            this.btnDelContasReceber.Location = new System.Drawing.Point(11, 491);
             this.btnDelContasReceber.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.btnDelContasReceber.Name = "btnDelContasReceber";
             this.btnDelContasReceber.Size = new System.Drawing.Size(210, 49);
@@ -201,8 +227,10 @@
             // 
             // btnRenContasReceber
             // 
-            this.btnRenContasReceber.BackColor = System.Drawing.Color.DodgerBlue;
-            this.btnRenContasReceber.Location = new System.Drawing.Point(13, 259);
+            this.btnRenContasReceber.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.btnRenContasReceber.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnRenContasReceber.ForeColor = System.Drawing.Color.DimGray;
+            this.btnRenContasReceber.Location = new System.Drawing.Point(11, 387);
             this.btnRenContasReceber.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.btnRenContasReceber.Name = "btnRenContasReceber";
             this.btnRenContasReceber.Size = new System.Drawing.Size(210, 47);
@@ -213,8 +241,10 @@
             // 
             // btnInsertContasReceber
             // 
-            this.btnInsertContasReceber.BackColor = System.Drawing.Color.DodgerBlue;
-            this.btnInsertContasReceber.Location = new System.Drawing.Point(13, 311);
+            this.btnInsertContasReceber.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.btnInsertContasReceber.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnInsertContasReceber.ForeColor = System.Drawing.Color.DimGray;
+            this.btnInsertContasReceber.Location = new System.Drawing.Point(11, 439);
             this.btnInsertContasReceber.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.btnInsertContasReceber.Name = "btnInsertContasReceber";
             this.btnInsertContasReceber.Size = new System.Drawing.Size(210, 47);
@@ -225,8 +255,10 @@
             // 
             // btnDelContasPagar
             // 
-            this.btnDelContasPagar.BackColor = System.Drawing.Color.DodgerBlue;
-            this.btnDelContasPagar.Location = new System.Drawing.Point(227, 363);
+            this.btnDelContasPagar.BackColor = System.Drawing.Color.Tan;
+            this.btnDelContasPagar.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnDelContasPagar.ForeColor = System.Drawing.Color.DimGray;
+            this.btnDelContasPagar.Location = new System.Drawing.Point(225, 491);
             this.btnDelContasPagar.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.btnDelContasPagar.Name = "btnDelContasPagar";
             this.btnDelContasPagar.Size = new System.Drawing.Size(210, 49);
@@ -237,8 +269,10 @@
             // 
             // btnRenContasPagar
             // 
-            this.btnRenContasPagar.BackColor = System.Drawing.Color.DodgerBlue;
-            this.btnRenContasPagar.Location = new System.Drawing.Point(227, 259);
+            this.btnRenContasPagar.BackColor = System.Drawing.Color.Tan;
+            this.btnRenContasPagar.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnRenContasPagar.ForeColor = System.Drawing.Color.DimGray;
+            this.btnRenContasPagar.Location = new System.Drawing.Point(225, 387);
             this.btnRenContasPagar.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.btnRenContasPagar.Name = "btnRenContasPagar";
             this.btnRenContasPagar.Size = new System.Drawing.Size(210, 47);
@@ -249,8 +283,10 @@
             // 
             // btnInsertContasPagar
             // 
-            this.btnInsertContasPagar.BackColor = System.Drawing.Color.DodgerBlue;
-            this.btnInsertContasPagar.Location = new System.Drawing.Point(227, 311);
+            this.btnInsertContasPagar.BackColor = System.Drawing.Color.Tan;
+            this.btnInsertContasPagar.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnInsertContasPagar.ForeColor = System.Drawing.Color.DimGray;
+            this.btnInsertContasPagar.Location = new System.Drawing.Point(225, 439);
             this.btnInsertContasPagar.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.btnInsertContasPagar.Name = "btnInsertContasPagar";
             this.btnInsertContasPagar.Size = new System.Drawing.Size(210, 47);
@@ -261,8 +297,10 @@
             // 
             // btnDelContasPagas
             // 
-            this.btnDelContasPagas.BackColor = System.Drawing.Color.DodgerBlue;
-            this.btnDelContasPagas.Location = new System.Drawing.Point(441, 363);
+            this.btnDelContasPagas.BackColor = System.Drawing.Color.Tan;
+            this.btnDelContasPagas.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnDelContasPagas.ForeColor = System.Drawing.Color.DimGray;
+            this.btnDelContasPagas.Location = new System.Drawing.Point(223, 668);
             this.btnDelContasPagas.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.btnDelContasPagas.Name = "btnDelContasPagas";
             this.btnDelContasPagas.Size = new System.Drawing.Size(210, 49);
@@ -273,8 +311,10 @@
             // 
             // btnRenContasPagas
             // 
-            this.btnRenContasPagas.BackColor = System.Drawing.Color.DodgerBlue;
-            this.btnRenContasPagas.Location = new System.Drawing.Point(441, 259);
+            this.btnRenContasPagas.BackColor = System.Drawing.Color.Tan;
+            this.btnRenContasPagas.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnRenContasPagas.ForeColor = System.Drawing.Color.DimGray;
+            this.btnRenContasPagas.Location = new System.Drawing.Point(223, 564);
             this.btnRenContasPagas.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.btnRenContasPagas.Name = "btnRenContasPagas";
             this.btnRenContasPagas.Size = new System.Drawing.Size(210, 47);
@@ -285,8 +325,10 @@
             // 
             // btnInsertContasPagas
             // 
-            this.btnInsertContasPagas.BackColor = System.Drawing.Color.DodgerBlue;
-            this.btnInsertContasPagas.Location = new System.Drawing.Point(441, 312);
+            this.btnInsertContasPagas.BackColor = System.Drawing.Color.Tan;
+            this.btnInsertContasPagas.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnInsertContasPagas.ForeColor = System.Drawing.Color.DimGray;
+            this.btnInsertContasPagas.Location = new System.Drawing.Point(223, 617);
             this.btnInsertContasPagas.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.btnInsertContasPagas.Name = "btnInsertContasPagas";
             this.btnInsertContasPagas.Size = new System.Drawing.Size(210, 47);
@@ -297,8 +339,10 @@
             // 
             // btnDelCaixasFios
             // 
-            this.btnDelCaixasFios.BackColor = System.Drawing.Color.DodgerBlue;
-            this.btnDelCaixasFios.Location = new System.Drawing.Point(655, 363);
+            this.btnDelCaixasFios.BackColor = System.Drawing.Color.Aquamarine;
+            this.btnDelCaixasFios.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnDelCaixasFios.ForeColor = System.Drawing.Color.DimGray;
+            this.btnDelCaixasFios.Location = new System.Drawing.Point(655, 314);
             this.btnDelCaixasFios.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.btnDelCaixasFios.Name = "btnDelCaixasFios";
             this.btnDelCaixasFios.Size = new System.Drawing.Size(210, 49);
@@ -309,8 +353,10 @@
             // 
             // btnRenCaixasFios
             // 
-            this.btnRenCaixasFios.BackColor = System.Drawing.Color.DodgerBlue;
-            this.btnRenCaixasFios.Location = new System.Drawing.Point(655, 259);
+            this.btnRenCaixasFios.BackColor = System.Drawing.Color.Aquamarine;
+            this.btnRenCaixasFios.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnRenCaixasFios.ForeColor = System.Drawing.Color.DimGray;
+            this.btnRenCaixasFios.Location = new System.Drawing.Point(655, 210);
             this.btnRenCaixasFios.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.btnRenCaixasFios.Name = "btnRenCaixasFios";
             this.btnRenCaixasFios.Size = new System.Drawing.Size(210, 47);
@@ -321,8 +367,10 @@
             // 
             // btnInsertCaixasFios
             // 
-            this.btnInsertCaixasFios.BackColor = System.Drawing.Color.DodgerBlue;
-            this.btnInsertCaixasFios.Location = new System.Drawing.Point(655, 312);
+            this.btnInsertCaixasFios.BackColor = System.Drawing.Color.Aquamarine;
+            this.btnInsertCaixasFios.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnInsertCaixasFios.ForeColor = System.Drawing.Color.DimGray;
+            this.btnInsertCaixasFios.Location = new System.Drawing.Point(655, 263);
             this.btnInsertCaixasFios.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.btnInsertCaixasFios.Name = "btnInsertCaixasFios";
             this.btnInsertCaixasFios.Size = new System.Drawing.Size(210, 47);
@@ -333,8 +381,10 @@
             // 
             // btnDelNotasFiscais
             // 
-            this.btnDelNotasFiscais.BackColor = System.Drawing.Color.DodgerBlue;
-            this.btnDelNotasFiscais.Location = new System.Drawing.Point(869, 363);
+            this.btnDelNotasFiscais.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.btnDelNotasFiscais.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnDelNotasFiscais.ForeColor = System.Drawing.Color.DimGray;
+            this.btnDelNotasFiscais.Location = new System.Drawing.Point(11, 314);
             this.btnDelNotasFiscais.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.btnDelNotasFiscais.Name = "btnDelNotasFiscais";
             this.btnDelNotasFiscais.Size = new System.Drawing.Size(210, 49);
@@ -345,8 +395,10 @@
             // 
             // btnRenNotasFiscais
             // 
-            this.btnRenNotasFiscais.BackColor = System.Drawing.Color.DodgerBlue;
-            this.btnRenNotasFiscais.Location = new System.Drawing.Point(869, 259);
+            this.btnRenNotasFiscais.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.btnRenNotasFiscais.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnRenNotasFiscais.ForeColor = System.Drawing.Color.DimGray;
+            this.btnRenNotasFiscais.Location = new System.Drawing.Point(11, 210);
             this.btnRenNotasFiscais.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.btnRenNotasFiscais.Name = "btnRenNotasFiscais";
             this.btnRenNotasFiscais.Size = new System.Drawing.Size(210, 47);
@@ -357,8 +409,10 @@
             // 
             // btnInsertNotasFiscais
             // 
-            this.btnInsertNotasFiscais.BackColor = System.Drawing.Color.DodgerBlue;
-            this.btnInsertNotasFiscais.Location = new System.Drawing.Point(869, 312);
+            this.btnInsertNotasFiscais.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.btnInsertNotasFiscais.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnInsertNotasFiscais.ForeColor = System.Drawing.Color.DimGray;
+            this.btnInsertNotasFiscais.Location = new System.Drawing.Point(11, 263);
             this.btnInsertNotasFiscais.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.btnInsertNotasFiscais.Name = "btnInsertNotasFiscais";
             this.btnInsertNotasFiscais.Size = new System.Drawing.Size(210, 47);
@@ -369,8 +423,10 @@
             // 
             // btnDelSaldosEstoque
             // 
-            this.btnDelSaldosEstoque.BackColor = System.Drawing.Color.DodgerBlue;
-            this.btnDelSaldosEstoque.Location = new System.Drawing.Point(1083, 363);
+            this.btnDelSaldosEstoque.BackColor = System.Drawing.Color.Aquamarine;
+            this.btnDelSaldosEstoque.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnDelSaldosEstoque.ForeColor = System.Drawing.Color.DimGray;
+            this.btnDelSaldosEstoque.Location = new System.Drawing.Point(655, 668);
             this.btnDelSaldosEstoque.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.btnDelSaldosEstoque.Name = "btnDelSaldosEstoque";
             this.btnDelSaldosEstoque.Size = new System.Drawing.Size(210, 49);
@@ -381,8 +437,10 @@
             // 
             // btnRenSaldosEstoque
             // 
-            this.btnRenSaldosEstoque.BackColor = System.Drawing.Color.DodgerBlue;
-            this.btnRenSaldosEstoque.Location = new System.Drawing.Point(1083, 259);
+            this.btnRenSaldosEstoque.BackColor = System.Drawing.Color.Aquamarine;
+            this.btnRenSaldosEstoque.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnRenSaldosEstoque.ForeColor = System.Drawing.Color.DimGray;
+            this.btnRenSaldosEstoque.Location = new System.Drawing.Point(655, 564);
             this.btnRenSaldosEstoque.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.btnRenSaldosEstoque.Name = "btnRenSaldosEstoque";
             this.btnRenSaldosEstoque.Size = new System.Drawing.Size(210, 47);
@@ -393,8 +451,10 @@
             // 
             // btnInsertSaldosEstoque
             // 
-            this.btnInsertSaldosEstoque.BackColor = System.Drawing.Color.DodgerBlue;
-            this.btnInsertSaldosEstoque.Location = new System.Drawing.Point(1083, 312);
+            this.btnInsertSaldosEstoque.BackColor = System.Drawing.Color.Aquamarine;
+            this.btnInsertSaldosEstoque.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnInsertSaldosEstoque.ForeColor = System.Drawing.Color.DimGray;
+            this.btnInsertSaldosEstoque.Location = new System.Drawing.Point(655, 617);
             this.btnInsertSaldosEstoque.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.btnInsertSaldosEstoque.Name = "btnInsertSaldosEstoque";
             this.btnInsertSaldosEstoque.Size = new System.Drawing.Size(210, 47);
@@ -405,8 +465,10 @@
             // 
             // btnDelEstoqueRolos
             // 
-            this.btnDelEstoqueRolos.BackColor = System.Drawing.Color.DodgerBlue;
-            this.btnDelEstoqueRolos.Location = new System.Drawing.Point(1297, 363);
+            this.btnDelEstoqueRolos.BackColor = System.Drawing.Color.Aquamarine;
+            this.btnDelEstoqueRolos.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnDelEstoqueRolos.ForeColor = System.Drawing.Color.DimGray;
+            this.btnDelEstoqueRolos.Location = new System.Drawing.Point(657, 491);
             this.btnDelEstoqueRolos.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.btnDelEstoqueRolos.Name = "btnDelEstoqueRolos";
             this.btnDelEstoqueRolos.Size = new System.Drawing.Size(210, 49);
@@ -417,8 +479,10 @@
             // 
             // btnRenEstoqueRolos
             // 
-            this.btnRenEstoqueRolos.BackColor = System.Drawing.Color.DodgerBlue;
-            this.btnRenEstoqueRolos.Location = new System.Drawing.Point(1297, 259);
+            this.btnRenEstoqueRolos.BackColor = System.Drawing.Color.Aquamarine;
+            this.btnRenEstoqueRolos.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnRenEstoqueRolos.ForeColor = System.Drawing.Color.DimGray;
+            this.btnRenEstoqueRolos.Location = new System.Drawing.Point(657, 387);
             this.btnRenEstoqueRolos.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.btnRenEstoqueRolos.Name = "btnRenEstoqueRolos";
             this.btnRenEstoqueRolos.Size = new System.Drawing.Size(210, 47);
@@ -429,8 +493,10 @@
             // 
             // btnInsertEstoqueRolos
             // 
-            this.btnInsertEstoqueRolos.BackColor = System.Drawing.Color.DodgerBlue;
-            this.btnInsertEstoqueRolos.Location = new System.Drawing.Point(1297, 312);
+            this.btnInsertEstoqueRolos.BackColor = System.Drawing.Color.Aquamarine;
+            this.btnInsertEstoqueRolos.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnInsertEstoqueRolos.ForeColor = System.Drawing.Color.DimGray;
+            this.btnInsertEstoqueRolos.Location = new System.Drawing.Point(657, 440);
             this.btnInsertEstoqueRolos.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.btnInsertEstoqueRolos.Name = "btnInsertEstoqueRolos";
             this.btnInsertEstoqueRolos.Size = new System.Drawing.Size(210, 47);
@@ -441,8 +507,10 @@
             // 
             // btnDelComercialVendas
             // 
-            this.btnDelComercialVendas.BackColor = System.Drawing.Color.DodgerBlue;
-            this.btnDelComercialVendas.Location = new System.Drawing.Point(14, 561);
+            this.btnDelComercialVendas.BackColor = System.Drawing.Color.Salmon;
+            this.btnDelComercialVendas.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnDelComercialVendas.ForeColor = System.Drawing.Color.DimGray;
+            this.btnDelComercialVendas.Location = new System.Drawing.Point(443, 314);
             this.btnDelComercialVendas.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.btnDelComercialVendas.Name = "btnDelComercialVendas";
             this.btnDelComercialVendas.Size = new System.Drawing.Size(210, 49);
@@ -453,8 +521,10 @@
             // 
             // btnRenComercialVendas
             // 
-            this.btnRenComercialVendas.BackColor = System.Drawing.Color.DodgerBlue;
-            this.btnRenComercialVendas.Location = new System.Drawing.Point(14, 457);
+            this.btnRenComercialVendas.BackColor = System.Drawing.Color.Salmon;
+            this.btnRenComercialVendas.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnRenComercialVendas.ForeColor = System.Drawing.Color.DimGray;
+            this.btnRenComercialVendas.Location = new System.Drawing.Point(443, 210);
             this.btnRenComercialVendas.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.btnRenComercialVendas.Name = "btnRenComercialVendas";
             this.btnRenComercialVendas.Size = new System.Drawing.Size(210, 47);
@@ -465,8 +535,10 @@
             // 
             // btnInsertComercialVendas
             // 
-            this.btnInsertComercialVendas.BackColor = System.Drawing.Color.DodgerBlue;
-            this.btnInsertComercialVendas.Location = new System.Drawing.Point(14, 510);
+            this.btnInsertComercialVendas.BackColor = System.Drawing.Color.Salmon;
+            this.btnInsertComercialVendas.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnInsertComercialVendas.ForeColor = System.Drawing.Color.DimGray;
+            this.btnInsertComercialVendas.Location = new System.Drawing.Point(443, 263);
             this.btnInsertComercialVendas.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.btnInsertComercialVendas.Name = "btnInsertComercialVendas";
             this.btnInsertComercialVendas.Size = new System.Drawing.Size(210, 47);
@@ -477,8 +549,10 @@
             // 
             // btnDelPosicaoOps
             // 
-            this.btnDelPosicaoOps.BackColor = System.Drawing.Color.DodgerBlue;
-            this.btnDelPosicaoOps.Location = new System.Drawing.Point(228, 561);
+            this.btnDelPosicaoOps.BackColor = System.Drawing.Color.Salmon;
+            this.btnDelPosicaoOps.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnDelPosicaoOps.ForeColor = System.Drawing.Color.DimGray;
+            this.btnDelPosicaoOps.Location = new System.Drawing.Point(443, 491);
             this.btnDelPosicaoOps.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.btnDelPosicaoOps.Name = "btnDelPosicaoOps";
             this.btnDelPosicaoOps.Size = new System.Drawing.Size(210, 49);
@@ -489,8 +563,10 @@
             // 
             // btnRenPosicaoOps
             // 
-            this.btnRenPosicaoOps.BackColor = System.Drawing.Color.DodgerBlue;
-            this.btnRenPosicaoOps.Location = new System.Drawing.Point(228, 457);
+            this.btnRenPosicaoOps.BackColor = System.Drawing.Color.Salmon;
+            this.btnRenPosicaoOps.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnRenPosicaoOps.ForeColor = System.Drawing.Color.DimGray;
+            this.btnRenPosicaoOps.Location = new System.Drawing.Point(443, 387);
             this.btnRenPosicaoOps.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.btnRenPosicaoOps.Name = "btnRenPosicaoOps";
             this.btnRenPosicaoOps.Size = new System.Drawing.Size(210, 47);
@@ -501,8 +577,10 @@
             // 
             // btnInsertPosicaoOps
             // 
-            this.btnInsertPosicaoOps.BackColor = System.Drawing.Color.DodgerBlue;
-            this.btnInsertPosicaoOps.Location = new System.Drawing.Point(228, 510);
+            this.btnInsertPosicaoOps.BackColor = System.Drawing.Color.Salmon;
+            this.btnInsertPosicaoOps.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnInsertPosicaoOps.ForeColor = System.Drawing.Color.DimGray;
+            this.btnInsertPosicaoOps.Location = new System.Drawing.Point(443, 440);
             this.btnInsertPosicaoOps.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.btnInsertPosicaoOps.Name = "btnInsertPosicaoOps";
             this.btnInsertPosicaoOps.Size = new System.Drawing.Size(210, 47);
@@ -513,8 +591,10 @@
             // 
             // btnDelRecebimentos
             // 
-            this.btnDelRecebimentos.BackColor = System.Drawing.Color.DodgerBlue;
-            this.btnDelRecebimentos.Location = new System.Drawing.Point(442, 561);
+            this.btnDelRecebimentos.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.btnDelRecebimentos.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnDelRecebimentos.ForeColor = System.Drawing.Color.DimGray;
+            this.btnDelRecebimentos.Location = new System.Drawing.Point(12, 668);
             this.btnDelRecebimentos.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.btnDelRecebimentos.Name = "btnDelRecebimentos";
             this.btnDelRecebimentos.Size = new System.Drawing.Size(210, 49);
@@ -525,8 +605,10 @@
             // 
             // btnRenRecebimentos
             // 
-            this.btnRenRecebimentos.BackColor = System.Drawing.Color.DodgerBlue;
-            this.btnRenRecebimentos.Location = new System.Drawing.Point(442, 457);
+            this.btnRenRecebimentos.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.btnRenRecebimentos.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnRenRecebimentos.ForeColor = System.Drawing.Color.DimGray;
+            this.btnRenRecebimentos.Location = new System.Drawing.Point(12, 564);
             this.btnRenRecebimentos.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.btnRenRecebimentos.Name = "btnRenRecebimentos";
             this.btnRenRecebimentos.Size = new System.Drawing.Size(210, 47);
@@ -537,8 +619,10 @@
             // 
             // btnInsertRecebimentos
             // 
-            this.btnInsertRecebimentos.BackColor = System.Drawing.Color.DodgerBlue;
-            this.btnInsertRecebimentos.Location = new System.Drawing.Point(442, 510);
+            this.btnInsertRecebimentos.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.btnInsertRecebimentos.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnInsertRecebimentos.ForeColor = System.Drawing.Color.DimGray;
+            this.btnInsertRecebimentos.Location = new System.Drawing.Point(12, 617);
             this.btnInsertRecebimentos.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.btnInsertRecebimentos.Name = "btnInsertRecebimentos";
             this.btnInsertRecebimentos.Size = new System.Drawing.Size(210, 47);
@@ -549,8 +633,10 @@
             // 
             // btnDelPedidoCompra
             // 
-            this.btnDelPedidoCompra.BackColor = System.Drawing.Color.DodgerBlue;
-            this.btnDelPedidoCompra.Location = new System.Drawing.Point(656, 561);
+            this.btnDelPedidoCompra.BackColor = System.Drawing.Color.Tan;
+            this.btnDelPedidoCompra.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnDelPedidoCompra.ForeColor = System.Drawing.Color.DimGray;
+            this.btnDelPedidoCompra.Location = new System.Drawing.Point(228, 314);
             this.btnDelPedidoCompra.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.btnDelPedidoCompra.Name = "btnDelPedidoCompra";
             this.btnDelPedidoCompra.Size = new System.Drawing.Size(210, 49);
@@ -561,8 +647,10 @@
             // 
             // btnRenPedidoCompra
             // 
-            this.btnRenPedidoCompra.BackColor = System.Drawing.Color.DodgerBlue;
-            this.btnRenPedidoCompra.Location = new System.Drawing.Point(656, 457);
+            this.btnRenPedidoCompra.BackColor = System.Drawing.Color.Tan;
+            this.btnRenPedidoCompra.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnRenPedidoCompra.ForeColor = System.Drawing.Color.DimGray;
+            this.btnRenPedidoCompra.Location = new System.Drawing.Point(228, 210);
             this.btnRenPedidoCompra.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.btnRenPedidoCompra.Name = "btnRenPedidoCompra";
             this.btnRenPedidoCompra.Size = new System.Drawing.Size(210, 47);
@@ -573,8 +661,10 @@
             // 
             // btnInsertPedidoCompra
             // 
-            this.btnInsertPedidoCompra.BackColor = System.Drawing.Color.DodgerBlue;
-            this.btnInsertPedidoCompra.Location = new System.Drawing.Point(656, 510);
+            this.btnInsertPedidoCompra.BackColor = System.Drawing.Color.Tan;
+            this.btnInsertPedidoCompra.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnInsertPedidoCompra.ForeColor = System.Drawing.Color.DimGray;
+            this.btnInsertPedidoCompra.Location = new System.Drawing.Point(228, 263);
             this.btnInsertPedidoCompra.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.btnInsertPedidoCompra.Name = "btnInsertPedidoCompra";
             this.btnInsertPedidoCompra.Size = new System.Drawing.Size(210, 47);
@@ -583,11 +673,98 @@
             this.btnInsertPedidoCompra.UseVisualStyleBackColor = false;
             this.btnInsertPedidoCompra.Click += new System.EventHandler(this.btnInsertPedidoCompra_Click);
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Salmon;
+            this.button1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button1.ForeColor = System.Drawing.Color.DimGray;
+            this.button1.Location = new System.Drawing.Point(443, 668);
+            this.button1.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(210, 49);
+            this.button1.TabIndex = 46;
+            this.button1.Text = "----------";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.Salmon;
+            this.button2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button2.ForeColor = System.Drawing.Color.DimGray;
+            this.button2.Location = new System.Drawing.Point(443, 564);
+            this.button2.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(210, 47);
+            this.button2.TabIndex = 45;
+            this.button2.Text = "----------";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.Salmon;
+            this.button3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button3.ForeColor = System.Drawing.Color.DimGray;
+            this.button3.Location = new System.Drawing.Point(443, 617);
+            this.button3.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(210, 47);
+            this.button3.TabIndex = 44;
+            this.button3.Text = "----------";
+            this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.Color.Aquamarine;
+            this.button4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button4.ForeColor = System.Drawing.Color.DimGray;
+            this.button4.Location = new System.Drawing.Point(657, 140);
+            this.button4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(208, 47);
+            this.button4.TabIndex = 49;
+            this.button4.Text = "----------";
+            this.button4.UseVisualStyleBackColor = false;
+            // 
+            // button5
+            // 
+            this.button5.BackColor = System.Drawing.Color.Aquamarine;
+            this.button5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button5.ForeColor = System.Drawing.Color.DimGray;
+            this.button5.Location = new System.Drawing.Point(657, 35);
+            this.button5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(208, 47);
+            this.button5.TabIndex = 48;
+            this.button5.Text = "----------";
+            this.button5.UseVisualStyleBackColor = false;
+            // 
+            // button6
+            // 
+            this.button6.BackColor = System.Drawing.Color.Aquamarine;
+            this.button6.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button6.ForeColor = System.Drawing.Color.DimGray;
+            this.button6.Location = new System.Drawing.Point(657, 86);
+            this.button6.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(208, 47);
+            this.button6.TabIndex = 47;
+            this.button6.Text = "----------";
+            this.button6.UseVisualStyleBackColor = false;
+            // 
             // UIPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1569, 1035);
+            this.ClientSize = new System.Drawing.Size(887, 764);
+            this.Controls.Add(this.button4);
+            this.Controls.Add(this.button5);
+            this.Controls.Add(this.button6);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button3);
             this.Controls.Add(this.btnDelPedidoCompra);
             this.Controls.Add(this.btnRenPedidoCompra);
             this.Controls.Add(this.btnInsertPedidoCompra);
@@ -685,5 +862,11 @@
         private Button btnDelPedidoCompra;
         private Button btnRenPedidoCompra;
         private Button btnInsertPedidoCompra;
+        private Button button1;
+        private Button button2;
+        private Button button3;
+        private Button button4;
+        private Button button5;
+        private Button button6;
     }
 }

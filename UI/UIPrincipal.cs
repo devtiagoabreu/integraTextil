@@ -350,15 +350,15 @@ namespace UI
 
             //PEDIDO COMPRA - EXECUTA AUTOMATICAMENTE OS METODOS SEM EXIBIR NADA NA TELA
             
-            BLLPedidoCompra bllPedidoCompra = new BLLPedidoCompra();
+            //BLLPedidoCompra bllPedidoCompra = new BLLPedidoCompra();
 
-            bllPedidoCompra.RenomearArquivo(bllPedidoCompra.PegarNomeArquivo(@"C:\integraTextil\relatorios\", "ROD"), "pedido_compra.csv", @"C:\integraTextil\relatorios\", @"C:\integraTextil\relatorios\pedido_compra\ren");
+            //bllPedidoCompra.RenomearArquivo(bllPedidoCompra.PegarNomeArquivo(@"C:\integraTextil\relatorios\", "ROD"), "pedido_compra.csv", @"C:\integraTextil\relatorios\", @"C:\integraTextil\relatorios\pedido_compra\ren");
 
-            bllPedidoCompra.InserirDadosBD(bllPedidoCompra.LerCsv(@"C:\integraTextil\relatorios\pedido_compra\ren\pedido_compra.csv"));
+            //bllPedidoCompra.InserirDadosBD(bllPedidoCompra.LerCsv(@"C:\integraTextil\relatorios\pedido_compra\ren\pedido_compra.csv"));
 
-            bllPedidoCompra.DeletarArquivos(@"C:\integraTextil\relatorios\pedido_compra\ren\");
+            //bllPedidoCompra.DeletarArquivos(@"C:\integraTextil\relatorios\pedido_compra\ren\");
 
-            Application.Exit();
+            //Application.Exit();
         }
 
         private void btnRenComercialVendas_Click(object sender, EventArgs e)
@@ -457,6 +457,21 @@ namespace UI
             BLLPedidoCompra bllPedidoCompra = new BLLPedidoCompra();
 
             bllPedidoCompra.DeletarArquivos(@"C:\integraTextil\relatorios\pedido_compra\ren\");
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
