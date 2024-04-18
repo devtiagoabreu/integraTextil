@@ -342,7 +342,7 @@ namespace BLL
                     dalMySQL.AdicionaParametros("@QtdGen16", daoDadosTeares.QtdGen16);
                     dalMySQL.AdicionaParametros("@MinGen16", daoDadosTeares.MinGen16);
 
-                    dalMySQL.ExecutarManipulacao(CommandType.StoredProcedure, "uspInsertDadosTeares");
+                    dalMySQL.ExecutarManipulacao(CommandType.StoredProcedure, "uspDadosTearesInserir");
                 }
                 return retorno;
             }

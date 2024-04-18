@@ -75,9 +75,9 @@
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
+            this.btnInsertDadosTeares = new System.Windows.Forms.Button();
+            this.btnRenDadosTeares = new System.Windows.Forms.Button();
+            this.btnLerDadosTeares = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnShiftReport
@@ -685,7 +685,6 @@
             this.button1.TabIndex = 46;
             this.button1.Text = "----------";
             this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -699,7 +698,6 @@
             this.button2.TabIndex = 45;
             this.button2.Text = "----------";
             this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
@@ -713,55 +711,57 @@
             this.button3.TabIndex = 44;
             this.button3.Text = "----------";
             this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
-            // button4
+            // btnInsertDadosTeares
             // 
-            this.button4.BackColor = System.Drawing.Color.Aquamarine;
-            this.button4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button4.ForeColor = System.Drawing.Color.DimGray;
-            this.button4.Location = new System.Drawing.Point(657, 140);
-            this.button4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(208, 47);
-            this.button4.TabIndex = 49;
-            this.button4.Text = "----------";
-            this.button4.UseVisualStyleBackColor = false;
+            this.btnInsertDadosTeares.BackColor = System.Drawing.Color.Aquamarine;
+            this.btnInsertDadosTeares.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnInsertDadosTeares.ForeColor = System.Drawing.Color.DimGray;
+            this.btnInsertDadosTeares.Location = new System.Drawing.Point(657, 140);
+            this.btnInsertDadosTeares.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnInsertDadosTeares.Name = "btnInsertDadosTeares";
+            this.btnInsertDadosTeares.Size = new System.Drawing.Size(208, 47);
+            this.btnInsertDadosTeares.TabIndex = 49;
+            this.btnInsertDadosTeares.Text = "Insert Dados Teares";
+            this.btnInsertDadosTeares.UseVisualStyleBackColor = false;
+            this.btnInsertDadosTeares.Click += new System.EventHandler(this.btnInsertDadosTeares_Click);
             // 
-            // button5
+            // btnRenDadosTeares
             // 
-            this.button5.BackColor = System.Drawing.Color.Aquamarine;
-            this.button5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button5.ForeColor = System.Drawing.Color.DimGray;
-            this.button5.Location = new System.Drawing.Point(657, 35);
-            this.button5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(208, 47);
-            this.button5.TabIndex = 48;
-            this.button5.Text = "----------";
-            this.button5.UseVisualStyleBackColor = false;
+            this.btnRenDadosTeares.BackColor = System.Drawing.Color.Aquamarine;
+            this.btnRenDadosTeares.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnRenDadosTeares.ForeColor = System.Drawing.Color.DimGray;
+            this.btnRenDadosTeares.Location = new System.Drawing.Point(657, 35);
+            this.btnRenDadosTeares.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnRenDadosTeares.Name = "btnRenDadosTeares";
+            this.btnRenDadosTeares.Size = new System.Drawing.Size(208, 47);
+            this.btnRenDadosTeares.TabIndex = 48;
+            this.btnRenDadosTeares.Text = "Ren Mov DadosTeares";
+            this.btnRenDadosTeares.UseVisualStyleBackColor = false;
+            this.btnRenDadosTeares.Click += new System.EventHandler(this.btnRenDadosTeares_Click);
             // 
-            // button6
+            // btnLerDadosTeares
             // 
-            this.button6.BackColor = System.Drawing.Color.Aquamarine;
-            this.button6.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button6.ForeColor = System.Drawing.Color.DimGray;
-            this.button6.Location = new System.Drawing.Point(657, 86);
-            this.button6.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(208, 47);
-            this.button6.TabIndex = 47;
-            this.button6.Text = "----------";
-            this.button6.UseVisualStyleBackColor = false;
+            this.btnLerDadosTeares.BackColor = System.Drawing.Color.Aquamarine;
+            this.btnLerDadosTeares.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnLerDadosTeares.ForeColor = System.Drawing.Color.DimGray;
+            this.btnLerDadosTeares.Location = new System.Drawing.Point(657, 86);
+            this.btnLerDadosTeares.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnLerDadosTeares.Name = "btnLerDadosTeares";
+            this.btnLerDadosTeares.Size = new System.Drawing.Size(208, 47);
+            this.btnLerDadosTeares.TabIndex = 47;
+            this.btnLerDadosTeares.Text = "Ler Dados Teares";
+            this.btnLerDadosTeares.UseVisualStyleBackColor = false;
+            this.btnLerDadosTeares.Click += new System.EventHandler(this.btnLerDadosTeares_Click);
             // 
             // UIPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(887, 764);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button6);
+            this.Controls.Add(this.btnInsertDadosTeares);
+            this.Controls.Add(this.btnRenDadosTeares);
+            this.Controls.Add(this.btnLerDadosTeares);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button3);
@@ -865,8 +865,8 @@
         private Button button1;
         private Button button2;
         private Button button3;
-        private Button button4;
-        private Button button5;
-        private Button button6;
+        private Button btnInsertDadosTeares;
+        private Button btnRenDadosTeares;
+        private Button btnLerDadosTeares;
     }
 }

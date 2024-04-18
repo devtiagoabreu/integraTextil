@@ -459,19 +459,27 @@ namespace UI
             bllPedidoCompra.DeletarArquivos(@"C:\integraTextil\relatorios\pedido_compra\ren\");
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void btnRenDadosTeares_Click(object sender, EventArgs e)
         {
+            string nomePasta = DateTime.Now.ToString("yyyy-MM");
+            string nomeArquivoCSV = DateTime.Now.AddDays(-1).ToString("yyyy-MM-dd");
 
+            BLLDadosTeares bLLDadosTeares = new BLLDadosTeares();
+            bLLDadosTeares.RenomearArquivo(bLLDadosTeares.PegarNomeArquivo(@"C:\TMSDATA\" + nomePasta + @"\daily", nomeArquivoCSV), "dadosTeares_" + nomeArquivoCSV + ".csv", @"C:\TMSDATA\" + nomePasta + @"\daily\", @"H:\Teares\dadosTearesRenomeada\");
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnLerDadosTeares_Click(object sender, EventArgs e)
         {
-
+            
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void btnInsertDadosTeares_Click(object sender, EventArgs e)
         {
+            string nomeArquivoCSV = DateTime.Now.AddDays(-1).ToString("yyyy-MM-dd");
 
+            BLLDadosTeares bLLDadosTeares = new BLLDadosTeares();
+
+            bLLDadosTeares.InserirDadosTeares(bLLDadosTeares.LerCSV(@"H:\Teares\dadosTearesRenomeada\" + "dadosTeares_" + nomeArquivoCSV + ".csv"));
         }
     }
 }
