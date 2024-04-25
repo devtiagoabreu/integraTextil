@@ -467,12 +467,7 @@ namespace UI
             BLLDadosTeares bLLDadosTeares = new BLLDadosTeares();
             bLLDadosTeares.RenomearArquivo(bLLDadosTeares.PegarNomeArquivo(@"C:\TMSDATA\" + nomePasta + @"\daily", nomeArquivoCSV), "dadosTeares_" + nomeArquivoCSV + ".csv", @"C:\TMSDATA\" + nomePasta + @"\daily\", @"H:\Teares\dadosTearesRenomeada\");
         }
-
-        private void btnLerDadosTeares_Click(object sender, EventArgs e)
-        {
-            
-        }
-
+        
         private void btnInsertDadosTeares_Click(object sender, EventArgs e)
         {
             string nomeArquivoCSV = DateTime.Now.AddDays(-1).ToString("yyyy-MM-dd");
@@ -480,6 +475,13 @@ namespace UI
             BLLDadosTeares bLLDadosTeares = new BLLDadosTeares();
 
             bLLDadosTeares.InserirDadosTeares(bLLDadosTeares.LerCSV(@"H:\Teares\dadosTearesRenomeada\" + "dadosTeares_" + nomeArquivoCSV + ".csv"));
+        }
+
+        private void btnDelDadosTeares_Click(object sender, EventArgs e)
+        {
+            BLLDadosTeares bLLDadosTeares = new BLLDadosTeares();
+
+            bLLDadosTeares.DeletarArquivos(@"H:\Teares\dadosTearesRenomeada\");
         }
     }
 }

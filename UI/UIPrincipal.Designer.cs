@@ -77,7 +77,7 @@
             this.button3 = new System.Windows.Forms.Button();
             this.btnInsertDadosTeares = new System.Windows.Forms.Button();
             this.btnRenDadosTeares = new System.Windows.Forms.Button();
-            this.btnLerDadosTeares = new System.Windows.Forms.Button();
+            this.btnDelDadosTeares = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnShiftReport
@@ -740,19 +740,19 @@
             this.btnRenDadosTeares.UseVisualStyleBackColor = false;
             this.btnRenDadosTeares.Click += new System.EventHandler(this.btnRenDadosTeares_Click);
             // 
-            // btnLerDadosTeares
+            // btnDelDadosTeares
             // 
-            this.btnLerDadosTeares.BackColor = System.Drawing.Color.Aquamarine;
-            this.btnLerDadosTeares.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnLerDadosTeares.ForeColor = System.Drawing.Color.DimGray;
-            this.btnLerDadosTeares.Location = new System.Drawing.Point(657, 86);
-            this.btnLerDadosTeares.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btnLerDadosTeares.Name = "btnLerDadosTeares";
-            this.btnLerDadosTeares.Size = new System.Drawing.Size(208, 47);
-            this.btnLerDadosTeares.TabIndex = 47;
-            this.btnLerDadosTeares.Text = "Ler Dados Teares";
-            this.btnLerDadosTeares.UseVisualStyleBackColor = false;
-            this.btnLerDadosTeares.Click += new System.EventHandler(this.btnLerDadosTeares_Click);
+            this.btnDelDadosTeares.BackColor = System.Drawing.Color.Aquamarine;
+            this.btnDelDadosTeares.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnDelDadosTeares.ForeColor = System.Drawing.Color.DimGray;
+            this.btnDelDadosTeares.Location = new System.Drawing.Point(657, 86);
+            this.btnDelDadosTeares.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnDelDadosTeares.Name = "btnDelDadosTeares";
+            this.btnDelDadosTeares.Size = new System.Drawing.Size(208, 47);
+            this.btnDelDadosTeares.TabIndex = 47;
+            this.btnDelDadosTeares.Text = "Del Dados Teares";
+            this.btnDelDadosTeares.UseVisualStyleBackColor = false;
+            this.btnDelDadosTeares.Click += new System.EventHandler(this.btnDelDadosTeares_Click);
             // 
             // UIPrincipal
             // 
@@ -761,7 +761,7 @@
             this.ClientSize = new System.Drawing.Size(887, 764);
             this.Controls.Add(this.btnInsertDadosTeares);
             this.Controls.Add(this.btnRenDadosTeares);
-            this.Controls.Add(this.btnLerDadosTeares);
+            this.Controls.Add(this.btnDelDadosTeares);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button3);
@@ -867,6 +867,6 @@
         private Button button3;
         private Button btnInsertDadosTeares;
         private Button btnRenDadosTeares;
-        private Button btnLerDadosTeares;
+        private Button btnDelDadosTeares;
     }
 }
