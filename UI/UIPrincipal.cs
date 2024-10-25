@@ -349,7 +349,7 @@ namespace UI
             //bllComercialVendas.DeletarArquivos(@"C:\integraTextil\relatorios\comercial_vendas\ren\");
 
             //PEDIDO COMPRA - EXECUTA AUTOMATICAMENTE OS METODOS SEM EXIBIR NADA NA TELA
-            
+
             //BLLPedidoCompra bllPedidoCompra = new BLLPedidoCompra();
 
             //bllPedidoCompra.RenomearArquivo(bllPedidoCompra.PegarNomeArquivo(@"C:\integraTextil\relatorios\", "ROD"), "pedido_compra.csv", @"C:\integraTextil\relatorios\", @"C:\integraTextil\relatorios\pedido_compra\ren");
@@ -358,8 +358,33 @@ namespace UI
 
             //bllPedidoCompra.DeletarArquivos(@"C:\integraTextil\relatorios\pedido_compra\ren\");
 
-            //Application.Exit();
-        }
+
+            //dados teares
+            /*
+            try
+            {
+                string nomePasta = DateTime.Now.ToString("yyyy-MM");
+                string nomeArquivoCSV = DateTime.Now.AddDays(-1).ToString("yyyy-MM-dd");
+
+                BLLDadosTeares bLLDadosTeares = new BLLDadosTeares();
+
+                bLLDadosTeares.RenomearArquivo(bLLDadosTeares.PegarNomeArquivo(@"C:\TMSDATA\" + nomePasta + @"\daily", nomeArquivoCSV), "dadosTeares_" + nomeArquivoCSV + ".csv", @"C:\TMSDATA\" + nomePasta + @"\daily\", @"E:\Teares\dadosTearesRenomeada\");
+
+                bLLDadosTeares.InserirDadosTeares(bLLDadosTeares.LerCSV(@"E:\Teares\dadosTearesRenomeada\" + "dadosTeares_" + nomeArquivoCSV + ".csv"));
+
+                bLLDadosTeares.DeletarArquivos(@"E:\Teares\dadosTearesRenomeada\");
+
+                MessageBox.Show("Dados dos teares importados com sucesso!");
+            }
+            catch 
+            {
+                MessageBox.Show("Não foi possível importar os dados dos teares!");
+            }
+            
+
+            Application.Exit();
+            */
+    }
 
         private void btnRenComercialVendas_Click(object sender, EventArgs e)
         {

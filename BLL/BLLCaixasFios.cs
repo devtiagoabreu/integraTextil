@@ -145,23 +145,159 @@ namespace BLL
 
                 if (index > 1)
                 {
-                    daoCaixasFios.Emp = campo[0].ToString();
-                    daoCaixasFios.Empresa = campo[1].ToString();
-                    daoCaixasFios.Dep = campo[2].ToString();
-                    daoCaixasFios.Deposito = campo[3].ToString();
-                    daoCaixasFios.Tran = campo[4].ToString();
-                    daoCaixasFios.Transacao = campo[5].ToString();
-                    daoCaixasFios.Produto = campo[6].ToString();
-                    daoCaixasFios.Nivel = campo[7].ToString();
-                    daoCaixasFios.Grupo = campo[8].ToString();
-                    daoCaixasFios.Sub = campo[9].ToString();
-                    daoCaixasFios.Item = campo[10].ToString();
-                    daoCaixasFios.Um = campo[11].ToString();
-                    daoCaixasFios.Narrativa = campo[12].ToString();
-                    daoCaixasFios.Tpg = campo[13].ToString();
-                    daoCaixasFios.TipoGlobal = campo[14].ToString();
-                    daoCaixasFios.Lote = campo[15].ToString();
-                    daoCaixasFios.LoteProduto = campo[16].ToString();
+                    try
+                    {
+                        daoCaixasFios.Emp = campo[0].ToString();
+                    }
+                    catch 
+                    {
+                        daoCaixasFios.Emp = "01";
+                    }
+
+                    try
+                    {
+                        daoCaixasFios.Empresa = campo[1].ToString();
+                    }
+                    catch 
+                    {
+                        daoCaixasFios.Empresa = "Pro Moda Têxtil LTDA";
+                    }
+                    
+                    try
+                    {
+                        daoCaixasFios.Dep = campo[2].ToString();
+                    }
+                    catch
+                    {
+                        daoCaixasFios.Dep = "000";
+                    }
+
+                    try
+                    {
+                        daoCaixasFios.Deposito = campo[3].ToString();
+                    }
+                    catch
+                    {
+                        daoCaixasFios.Deposito = "000";
+                    }
+
+                    try
+                    {
+                        daoCaixasFios.Tran = campo[4].ToString();
+                    }
+                    catch
+                    {
+                        daoCaixasFios.Tran = "000";
+                    }
+
+                    try
+                    {
+                        daoCaixasFios.Transacao = campo[5].ToString();
+                    }
+                    catch
+                    {
+                        daoCaixasFios.Transacao = "000";
+                    }
+
+                    try
+                    {
+                        daoCaixasFios.Produto = campo[6].ToString();
+                    }
+                    catch
+                    {
+                        daoCaixasFios.Produto = "000";
+                    }
+
+                    try
+                    {
+                        daoCaixasFios.Nivel = campo[7].ToString();
+                    }
+                    catch
+                    {
+                        daoCaixasFios.Nivel = "000";
+                    }
+
+                    try
+                    {
+                        daoCaixasFios.Grupo = campo[8].ToString();
+                    }
+                    catch
+                    {
+                        daoCaixasFios.Grupo = "000";
+                    }
+
+                    try
+                    {
+                        daoCaixasFios.Sub = campo[9].ToString();
+                    }
+                    catch
+                    {
+                        daoCaixasFios.Sub = "000";
+                    }
+
+                    try
+                    {
+                        daoCaixasFios.Item = campo[10].ToString();
+                    }
+                    catch
+                    {
+                        daoCaixasFios.Item = "000";
+                    }
+
+                    try
+                    {
+                        daoCaixasFios.Um = campo[11].ToString();
+                    }
+                    catch
+                    {
+                        daoCaixasFios.Um = "000";
+                    }
+
+                    try
+                    {
+                        daoCaixasFios.Narrativa = campo[12].ToString();
+                    }
+                    catch
+                    {
+                        daoCaixasFios.Narrativa = "000";
+                    }
+
+                    try
+                    {
+                        daoCaixasFios.Tpg = campo[13].ToString();
+                    }
+                    catch
+                    {
+                        daoCaixasFios.Tpg = "000";
+                    }
+
+                    try
+                    {
+                        daoCaixasFios.TipoGlobal = campo[14].ToString();
+                    }
+                    catch
+                    {
+                        daoCaixasFios.TipoGlobal = "000";
+                    }
+
+                    try
+                    {
+                        daoCaixasFios.Lote = campo[15].ToString();
+                    }
+                    catch
+                    {
+                        daoCaixasFios.Lote = "000";
+                    }
+
+                    try
+                    {
+                        daoCaixasFios.LoteProduto = campo[16].ToString();
+                    }
+                    catch
+                    {
+                        daoCaixasFios.LoteProduto = "000";
+                    }
+                             
                     try
                     {
                         daoCaixasFios.Quantidade = Convert.ToDecimal(campo[17].ToString());
@@ -185,19 +321,108 @@ namespace BLL
                     catch
                     {
                         daoCaixasFios.PesoLiquido = 0;
-                    }                    
-                    daoCaixasFios.NumeroVolume = campo[20].ToString();
-                    daoCaixasFios.NumeroOrigem = campo[21].ToString();
-                    daoCaixasFios.Situacao = campo[22].ToString();
-                    daoCaixasFios.DataEntrada = Convert.ToDateTime(campo[23].ToString());
-                    //se a máquina estiver no idioma Inglês
-                    //daoCaixasFios.DataEntrada = DateTime.ParseExact(campo[23].ToString(), "dd/MM/yyyy", null);
-                    daoCaixasFios.Nf = campo[24].ToString();
-                    daoCaixasFios.Serie = campo[25].ToString();
-                    daoCaixasFios.seqNf = campo[26].ToString();
-                    daoCaixasFios.Fornecedor = campo[27].ToString();
-                    daoCaixasFios.NomeFornecedor = campo[28].ToString();
-                    daoCaixasFios.Obs = campo[29].ToString();
+                    }
+
+                    try
+                    {
+                        daoCaixasFios.PesoLiquido = Convert.ToDecimal(campo[19].ToString());
+                    }
+                    catch
+                    {
+                        daoCaixasFios.PesoLiquido = 0;
+                    }
+
+                    try
+                    {
+                        daoCaixasFios.NumeroVolume = campo[20].ToString();
+                    }
+                    catch
+                    {
+                        daoCaixasFios.NumeroVolume = "000";
+                    }
+
+                    try
+                    {
+                        daoCaixasFios.NumeroOrigem = campo[21].ToString();
+                    }
+                    catch
+                    {
+                        daoCaixasFios.NumeroOrigem = "000";
+                    }
+
+                    try
+                    {
+                        daoCaixasFios.Situacao = campo[22].ToString();
+                    }
+                    catch
+                    {
+                        daoCaixasFios.Situacao = "000";
+                    }
+
+                    try
+                    {
+                        daoCaixasFios.DataEntrada = Convert.ToDateTime(campo[23].ToString());
+                        //se a máquina estiver no idioma Inglês
+                        //daoCaixasFios.DataEntrada = DateTime.ParseExact(campo[23].ToString(), "dd/MM/yyyy", null);
+                    }
+                    catch
+                    {
+                        daoCaixasFios.DataEntrada = Convert.ToDateTime("09/09/1982");
+                    }
+
+                    try
+                    {
+                        daoCaixasFios.Nf = campo[24].ToString();
+                    }
+                    catch
+                    {
+                        daoCaixasFios.Nf = "000";
+                    }
+
+                    try
+                    {
+                        daoCaixasFios.Serie = campo[25].ToString();
+                    }
+                    catch
+                    {
+                        daoCaixasFios.Serie = "1";
+                    }
+
+                    try
+                    {
+                        daoCaixasFios.seqNf = campo[26].ToString();
+                    }
+                    catch
+                    {
+                        daoCaixasFios.seqNf = "000";
+                    }
+
+                    try
+                    {
+                        daoCaixasFios.Fornecedor = campo[27].ToString();
+                    }
+                    catch
+                    {
+                        daoCaixasFios.Fornecedor = "000";
+                    }
+
+                    try
+                    {
+                        daoCaixasFios.NomeFornecedor = campo[28].ToString();
+                    }
+                    catch
+                    {
+                        daoCaixasFios.NomeFornecedor = "000";
+                    }
+
+                    try
+                    {
+                        daoCaixasFios.Obs = campo[29].ToString();
+                    }
+                    catch
+                    {
+                        daoCaixasFios.Obs = "Erro na leitura de alguns campos";
+                    }                   
 
                     daoCaixasFiosList.Add(daoCaixasFios);
                 }
