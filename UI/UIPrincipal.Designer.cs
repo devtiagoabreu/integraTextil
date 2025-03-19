@@ -28,793 +28,795 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.btnShiftReport = new System.Windows.Forms.Button();
-            this.btnProduction = new System.Windows.Forms.Button();
-            this.btnRenProduction = new System.Windows.Forms.Button();
-            this.btnRenShiftReport = new System.Windows.Forms.Button();
-            this.btnDelProduction = new System.Windows.Forms.Button();
-            this.btnLerDisplayOperacao = new System.Windows.Forms.Button();
-            this.btnCopyDisplayOperacao = new System.Windows.Forms.Button();
-            this.btnInsertDisplayOperacao = new System.Windows.Forms.Button();
-            this.btnDelShiftReport = new System.Windows.Forms.Button();
-            this.timerWebScrapingGeral = new System.Windows.Forms.Timer(this.components);
-            this.btnDelContasReceber = new System.Windows.Forms.Button();
-            this.btnRenContasReceber = new System.Windows.Forms.Button();
-            this.btnInsertContasReceber = new System.Windows.Forms.Button();
-            this.btnDelContasPagar = new System.Windows.Forms.Button();
-            this.btnRenContasPagar = new System.Windows.Forms.Button();
-            this.btnInsertContasPagar = new System.Windows.Forms.Button();
-            this.btnDelContasPagas = new System.Windows.Forms.Button();
-            this.btnRenContasPagas = new System.Windows.Forms.Button();
-            this.btnInsertContasPagas = new System.Windows.Forms.Button();
-            this.btnDelCaixasFios = new System.Windows.Forms.Button();
-            this.btnRenCaixasFios = new System.Windows.Forms.Button();
-            this.btnInsertCaixasFios = new System.Windows.Forms.Button();
-            this.btnDelNotasFiscais = new System.Windows.Forms.Button();
-            this.btnRenNotasFiscais = new System.Windows.Forms.Button();
-            this.btnInsertNotasFiscais = new System.Windows.Forms.Button();
-            this.btnDelSaldosEstoque = new System.Windows.Forms.Button();
-            this.btnRenSaldosEstoque = new System.Windows.Forms.Button();
-            this.btnInsertSaldosEstoque = new System.Windows.Forms.Button();
-            this.btnDelEstoqueRolos = new System.Windows.Forms.Button();
-            this.btnRenEstoqueRolos = new System.Windows.Forms.Button();
-            this.btnInsertEstoqueRolos = new System.Windows.Forms.Button();
-            this.btnDelComercialVendas = new System.Windows.Forms.Button();
-            this.btnRenComercialVendas = new System.Windows.Forms.Button();
-            this.btnInsertComercialVendas = new System.Windows.Forms.Button();
-            this.btnDelPosicaoOps = new System.Windows.Forms.Button();
-            this.btnRenPosicaoOps = new System.Windows.Forms.Button();
-            this.btnInsertPosicaoOps = new System.Windows.Forms.Button();
-            this.btnDelRecebimentos = new System.Windows.Forms.Button();
-            this.btnRenRecebimentos = new System.Windows.Forms.Button();
-            this.btnInsertRecebimentos = new System.Windows.Forms.Button();
-            this.btnDelPedidoCompra = new System.Windows.Forms.Button();
-            this.btnRenPedidoCompra = new System.Windows.Forms.Button();
-            this.btnInsertPedidoCompra = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.btnInsertDadosTeares = new System.Windows.Forms.Button();
-            this.btnRenDadosTeares = new System.Windows.Forms.Button();
-            this.btnDelDadosTeares = new System.Windows.Forms.Button();
-            this.SuspendLayout();
+            components = new System.ComponentModel.Container();
+            btnShiftReport = new Button();
+            btnProduction = new Button();
+            btnRenProduction = new Button();
+            btnRenShiftReport = new Button();
+            btnDelProduction = new Button();
+            btnLerDisplayOperacao = new Button();
+            btnCopyDisplayOperacao = new Button();
+            btnInsertDisplayOperacao = new Button();
+            btnDelShiftReport = new Button();
+            timerWebScrapingGeral = new System.Windows.Forms.Timer(components);
+            btnDelContasReceber = new Button();
+            btnRenContasReceber = new Button();
+            btnInsertContasReceber = new Button();
+            btnDelContasPagar = new Button();
+            btnRenContasPagar = new Button();
+            btnInsertContasPagar = new Button();
+            btnDelContasPagas = new Button();
+            btnRenContasPagas = new Button();
+            btnInsertContasPagas = new Button();
+            btnDelCaixasFios = new Button();
+            btnRenCaixasFios = new Button();
+            btnInsertCaixasFios = new Button();
+            btnDelNotasFiscais = new Button();
+            btnRenNotasFiscais = new Button();
+            btnInsertNotasFiscais = new Button();
+            btnDelSaldosEstoque = new Button();
+            btnRenSaldosEstoque = new Button();
+            btnInsertSaldosEstoque = new Button();
+            btnDelEstoqueRolos = new Button();
+            btnRenEstoqueRolos = new Button();
+            btnInsertEstoqueRolos = new Button();
+            btnDelComercialVendas = new Button();
+            btnRenComercialVendas = new Button();
+            btnInsertComercialVendas = new Button();
+            btnDelPosicaoOps = new Button();
+            btnRenPosicaoOps = new Button();
+            btnInsertPosicaoOps = new Button();
+            btnDelRecebimentos = new Button();
+            btnRenRecebimentos = new Button();
+            btnInsertRecebimentos = new Button();
+            btnDelPedidoCompra = new Button();
+            btnRenPedidoCompra = new Button();
+            btnInsertPedidoCompra = new Button();
+            btnDelFinanceiroContasPagarGIJOE = new Button();
+            btnRenFinanceiroContasPagarGIJOE = new Button();
+            btnInsertFinanceiroContasPagarGIJOE = new Button();
+            btnInsertDadosTeares = new Button();
+            btnRenDadosTeares = new Button();
+            btnDelDadosTeares = new Button();
+            SuspendLayout();
             // 
             // btnShiftReport
             // 
-            this.btnShiftReport.BackColor = System.Drawing.Color.LightSkyBlue;
-            this.btnShiftReport.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnShiftReport.ForeColor = System.Drawing.Color.DimGray;
-            this.btnShiftReport.Location = new System.Drawing.Point(13, 87);
-            this.btnShiftReport.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.btnShiftReport.Name = "btnShiftReport";
-            this.btnShiftReport.Size = new System.Drawing.Size(211, 47);
-            this.btnShiftReport.TabIndex = 0;
-            this.btnShiftReport.Text = "Insert ShiftReport";
-            this.btnShiftReport.UseVisualStyleBackColor = false;
-            this.btnShiftReport.Click += new System.EventHandler(this.btnShiftReport_Click);
+            btnShiftReport.BackColor = Color.LightSkyBlue;
+            btnShiftReport.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            btnShiftReport.ForeColor = Color.DimGray;
+            btnShiftReport.Location = new Point(13, 87);
+            btnShiftReport.Margin = new Padding(2, 3, 2, 3);
+            btnShiftReport.Name = "btnShiftReport";
+            btnShiftReport.Size = new Size(211, 47);
+            btnShiftReport.TabIndex = 0;
+            btnShiftReport.Text = "Insert ShiftReport";
+            btnShiftReport.UseVisualStyleBackColor = false;
+            btnShiftReport.Click += btnShiftReport_Click;
             // 
             // btnProduction
             // 
-            this.btnProduction.BackColor = System.Drawing.Color.Tan;
-            this.btnProduction.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnProduction.ForeColor = System.Drawing.Color.DimGray;
-            this.btnProduction.Location = new System.Drawing.Point(228, 87);
-            this.btnProduction.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.btnProduction.Name = "btnProduction";
-            this.btnProduction.Size = new System.Drawing.Size(209, 47);
-            this.btnProduction.TabIndex = 1;
-            this.btnProduction.Text = "Insert Production";
-            this.btnProduction.UseVisualStyleBackColor = false;
-            this.btnProduction.Click += new System.EventHandler(this.btnProduction_Click);
+            btnProduction.BackColor = Color.Tan;
+            btnProduction.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            btnProduction.ForeColor = Color.DimGray;
+            btnProduction.Location = new Point(228, 87);
+            btnProduction.Margin = new Padding(2, 3, 2, 3);
+            btnProduction.Name = "btnProduction";
+            btnProduction.Size = new Size(209, 47);
+            btnProduction.TabIndex = 1;
+            btnProduction.Text = "Insert Production";
+            btnProduction.UseVisualStyleBackColor = false;
+            btnProduction.Click += btnProduction_Click;
             // 
             // btnRenProduction
             // 
-            this.btnRenProduction.BackColor = System.Drawing.Color.Tan;
-            this.btnRenProduction.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnRenProduction.ForeColor = System.Drawing.Color.DimGray;
-            this.btnRenProduction.Location = new System.Drawing.Point(228, 35);
-            this.btnRenProduction.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.btnRenProduction.Name = "btnRenProduction";
-            this.btnRenProduction.Size = new System.Drawing.Size(209, 47);
-            this.btnRenProduction.TabIndex = 2;
-            this.btnRenProduction.Text = "Ren Mov Production";
-            this.btnRenProduction.UseVisualStyleBackColor = false;
-            this.btnRenProduction.Click += new System.EventHandler(this.btnRenProduction_Click);
+            btnRenProduction.BackColor = Color.Tan;
+            btnRenProduction.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            btnRenProduction.ForeColor = Color.DimGray;
+            btnRenProduction.Location = new Point(228, 35);
+            btnRenProduction.Margin = new Padding(2, 3, 2, 3);
+            btnRenProduction.Name = "btnRenProduction";
+            btnRenProduction.Size = new Size(209, 47);
+            btnRenProduction.TabIndex = 2;
+            btnRenProduction.Text = "Ren Mov Production";
+            btnRenProduction.UseVisualStyleBackColor = false;
+            btnRenProduction.Click += btnRenProduction_Click;
             // 
             // btnRenShiftReport
             // 
-            this.btnRenShiftReport.BackColor = System.Drawing.Color.LightSkyBlue;
-            this.btnRenShiftReport.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnRenShiftReport.ForeColor = System.Drawing.Color.DimGray;
-            this.btnRenShiftReport.Location = new System.Drawing.Point(13, 35);
-            this.btnRenShiftReport.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.btnRenShiftReport.Name = "btnRenShiftReport";
-            this.btnRenShiftReport.Size = new System.Drawing.Size(211, 47);
-            this.btnRenShiftReport.TabIndex = 3;
-            this.btnRenShiftReport.Text = "Ren Mov ShiftReport";
-            this.btnRenShiftReport.UseVisualStyleBackColor = false;
-            this.btnRenShiftReport.Click += new System.EventHandler(this.btnRenShiftReport_Click);
+            btnRenShiftReport.BackColor = Color.LightSkyBlue;
+            btnRenShiftReport.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            btnRenShiftReport.ForeColor = Color.DimGray;
+            btnRenShiftReport.Location = new Point(13, 35);
+            btnRenShiftReport.Margin = new Padding(2, 3, 2, 3);
+            btnRenShiftReport.Name = "btnRenShiftReport";
+            btnRenShiftReport.Size = new Size(211, 47);
+            btnRenShiftReport.TabIndex = 3;
+            btnRenShiftReport.Text = "Ren Mov ShiftReport";
+            btnRenShiftReport.UseVisualStyleBackColor = false;
+            btnRenShiftReport.Click += btnRenShiftReport_Click;
             // 
             // btnDelProduction
             // 
-            this.btnDelProduction.BackColor = System.Drawing.Color.Tan;
-            this.btnDelProduction.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnDelProduction.ForeColor = System.Drawing.Color.DimGray;
-            this.btnDelProduction.Location = new System.Drawing.Point(228, 139);
-            this.btnDelProduction.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.btnDelProduction.Name = "btnDelProduction";
-            this.btnDelProduction.Size = new System.Drawing.Size(209, 49);
-            this.btnDelProduction.TabIndex = 5;
-            this.btnDelProduction.Text = "Del Production";
-            this.btnDelProduction.UseVisualStyleBackColor = false;
-            this.btnDelProduction.Click += new System.EventHandler(this.btnDelProduction_Click);
+            btnDelProduction.BackColor = Color.Tan;
+            btnDelProduction.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            btnDelProduction.ForeColor = Color.DimGray;
+            btnDelProduction.Location = new Point(228, 139);
+            btnDelProduction.Margin = new Padding(2, 3, 2, 3);
+            btnDelProduction.Name = "btnDelProduction";
+            btnDelProduction.Size = new Size(209, 49);
+            btnDelProduction.TabIndex = 5;
+            btnDelProduction.Text = "Del Production";
+            btnDelProduction.UseVisualStyleBackColor = false;
+            btnDelProduction.Click += btnDelProduction_Click;
             // 
             // btnLerDisplayOperacao
             // 
-            this.btnLerDisplayOperacao.BackColor = System.Drawing.Color.Salmon;
-            this.btnLerDisplayOperacao.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnLerDisplayOperacao.ForeColor = System.Drawing.Color.DimGray;
-            this.btnLerDisplayOperacao.Location = new System.Drawing.Point(443, 86);
-            this.btnLerDisplayOperacao.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btnLerDisplayOperacao.Name = "btnLerDisplayOperacao";
-            this.btnLerDisplayOperacao.Size = new System.Drawing.Size(208, 47);
-            this.btnLerDisplayOperacao.TabIndex = 6;
-            this.btnLerDisplayOperacao.Text = "Ler DisplayOperacao";
-            this.btnLerDisplayOperacao.UseVisualStyleBackColor = false;
-            this.btnLerDisplayOperacao.Click += new System.EventHandler(this.btnLerDisplayOperacao_Click);
+            btnLerDisplayOperacao.BackColor = Color.Salmon;
+            btnLerDisplayOperacao.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            btnLerDisplayOperacao.ForeColor = Color.DimGray;
+            btnLerDisplayOperacao.Location = new Point(443, 86);
+            btnLerDisplayOperacao.Margin = new Padding(3, 4, 3, 4);
+            btnLerDisplayOperacao.Name = "btnLerDisplayOperacao";
+            btnLerDisplayOperacao.Size = new Size(208, 47);
+            btnLerDisplayOperacao.TabIndex = 6;
+            btnLerDisplayOperacao.Text = "Ler DisplayOperacao";
+            btnLerDisplayOperacao.UseVisualStyleBackColor = false;
+            btnLerDisplayOperacao.Click += btnLerDisplayOperacao_Click;
             // 
             // btnCopyDisplayOperacao
             // 
-            this.btnCopyDisplayOperacao.BackColor = System.Drawing.Color.Salmon;
-            this.btnCopyDisplayOperacao.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnCopyDisplayOperacao.ForeColor = System.Drawing.Color.DimGray;
-            this.btnCopyDisplayOperacao.Location = new System.Drawing.Point(443, 35);
-            this.btnCopyDisplayOperacao.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btnCopyDisplayOperacao.Name = "btnCopyDisplayOperacao";
-            this.btnCopyDisplayOperacao.Size = new System.Drawing.Size(208, 47);
-            this.btnCopyDisplayOperacao.TabIndex = 7;
-            this.btnCopyDisplayOperacao.Text = "Copiar DisplayOperacao";
-            this.btnCopyDisplayOperacao.UseVisualStyleBackColor = false;
-            this.btnCopyDisplayOperacao.Click += new System.EventHandler(this.btnCopyDisplayOperacao_Click);
+            btnCopyDisplayOperacao.BackColor = Color.Salmon;
+            btnCopyDisplayOperacao.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            btnCopyDisplayOperacao.ForeColor = Color.DimGray;
+            btnCopyDisplayOperacao.Location = new Point(443, 35);
+            btnCopyDisplayOperacao.Margin = new Padding(3, 4, 3, 4);
+            btnCopyDisplayOperacao.Name = "btnCopyDisplayOperacao";
+            btnCopyDisplayOperacao.Size = new Size(208, 47);
+            btnCopyDisplayOperacao.TabIndex = 7;
+            btnCopyDisplayOperacao.Text = "Copiar DisplayOperacao";
+            btnCopyDisplayOperacao.UseVisualStyleBackColor = false;
+            btnCopyDisplayOperacao.Click += btnCopyDisplayOperacao_Click;
             // 
             // btnInsertDisplayOperacao
             // 
-            this.btnInsertDisplayOperacao.BackColor = System.Drawing.Color.Salmon;
-            this.btnInsertDisplayOperacao.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnInsertDisplayOperacao.ForeColor = System.Drawing.Color.DimGray;
-            this.btnInsertDisplayOperacao.Location = new System.Drawing.Point(443, 140);
-            this.btnInsertDisplayOperacao.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btnInsertDisplayOperacao.Name = "btnInsertDisplayOperacao";
-            this.btnInsertDisplayOperacao.Size = new System.Drawing.Size(208, 47);
-            this.btnInsertDisplayOperacao.TabIndex = 8;
-            this.btnInsertDisplayOperacao.Text = "Insert DisplayOperacao";
-            this.btnInsertDisplayOperacao.UseVisualStyleBackColor = false;
-            this.btnInsertDisplayOperacao.Click += new System.EventHandler(this.btnInsertDisplayOperacao_Click);
+            btnInsertDisplayOperacao.BackColor = Color.Salmon;
+            btnInsertDisplayOperacao.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            btnInsertDisplayOperacao.ForeColor = Color.DimGray;
+            btnInsertDisplayOperacao.Location = new Point(443, 140);
+            btnInsertDisplayOperacao.Margin = new Padding(3, 4, 3, 4);
+            btnInsertDisplayOperacao.Name = "btnInsertDisplayOperacao";
+            btnInsertDisplayOperacao.Size = new Size(208, 47);
+            btnInsertDisplayOperacao.TabIndex = 8;
+            btnInsertDisplayOperacao.Text = "Insert DisplayOperacao";
+            btnInsertDisplayOperacao.UseVisualStyleBackColor = false;
+            btnInsertDisplayOperacao.Click += btnInsertDisplayOperacao_Click;
             // 
             // btnDelShiftReport
             // 
-            this.btnDelShiftReport.BackColor = System.Drawing.Color.LightSkyBlue;
-            this.btnDelShiftReport.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnDelShiftReport.ForeColor = System.Drawing.Color.DimGray;
-            this.btnDelShiftReport.Location = new System.Drawing.Point(13, 139);
-            this.btnDelShiftReport.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.btnDelShiftReport.Name = "btnDelShiftReport";
-            this.btnDelShiftReport.Size = new System.Drawing.Size(211, 47);
-            this.btnDelShiftReport.TabIndex = 9;
-            this.btnDelShiftReport.Text = "Del ShiftReport";
-            this.btnDelShiftReport.UseVisualStyleBackColor = false;
-            this.btnDelShiftReport.Click += new System.EventHandler(this.btnDelShiftReport_Click);
+            btnDelShiftReport.BackColor = Color.LightSkyBlue;
+            btnDelShiftReport.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            btnDelShiftReport.ForeColor = Color.DimGray;
+            btnDelShiftReport.Location = new Point(13, 139);
+            btnDelShiftReport.Margin = new Padding(2, 3, 2, 3);
+            btnDelShiftReport.Name = "btnDelShiftReport";
+            btnDelShiftReport.Size = new Size(211, 47);
+            btnDelShiftReport.TabIndex = 9;
+            btnDelShiftReport.Text = "Del ShiftReport";
+            btnDelShiftReport.UseVisualStyleBackColor = false;
+            btnDelShiftReport.Click += btnDelShiftReport_Click;
             // 
             // timerWebScrapingGeral
             // 
-            this.timerWebScrapingGeral.Interval = 60000;
-            this.timerWebScrapingGeral.Tick += new System.EventHandler(this.timerWebScrapingGeral_Tick);
+            timerWebScrapingGeral.Interval = 60000;
+            timerWebScrapingGeral.Tick += timerWebScrapingGeral_Tick;
             // 
             // btnDelContasReceber
             // 
-            this.btnDelContasReceber.BackColor = System.Drawing.Color.LightSkyBlue;
-            this.btnDelContasReceber.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnDelContasReceber.ForeColor = System.Drawing.Color.DimGray;
-            this.btnDelContasReceber.Location = new System.Drawing.Point(11, 491);
-            this.btnDelContasReceber.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.btnDelContasReceber.Name = "btnDelContasReceber";
-            this.btnDelContasReceber.Size = new System.Drawing.Size(210, 49);
-            this.btnDelContasReceber.TabIndex = 13;
-            this.btnDelContasReceber.Text = "Del Contas a Receber";
-            this.btnDelContasReceber.UseVisualStyleBackColor = false;
-            this.btnDelContasReceber.Click += new System.EventHandler(this.btnDelContasReceber_Click);
+            btnDelContasReceber.BackColor = Color.LightSkyBlue;
+            btnDelContasReceber.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            btnDelContasReceber.ForeColor = Color.DimGray;
+            btnDelContasReceber.Location = new Point(11, 491);
+            btnDelContasReceber.Margin = new Padding(2, 3, 2, 3);
+            btnDelContasReceber.Name = "btnDelContasReceber";
+            btnDelContasReceber.Size = new Size(210, 49);
+            btnDelContasReceber.TabIndex = 13;
+            btnDelContasReceber.Text = "Del Contas a Receber";
+            btnDelContasReceber.UseVisualStyleBackColor = false;
+            btnDelContasReceber.Click += btnDelContasReceber_Click;
             // 
             // btnRenContasReceber
             // 
-            this.btnRenContasReceber.BackColor = System.Drawing.Color.LightSkyBlue;
-            this.btnRenContasReceber.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnRenContasReceber.ForeColor = System.Drawing.Color.DimGray;
-            this.btnRenContasReceber.Location = new System.Drawing.Point(11, 387);
-            this.btnRenContasReceber.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.btnRenContasReceber.Name = "btnRenContasReceber";
-            this.btnRenContasReceber.Size = new System.Drawing.Size(210, 47);
-            this.btnRenContasReceber.TabIndex = 12;
-            this.btnRenContasReceber.Text = "Ren Mov Contas a Receber";
-            this.btnRenContasReceber.UseVisualStyleBackColor = false;
-            this.btnRenContasReceber.Click += new System.EventHandler(this.btnRenContasReceber_Click);
+            btnRenContasReceber.BackColor = Color.LightSkyBlue;
+            btnRenContasReceber.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            btnRenContasReceber.ForeColor = Color.DimGray;
+            btnRenContasReceber.Location = new Point(11, 387);
+            btnRenContasReceber.Margin = new Padding(2, 3, 2, 3);
+            btnRenContasReceber.Name = "btnRenContasReceber";
+            btnRenContasReceber.Size = new Size(210, 47);
+            btnRenContasReceber.TabIndex = 12;
+            btnRenContasReceber.Text = "Ren Mov Contas a Receber";
+            btnRenContasReceber.UseVisualStyleBackColor = false;
+            btnRenContasReceber.Click += btnRenContasReceber_Click;
             // 
             // btnInsertContasReceber
             // 
-            this.btnInsertContasReceber.BackColor = System.Drawing.Color.LightSkyBlue;
-            this.btnInsertContasReceber.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnInsertContasReceber.ForeColor = System.Drawing.Color.DimGray;
-            this.btnInsertContasReceber.Location = new System.Drawing.Point(11, 439);
-            this.btnInsertContasReceber.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.btnInsertContasReceber.Name = "btnInsertContasReceber";
-            this.btnInsertContasReceber.Size = new System.Drawing.Size(210, 47);
-            this.btnInsertContasReceber.TabIndex = 11;
-            this.btnInsertContasReceber.Text = "Insert Contas a Receber";
-            this.btnInsertContasReceber.UseVisualStyleBackColor = false;
-            this.btnInsertContasReceber.Click += new System.EventHandler(this.btnInsertContasReceber_Click);
+            btnInsertContasReceber.BackColor = Color.LightSkyBlue;
+            btnInsertContasReceber.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            btnInsertContasReceber.ForeColor = Color.DimGray;
+            btnInsertContasReceber.Location = new Point(11, 439);
+            btnInsertContasReceber.Margin = new Padding(2, 3, 2, 3);
+            btnInsertContasReceber.Name = "btnInsertContasReceber";
+            btnInsertContasReceber.Size = new Size(210, 47);
+            btnInsertContasReceber.TabIndex = 11;
+            btnInsertContasReceber.Text = "Insert Contas a Receber";
+            btnInsertContasReceber.UseVisualStyleBackColor = false;
+            btnInsertContasReceber.Click += btnInsertContasReceber_Click;
             // 
             // btnDelContasPagar
             // 
-            this.btnDelContasPagar.BackColor = System.Drawing.Color.Tan;
-            this.btnDelContasPagar.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnDelContasPagar.ForeColor = System.Drawing.Color.DimGray;
-            this.btnDelContasPagar.Location = new System.Drawing.Point(225, 491);
-            this.btnDelContasPagar.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.btnDelContasPagar.Name = "btnDelContasPagar";
-            this.btnDelContasPagar.Size = new System.Drawing.Size(210, 49);
-            this.btnDelContasPagar.TabIndex = 16;
-            this.btnDelContasPagar.Text = "Del Contas a Pagar";
-            this.btnDelContasPagar.UseVisualStyleBackColor = false;
-            this.btnDelContasPagar.Click += new System.EventHandler(this.btnDelContasPagar_Click);
+            btnDelContasPagar.BackColor = Color.Tan;
+            btnDelContasPagar.Font = new Font("Microsoft Sans Serif", 7.8F, FontStyle.Bold, GraphicsUnit.Point);
+            btnDelContasPagar.ForeColor = Color.DimGray;
+            btnDelContasPagar.Location = new Point(225, 491);
+            btnDelContasPagar.Margin = new Padding(2, 3, 2, 3);
+            btnDelContasPagar.Name = "btnDelContasPagar";
+            btnDelContasPagar.Size = new Size(210, 49);
+            btnDelContasPagar.TabIndex = 16;
+            btnDelContasPagar.Text = "Del Contas a Pagar";
+            btnDelContasPagar.UseVisualStyleBackColor = false;
+            btnDelContasPagar.Click += btnDelContasPagar_Click;
             // 
             // btnRenContasPagar
             // 
-            this.btnRenContasPagar.BackColor = System.Drawing.Color.Tan;
-            this.btnRenContasPagar.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnRenContasPagar.ForeColor = System.Drawing.Color.DimGray;
-            this.btnRenContasPagar.Location = new System.Drawing.Point(225, 387);
-            this.btnRenContasPagar.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.btnRenContasPagar.Name = "btnRenContasPagar";
-            this.btnRenContasPagar.Size = new System.Drawing.Size(210, 47);
-            this.btnRenContasPagar.TabIndex = 15;
-            this.btnRenContasPagar.Text = "Ren Mov Contas a Pagar";
-            this.btnRenContasPagar.UseVisualStyleBackColor = false;
-            this.btnRenContasPagar.Click += new System.EventHandler(this.btnRenContasPagar_Click);
+            btnRenContasPagar.BackColor = Color.Tan;
+            btnRenContasPagar.Font = new Font("Microsoft Sans Serif", 7.8F, FontStyle.Bold, GraphicsUnit.Point);
+            btnRenContasPagar.ForeColor = Color.DimGray;
+            btnRenContasPagar.Location = new Point(225, 387);
+            btnRenContasPagar.Margin = new Padding(2, 3, 2, 3);
+            btnRenContasPagar.Name = "btnRenContasPagar";
+            btnRenContasPagar.Size = new Size(210, 47);
+            btnRenContasPagar.TabIndex = 15;
+            btnRenContasPagar.Text = "Ren Mov Contas a Pagar";
+            btnRenContasPagar.UseVisualStyleBackColor = false;
+            btnRenContasPagar.Click += btnRenContasPagar_Click;
             // 
             // btnInsertContasPagar
             // 
-            this.btnInsertContasPagar.BackColor = System.Drawing.Color.Tan;
-            this.btnInsertContasPagar.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnInsertContasPagar.ForeColor = System.Drawing.Color.DimGray;
-            this.btnInsertContasPagar.Location = new System.Drawing.Point(225, 439);
-            this.btnInsertContasPagar.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.btnInsertContasPagar.Name = "btnInsertContasPagar";
-            this.btnInsertContasPagar.Size = new System.Drawing.Size(210, 47);
-            this.btnInsertContasPagar.TabIndex = 14;
-            this.btnInsertContasPagar.Text = "Insert Contas a Pagar";
-            this.btnInsertContasPagar.UseVisualStyleBackColor = false;
-            this.btnInsertContasPagar.Click += new System.EventHandler(this.btnInsertContasPagar_Click);
+            btnInsertContasPagar.BackColor = Color.Tan;
+            btnInsertContasPagar.Font = new Font("Microsoft Sans Serif", 7.8F, FontStyle.Bold, GraphicsUnit.Point);
+            btnInsertContasPagar.ForeColor = Color.DimGray;
+            btnInsertContasPagar.Location = new Point(225, 439);
+            btnInsertContasPagar.Margin = new Padding(2, 3, 2, 3);
+            btnInsertContasPagar.Name = "btnInsertContasPagar";
+            btnInsertContasPagar.Size = new Size(210, 47);
+            btnInsertContasPagar.TabIndex = 14;
+            btnInsertContasPagar.Text = "Insert Contas a Pagar";
+            btnInsertContasPagar.UseVisualStyleBackColor = false;
+            btnInsertContasPagar.Click += btnInsertContasPagar_Click;
             // 
             // btnDelContasPagas
             // 
-            this.btnDelContasPagas.BackColor = System.Drawing.Color.Tan;
-            this.btnDelContasPagas.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnDelContasPagas.ForeColor = System.Drawing.Color.DimGray;
-            this.btnDelContasPagas.Location = new System.Drawing.Point(223, 668);
-            this.btnDelContasPagas.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.btnDelContasPagas.Name = "btnDelContasPagas";
-            this.btnDelContasPagas.Size = new System.Drawing.Size(210, 49);
-            this.btnDelContasPagas.TabIndex = 19;
-            this.btnDelContasPagas.Text = "Del Contas a Pagas";
-            this.btnDelContasPagas.UseVisualStyleBackColor = false;
-            this.btnDelContasPagas.Click += new System.EventHandler(this.btnDelContasPagas_Click);
+            btnDelContasPagas.BackColor = Color.Tan;
+            btnDelContasPagas.Font = new Font("Microsoft Sans Serif", 7.8F, FontStyle.Bold, GraphicsUnit.Point);
+            btnDelContasPagas.ForeColor = Color.DimGray;
+            btnDelContasPagas.Location = new Point(223, 668);
+            btnDelContasPagas.Margin = new Padding(2, 3, 2, 3);
+            btnDelContasPagas.Name = "btnDelContasPagas";
+            btnDelContasPagas.Size = new Size(210, 49);
+            btnDelContasPagas.TabIndex = 19;
+            btnDelContasPagas.Text = "Del Contas a Pagas";
+            btnDelContasPagas.UseVisualStyleBackColor = false;
+            btnDelContasPagas.Click += btnDelContasPagas_Click;
             // 
             // btnRenContasPagas
             // 
-            this.btnRenContasPagas.BackColor = System.Drawing.Color.Tan;
-            this.btnRenContasPagas.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnRenContasPagas.ForeColor = System.Drawing.Color.DimGray;
-            this.btnRenContasPagas.Location = new System.Drawing.Point(223, 564);
-            this.btnRenContasPagas.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.btnRenContasPagas.Name = "btnRenContasPagas";
-            this.btnRenContasPagas.Size = new System.Drawing.Size(210, 47);
-            this.btnRenContasPagas.TabIndex = 18;
-            this.btnRenContasPagas.Text = "Ren Mov Contas a Pagas";
-            this.btnRenContasPagas.UseVisualStyleBackColor = false;
-            this.btnRenContasPagas.Click += new System.EventHandler(this.btnRenContasPagas_Click);
+            btnRenContasPagas.BackColor = Color.Tan;
+            btnRenContasPagas.Font = new Font("Microsoft Sans Serif", 7.8F, FontStyle.Bold, GraphicsUnit.Point);
+            btnRenContasPagas.ForeColor = Color.DimGray;
+            btnRenContasPagas.Location = new Point(223, 564);
+            btnRenContasPagas.Margin = new Padding(2, 3, 2, 3);
+            btnRenContasPagas.Name = "btnRenContasPagas";
+            btnRenContasPagas.Size = new Size(210, 47);
+            btnRenContasPagas.TabIndex = 18;
+            btnRenContasPagas.Text = "Ren Mov Contas a Pagas";
+            btnRenContasPagas.UseVisualStyleBackColor = false;
+            btnRenContasPagas.Click += btnRenContasPagas_Click;
             // 
             // btnInsertContasPagas
             // 
-            this.btnInsertContasPagas.BackColor = System.Drawing.Color.Tan;
-            this.btnInsertContasPagas.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnInsertContasPagas.ForeColor = System.Drawing.Color.DimGray;
-            this.btnInsertContasPagas.Location = new System.Drawing.Point(223, 617);
-            this.btnInsertContasPagas.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.btnInsertContasPagas.Name = "btnInsertContasPagas";
-            this.btnInsertContasPagas.Size = new System.Drawing.Size(210, 47);
-            this.btnInsertContasPagas.TabIndex = 17;
-            this.btnInsertContasPagas.Text = "Insert Contas a Pagas";
-            this.btnInsertContasPagas.UseVisualStyleBackColor = false;
-            this.btnInsertContasPagas.Click += new System.EventHandler(this.btnInsertContasPagas_Click);
+            btnInsertContasPagas.BackColor = Color.Tan;
+            btnInsertContasPagas.Font = new Font("Microsoft Sans Serif", 7.8F, FontStyle.Bold, GraphicsUnit.Point);
+            btnInsertContasPagas.ForeColor = Color.DimGray;
+            btnInsertContasPagas.Location = new Point(223, 617);
+            btnInsertContasPagas.Margin = new Padding(2, 3, 2, 3);
+            btnInsertContasPagas.Name = "btnInsertContasPagas";
+            btnInsertContasPagas.Size = new Size(210, 47);
+            btnInsertContasPagas.TabIndex = 17;
+            btnInsertContasPagas.Text = "Insert Contas a Pagas";
+            btnInsertContasPagas.UseVisualStyleBackColor = false;
+            btnInsertContasPagas.Click += btnInsertContasPagas_Click;
             // 
             // btnDelCaixasFios
             // 
-            this.btnDelCaixasFios.BackColor = System.Drawing.Color.Aquamarine;
-            this.btnDelCaixasFios.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnDelCaixasFios.ForeColor = System.Drawing.Color.DimGray;
-            this.btnDelCaixasFios.Location = new System.Drawing.Point(655, 314);
-            this.btnDelCaixasFios.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.btnDelCaixasFios.Name = "btnDelCaixasFios";
-            this.btnDelCaixasFios.Size = new System.Drawing.Size(210, 49);
-            this.btnDelCaixasFios.TabIndex = 22;
-            this.btnDelCaixasFios.Text = "Del Caixas fios";
-            this.btnDelCaixasFios.UseVisualStyleBackColor = false;
-            this.btnDelCaixasFios.Click += new System.EventHandler(this.btnDelCaixasFios_Click);
+            btnDelCaixasFios.BackColor = Color.Aquamarine;
+            btnDelCaixasFios.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            btnDelCaixasFios.ForeColor = Color.DimGray;
+            btnDelCaixasFios.Location = new Point(655, 314);
+            btnDelCaixasFios.Margin = new Padding(2, 3, 2, 3);
+            btnDelCaixasFios.Name = "btnDelCaixasFios";
+            btnDelCaixasFios.Size = new Size(210, 49);
+            btnDelCaixasFios.TabIndex = 22;
+            btnDelCaixasFios.Text = "Del Caixas fios";
+            btnDelCaixasFios.UseVisualStyleBackColor = false;
+            btnDelCaixasFios.Click += btnDelCaixasFios_Click;
             // 
             // btnRenCaixasFios
             // 
-            this.btnRenCaixasFios.BackColor = System.Drawing.Color.Aquamarine;
-            this.btnRenCaixasFios.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnRenCaixasFios.ForeColor = System.Drawing.Color.DimGray;
-            this.btnRenCaixasFios.Location = new System.Drawing.Point(655, 210);
-            this.btnRenCaixasFios.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.btnRenCaixasFios.Name = "btnRenCaixasFios";
-            this.btnRenCaixasFios.Size = new System.Drawing.Size(210, 47);
-            this.btnRenCaixasFios.TabIndex = 21;
-            this.btnRenCaixasFios.Text = "Ren Mov Caixas fios";
-            this.btnRenCaixasFios.UseVisualStyleBackColor = false;
-            this.btnRenCaixasFios.Click += new System.EventHandler(this.btnRenCaixasFios_Click);
+            btnRenCaixasFios.BackColor = Color.Aquamarine;
+            btnRenCaixasFios.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            btnRenCaixasFios.ForeColor = Color.DimGray;
+            btnRenCaixasFios.Location = new Point(655, 210);
+            btnRenCaixasFios.Margin = new Padding(2, 3, 2, 3);
+            btnRenCaixasFios.Name = "btnRenCaixasFios";
+            btnRenCaixasFios.Size = new Size(210, 47);
+            btnRenCaixasFios.TabIndex = 21;
+            btnRenCaixasFios.Text = "Ren Mov Caixas fios";
+            btnRenCaixasFios.UseVisualStyleBackColor = false;
+            btnRenCaixasFios.Click += btnRenCaixasFios_Click;
             // 
             // btnInsertCaixasFios
             // 
-            this.btnInsertCaixasFios.BackColor = System.Drawing.Color.Aquamarine;
-            this.btnInsertCaixasFios.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnInsertCaixasFios.ForeColor = System.Drawing.Color.DimGray;
-            this.btnInsertCaixasFios.Location = new System.Drawing.Point(655, 263);
-            this.btnInsertCaixasFios.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.btnInsertCaixasFios.Name = "btnInsertCaixasFios";
-            this.btnInsertCaixasFios.Size = new System.Drawing.Size(210, 47);
-            this.btnInsertCaixasFios.TabIndex = 20;
-            this.btnInsertCaixasFios.Text = "Insert Caixas fios";
-            this.btnInsertCaixasFios.UseVisualStyleBackColor = false;
-            this.btnInsertCaixasFios.Click += new System.EventHandler(this.btnInsertCaixasFios_Click);
+            btnInsertCaixasFios.BackColor = Color.Aquamarine;
+            btnInsertCaixasFios.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            btnInsertCaixasFios.ForeColor = Color.DimGray;
+            btnInsertCaixasFios.Location = new Point(655, 263);
+            btnInsertCaixasFios.Margin = new Padding(2, 3, 2, 3);
+            btnInsertCaixasFios.Name = "btnInsertCaixasFios";
+            btnInsertCaixasFios.Size = new Size(210, 47);
+            btnInsertCaixasFios.TabIndex = 20;
+            btnInsertCaixasFios.Text = "Insert Caixas fios";
+            btnInsertCaixasFios.UseVisualStyleBackColor = false;
+            btnInsertCaixasFios.Click += btnInsertCaixasFios_Click;
             // 
             // btnDelNotasFiscais
             // 
-            this.btnDelNotasFiscais.BackColor = System.Drawing.Color.LightSkyBlue;
-            this.btnDelNotasFiscais.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnDelNotasFiscais.ForeColor = System.Drawing.Color.DimGray;
-            this.btnDelNotasFiscais.Location = new System.Drawing.Point(11, 314);
-            this.btnDelNotasFiscais.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.btnDelNotasFiscais.Name = "btnDelNotasFiscais";
-            this.btnDelNotasFiscais.Size = new System.Drawing.Size(210, 49);
-            this.btnDelNotasFiscais.TabIndex = 25;
-            this.btnDelNotasFiscais.Text = "Del Notas Fiscais";
-            this.btnDelNotasFiscais.UseVisualStyleBackColor = false;
-            this.btnDelNotasFiscais.Click += new System.EventHandler(this.btnDelNotasFiscais_Click);
+            btnDelNotasFiscais.BackColor = Color.LightSkyBlue;
+            btnDelNotasFiscais.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            btnDelNotasFiscais.ForeColor = Color.DimGray;
+            btnDelNotasFiscais.Location = new Point(11, 314);
+            btnDelNotasFiscais.Margin = new Padding(2, 3, 2, 3);
+            btnDelNotasFiscais.Name = "btnDelNotasFiscais";
+            btnDelNotasFiscais.Size = new Size(210, 49);
+            btnDelNotasFiscais.TabIndex = 25;
+            btnDelNotasFiscais.Text = "Del Notas Fiscais";
+            btnDelNotasFiscais.UseVisualStyleBackColor = false;
+            btnDelNotasFiscais.Click += btnDelNotasFiscais_Click;
             // 
             // btnRenNotasFiscais
             // 
-            this.btnRenNotasFiscais.BackColor = System.Drawing.Color.LightSkyBlue;
-            this.btnRenNotasFiscais.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnRenNotasFiscais.ForeColor = System.Drawing.Color.DimGray;
-            this.btnRenNotasFiscais.Location = new System.Drawing.Point(11, 210);
-            this.btnRenNotasFiscais.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.btnRenNotasFiscais.Name = "btnRenNotasFiscais";
-            this.btnRenNotasFiscais.Size = new System.Drawing.Size(210, 47);
-            this.btnRenNotasFiscais.TabIndex = 24;
-            this.btnRenNotasFiscais.Text = "Ren Mov Notas Ficais";
-            this.btnRenNotasFiscais.UseVisualStyleBackColor = false;
-            this.btnRenNotasFiscais.Click += new System.EventHandler(this.btnRenNotasFiscais_Click);
+            btnRenNotasFiscais.BackColor = Color.LightSkyBlue;
+            btnRenNotasFiscais.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            btnRenNotasFiscais.ForeColor = Color.DimGray;
+            btnRenNotasFiscais.Location = new Point(11, 210);
+            btnRenNotasFiscais.Margin = new Padding(2, 3, 2, 3);
+            btnRenNotasFiscais.Name = "btnRenNotasFiscais";
+            btnRenNotasFiscais.Size = new Size(210, 47);
+            btnRenNotasFiscais.TabIndex = 24;
+            btnRenNotasFiscais.Text = "Ren Mov Notas Ficais";
+            btnRenNotasFiscais.UseVisualStyleBackColor = false;
+            btnRenNotasFiscais.Click += btnRenNotasFiscais_Click;
             // 
             // btnInsertNotasFiscais
             // 
-            this.btnInsertNotasFiscais.BackColor = System.Drawing.Color.LightSkyBlue;
-            this.btnInsertNotasFiscais.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnInsertNotasFiscais.ForeColor = System.Drawing.Color.DimGray;
-            this.btnInsertNotasFiscais.Location = new System.Drawing.Point(11, 263);
-            this.btnInsertNotasFiscais.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.btnInsertNotasFiscais.Name = "btnInsertNotasFiscais";
-            this.btnInsertNotasFiscais.Size = new System.Drawing.Size(210, 47);
-            this.btnInsertNotasFiscais.TabIndex = 23;
-            this.btnInsertNotasFiscais.Text = "Insert Notas Fiscais";
-            this.btnInsertNotasFiscais.UseVisualStyleBackColor = false;
-            this.btnInsertNotasFiscais.Click += new System.EventHandler(this.btnInsertNotasFiscais_Click);
+            btnInsertNotasFiscais.BackColor = Color.LightSkyBlue;
+            btnInsertNotasFiscais.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            btnInsertNotasFiscais.ForeColor = Color.DimGray;
+            btnInsertNotasFiscais.Location = new Point(11, 263);
+            btnInsertNotasFiscais.Margin = new Padding(2, 3, 2, 3);
+            btnInsertNotasFiscais.Name = "btnInsertNotasFiscais";
+            btnInsertNotasFiscais.Size = new Size(210, 47);
+            btnInsertNotasFiscais.TabIndex = 23;
+            btnInsertNotasFiscais.Text = "Insert Notas Fiscais";
+            btnInsertNotasFiscais.UseVisualStyleBackColor = false;
+            btnInsertNotasFiscais.Click += btnInsertNotasFiscais_Click;
             // 
             // btnDelSaldosEstoque
             // 
-            this.btnDelSaldosEstoque.BackColor = System.Drawing.Color.Aquamarine;
-            this.btnDelSaldosEstoque.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnDelSaldosEstoque.ForeColor = System.Drawing.Color.DimGray;
-            this.btnDelSaldosEstoque.Location = new System.Drawing.Point(655, 668);
-            this.btnDelSaldosEstoque.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.btnDelSaldosEstoque.Name = "btnDelSaldosEstoque";
-            this.btnDelSaldosEstoque.Size = new System.Drawing.Size(210, 49);
-            this.btnDelSaldosEstoque.TabIndex = 28;
-            this.btnDelSaldosEstoque.Text = "Del Saldos Estoque";
-            this.btnDelSaldosEstoque.UseVisualStyleBackColor = false;
-            this.btnDelSaldosEstoque.Click += new System.EventHandler(this.btnDelSaldosEstoque_Click);
+            btnDelSaldosEstoque.BackColor = Color.Aquamarine;
+            btnDelSaldosEstoque.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            btnDelSaldosEstoque.ForeColor = Color.DimGray;
+            btnDelSaldosEstoque.Location = new Point(655, 668);
+            btnDelSaldosEstoque.Margin = new Padding(2, 3, 2, 3);
+            btnDelSaldosEstoque.Name = "btnDelSaldosEstoque";
+            btnDelSaldosEstoque.Size = new Size(210, 49);
+            btnDelSaldosEstoque.TabIndex = 28;
+            btnDelSaldosEstoque.Text = "Del Saldos Estoque";
+            btnDelSaldosEstoque.UseVisualStyleBackColor = false;
+            btnDelSaldosEstoque.Click += btnDelSaldosEstoque_Click;
             // 
             // btnRenSaldosEstoque
             // 
-            this.btnRenSaldosEstoque.BackColor = System.Drawing.Color.Aquamarine;
-            this.btnRenSaldosEstoque.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnRenSaldosEstoque.ForeColor = System.Drawing.Color.DimGray;
-            this.btnRenSaldosEstoque.Location = new System.Drawing.Point(655, 564);
-            this.btnRenSaldosEstoque.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.btnRenSaldosEstoque.Name = "btnRenSaldosEstoque";
-            this.btnRenSaldosEstoque.Size = new System.Drawing.Size(210, 47);
-            this.btnRenSaldosEstoque.TabIndex = 27;
-            this.btnRenSaldosEstoque.Text = "Ren Mov Saldos Estoque ";
-            this.btnRenSaldosEstoque.UseVisualStyleBackColor = false;
-            this.btnRenSaldosEstoque.Click += new System.EventHandler(this.btnRenSaldosEstoque_Click);
+            btnRenSaldosEstoque.BackColor = Color.Aquamarine;
+            btnRenSaldosEstoque.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            btnRenSaldosEstoque.ForeColor = Color.DimGray;
+            btnRenSaldosEstoque.Location = new Point(655, 564);
+            btnRenSaldosEstoque.Margin = new Padding(2, 3, 2, 3);
+            btnRenSaldosEstoque.Name = "btnRenSaldosEstoque";
+            btnRenSaldosEstoque.Size = new Size(210, 47);
+            btnRenSaldosEstoque.TabIndex = 27;
+            btnRenSaldosEstoque.Text = "Ren Mov Saldos Estoque ";
+            btnRenSaldosEstoque.UseVisualStyleBackColor = false;
+            btnRenSaldosEstoque.Click += btnRenSaldosEstoque_Click;
             // 
             // btnInsertSaldosEstoque
             // 
-            this.btnInsertSaldosEstoque.BackColor = System.Drawing.Color.Aquamarine;
-            this.btnInsertSaldosEstoque.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnInsertSaldosEstoque.ForeColor = System.Drawing.Color.DimGray;
-            this.btnInsertSaldosEstoque.Location = new System.Drawing.Point(655, 617);
-            this.btnInsertSaldosEstoque.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.btnInsertSaldosEstoque.Name = "btnInsertSaldosEstoque";
-            this.btnInsertSaldosEstoque.Size = new System.Drawing.Size(210, 47);
-            this.btnInsertSaldosEstoque.TabIndex = 26;
-            this.btnInsertSaldosEstoque.Text = "Insert Saldos Estoque";
-            this.btnInsertSaldosEstoque.UseVisualStyleBackColor = false;
-            this.btnInsertSaldosEstoque.Click += new System.EventHandler(this.btnInsertSaldosEstoque_Click);
+            btnInsertSaldosEstoque.BackColor = Color.Aquamarine;
+            btnInsertSaldosEstoque.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            btnInsertSaldosEstoque.ForeColor = Color.DimGray;
+            btnInsertSaldosEstoque.Location = new Point(655, 617);
+            btnInsertSaldosEstoque.Margin = new Padding(2, 3, 2, 3);
+            btnInsertSaldosEstoque.Name = "btnInsertSaldosEstoque";
+            btnInsertSaldosEstoque.Size = new Size(210, 47);
+            btnInsertSaldosEstoque.TabIndex = 26;
+            btnInsertSaldosEstoque.Text = "Insert Saldos Estoque";
+            btnInsertSaldosEstoque.UseVisualStyleBackColor = false;
+            btnInsertSaldosEstoque.Click += btnInsertSaldosEstoque_Click;
             // 
             // btnDelEstoqueRolos
             // 
-            this.btnDelEstoqueRolos.BackColor = System.Drawing.Color.Aquamarine;
-            this.btnDelEstoqueRolos.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnDelEstoqueRolos.ForeColor = System.Drawing.Color.DimGray;
-            this.btnDelEstoqueRolos.Location = new System.Drawing.Point(657, 491);
-            this.btnDelEstoqueRolos.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.btnDelEstoqueRolos.Name = "btnDelEstoqueRolos";
-            this.btnDelEstoqueRolos.Size = new System.Drawing.Size(210, 49);
-            this.btnDelEstoqueRolos.TabIndex = 31;
-            this.btnDelEstoqueRolos.Text = "Del Estoque Rolos";
-            this.btnDelEstoqueRolos.UseVisualStyleBackColor = false;
-            this.btnDelEstoqueRolos.Click += new System.EventHandler(this.btnDelEstoqueRolos_Click);
+            btnDelEstoqueRolos.BackColor = Color.Aquamarine;
+            btnDelEstoqueRolos.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            btnDelEstoqueRolos.ForeColor = Color.DimGray;
+            btnDelEstoqueRolos.Location = new Point(657, 491);
+            btnDelEstoqueRolos.Margin = new Padding(2, 3, 2, 3);
+            btnDelEstoqueRolos.Name = "btnDelEstoqueRolos";
+            btnDelEstoqueRolos.Size = new Size(210, 49);
+            btnDelEstoqueRolos.TabIndex = 31;
+            btnDelEstoqueRolos.Text = "Del Estoque Rolos";
+            btnDelEstoqueRolos.UseVisualStyleBackColor = false;
+            btnDelEstoqueRolos.Click += btnDelEstoqueRolos_Click;
             // 
             // btnRenEstoqueRolos
             // 
-            this.btnRenEstoqueRolos.BackColor = System.Drawing.Color.Aquamarine;
-            this.btnRenEstoqueRolos.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnRenEstoqueRolos.ForeColor = System.Drawing.Color.DimGray;
-            this.btnRenEstoqueRolos.Location = new System.Drawing.Point(657, 387);
-            this.btnRenEstoqueRolos.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.btnRenEstoqueRolos.Name = "btnRenEstoqueRolos";
-            this.btnRenEstoqueRolos.Size = new System.Drawing.Size(210, 47);
-            this.btnRenEstoqueRolos.TabIndex = 30;
-            this.btnRenEstoqueRolos.Text = "Ren Mov Estoque Rolos";
-            this.btnRenEstoqueRolos.UseVisualStyleBackColor = false;
-            this.btnRenEstoqueRolos.Click += new System.EventHandler(this.btnRenEstoqueRolos_Click);
+            btnRenEstoqueRolos.BackColor = Color.Aquamarine;
+            btnRenEstoqueRolos.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            btnRenEstoqueRolos.ForeColor = Color.DimGray;
+            btnRenEstoqueRolos.Location = new Point(657, 387);
+            btnRenEstoqueRolos.Margin = new Padding(2, 3, 2, 3);
+            btnRenEstoqueRolos.Name = "btnRenEstoqueRolos";
+            btnRenEstoqueRolos.Size = new Size(210, 47);
+            btnRenEstoqueRolos.TabIndex = 30;
+            btnRenEstoqueRolos.Text = "Ren Mov Estoque Rolos";
+            btnRenEstoqueRolos.UseVisualStyleBackColor = false;
+            btnRenEstoqueRolos.Click += btnRenEstoqueRolos_Click;
             // 
             // btnInsertEstoqueRolos
             // 
-            this.btnInsertEstoqueRolos.BackColor = System.Drawing.Color.Aquamarine;
-            this.btnInsertEstoqueRolos.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnInsertEstoqueRolos.ForeColor = System.Drawing.Color.DimGray;
-            this.btnInsertEstoqueRolos.Location = new System.Drawing.Point(657, 440);
-            this.btnInsertEstoqueRolos.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.btnInsertEstoqueRolos.Name = "btnInsertEstoqueRolos";
-            this.btnInsertEstoqueRolos.Size = new System.Drawing.Size(210, 47);
-            this.btnInsertEstoqueRolos.TabIndex = 29;
-            this.btnInsertEstoqueRolos.Text = "Insert Estoque Rolos";
-            this.btnInsertEstoqueRolos.UseVisualStyleBackColor = false;
-            this.btnInsertEstoqueRolos.Click += new System.EventHandler(this.btnInsertEstoqueRolos_Click);
+            btnInsertEstoqueRolos.BackColor = Color.Aquamarine;
+            btnInsertEstoqueRolos.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            btnInsertEstoqueRolos.ForeColor = Color.DimGray;
+            btnInsertEstoqueRolos.Location = new Point(657, 440);
+            btnInsertEstoqueRolos.Margin = new Padding(2, 3, 2, 3);
+            btnInsertEstoqueRolos.Name = "btnInsertEstoqueRolos";
+            btnInsertEstoqueRolos.Size = new Size(210, 47);
+            btnInsertEstoqueRolos.TabIndex = 29;
+            btnInsertEstoqueRolos.Text = "Insert Estoque Rolos";
+            btnInsertEstoqueRolos.UseVisualStyleBackColor = false;
+            btnInsertEstoqueRolos.Click += btnInsertEstoqueRolos_Click;
             // 
             // btnDelComercialVendas
             // 
-            this.btnDelComercialVendas.BackColor = System.Drawing.Color.Salmon;
-            this.btnDelComercialVendas.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnDelComercialVendas.ForeColor = System.Drawing.Color.DimGray;
-            this.btnDelComercialVendas.Location = new System.Drawing.Point(443, 314);
-            this.btnDelComercialVendas.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.btnDelComercialVendas.Name = "btnDelComercialVendas";
-            this.btnDelComercialVendas.Size = new System.Drawing.Size(210, 49);
-            this.btnDelComercialVendas.TabIndex = 34;
-            this.btnDelComercialVendas.Text = "Del Comercial Vendas";
-            this.btnDelComercialVendas.UseVisualStyleBackColor = false;
-            this.btnDelComercialVendas.Click += new System.EventHandler(this.btnDelComercialVendas_Click);
+            btnDelComercialVendas.BackColor = Color.Salmon;
+            btnDelComercialVendas.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            btnDelComercialVendas.ForeColor = Color.DimGray;
+            btnDelComercialVendas.Location = new Point(443, 314);
+            btnDelComercialVendas.Margin = new Padding(2, 3, 2, 3);
+            btnDelComercialVendas.Name = "btnDelComercialVendas";
+            btnDelComercialVendas.Size = new Size(210, 49);
+            btnDelComercialVendas.TabIndex = 34;
+            btnDelComercialVendas.Text = "Del Comercial Vendas";
+            btnDelComercialVendas.UseVisualStyleBackColor = false;
+            btnDelComercialVendas.Click += btnDelComercialVendas_Click;
             // 
             // btnRenComercialVendas
             // 
-            this.btnRenComercialVendas.BackColor = System.Drawing.Color.Salmon;
-            this.btnRenComercialVendas.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnRenComercialVendas.ForeColor = System.Drawing.Color.DimGray;
-            this.btnRenComercialVendas.Location = new System.Drawing.Point(443, 210);
-            this.btnRenComercialVendas.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.btnRenComercialVendas.Name = "btnRenComercialVendas";
-            this.btnRenComercialVendas.Size = new System.Drawing.Size(210, 47);
-            this.btnRenComercialVendas.TabIndex = 33;
-            this.btnRenComercialVendas.Text = "Ren Mov Comercial Vendas";
-            this.btnRenComercialVendas.UseVisualStyleBackColor = false;
-            this.btnRenComercialVendas.Click += new System.EventHandler(this.btnRenComercialVendas_Click);
+            btnRenComercialVendas.BackColor = Color.Salmon;
+            btnRenComercialVendas.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            btnRenComercialVendas.ForeColor = Color.DimGray;
+            btnRenComercialVendas.Location = new Point(443, 210);
+            btnRenComercialVendas.Margin = new Padding(2, 3, 2, 3);
+            btnRenComercialVendas.Name = "btnRenComercialVendas";
+            btnRenComercialVendas.Size = new Size(210, 47);
+            btnRenComercialVendas.TabIndex = 33;
+            btnRenComercialVendas.Text = "Ren Mov Comercial Vendas";
+            btnRenComercialVendas.UseVisualStyleBackColor = false;
+            btnRenComercialVendas.Click += btnRenComercialVendas_Click;
             // 
             // btnInsertComercialVendas
             // 
-            this.btnInsertComercialVendas.BackColor = System.Drawing.Color.Salmon;
-            this.btnInsertComercialVendas.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnInsertComercialVendas.ForeColor = System.Drawing.Color.DimGray;
-            this.btnInsertComercialVendas.Location = new System.Drawing.Point(443, 263);
-            this.btnInsertComercialVendas.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.btnInsertComercialVendas.Name = "btnInsertComercialVendas";
-            this.btnInsertComercialVendas.Size = new System.Drawing.Size(210, 47);
-            this.btnInsertComercialVendas.TabIndex = 32;
-            this.btnInsertComercialVendas.Text = "Insert Comercial Vendas";
-            this.btnInsertComercialVendas.UseVisualStyleBackColor = false;
-            this.btnInsertComercialVendas.Click += new System.EventHandler(this.btnInsertComercialVendas_Click);
+            btnInsertComercialVendas.BackColor = Color.Salmon;
+            btnInsertComercialVendas.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            btnInsertComercialVendas.ForeColor = Color.DimGray;
+            btnInsertComercialVendas.Location = new Point(443, 263);
+            btnInsertComercialVendas.Margin = new Padding(2, 3, 2, 3);
+            btnInsertComercialVendas.Name = "btnInsertComercialVendas";
+            btnInsertComercialVendas.Size = new Size(210, 47);
+            btnInsertComercialVendas.TabIndex = 32;
+            btnInsertComercialVendas.Text = "Insert Comercial Vendas";
+            btnInsertComercialVendas.UseVisualStyleBackColor = false;
+            btnInsertComercialVendas.Click += btnInsertComercialVendas_Click;
             // 
             // btnDelPosicaoOps
             // 
-            this.btnDelPosicaoOps.BackColor = System.Drawing.Color.Salmon;
-            this.btnDelPosicaoOps.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnDelPosicaoOps.ForeColor = System.Drawing.Color.DimGray;
-            this.btnDelPosicaoOps.Location = new System.Drawing.Point(443, 491);
-            this.btnDelPosicaoOps.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.btnDelPosicaoOps.Name = "btnDelPosicaoOps";
-            this.btnDelPosicaoOps.Size = new System.Drawing.Size(210, 49);
-            this.btnDelPosicaoOps.TabIndex = 37;
-            this.btnDelPosicaoOps.Text = "Del Posicao OPs";
-            this.btnDelPosicaoOps.UseVisualStyleBackColor = false;
-            this.btnDelPosicaoOps.Click += new System.EventHandler(this.btnDelPosicaoOps_Click);
+            btnDelPosicaoOps.BackColor = Color.Salmon;
+            btnDelPosicaoOps.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            btnDelPosicaoOps.ForeColor = Color.DimGray;
+            btnDelPosicaoOps.Location = new Point(443, 491);
+            btnDelPosicaoOps.Margin = new Padding(2, 3, 2, 3);
+            btnDelPosicaoOps.Name = "btnDelPosicaoOps";
+            btnDelPosicaoOps.Size = new Size(210, 49);
+            btnDelPosicaoOps.TabIndex = 37;
+            btnDelPosicaoOps.Text = "Del Posicao OPs";
+            btnDelPosicaoOps.UseVisualStyleBackColor = false;
+            btnDelPosicaoOps.Click += btnDelPosicaoOps_Click;
             // 
             // btnRenPosicaoOps
             // 
-            this.btnRenPosicaoOps.BackColor = System.Drawing.Color.Salmon;
-            this.btnRenPosicaoOps.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnRenPosicaoOps.ForeColor = System.Drawing.Color.DimGray;
-            this.btnRenPosicaoOps.Location = new System.Drawing.Point(443, 387);
-            this.btnRenPosicaoOps.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.btnRenPosicaoOps.Name = "btnRenPosicaoOps";
-            this.btnRenPosicaoOps.Size = new System.Drawing.Size(210, 47);
-            this.btnRenPosicaoOps.TabIndex = 36;
-            this.btnRenPosicaoOps.Text = "Ren Mov Posicao OPs";
-            this.btnRenPosicaoOps.UseVisualStyleBackColor = false;
-            this.btnRenPosicaoOps.Click += new System.EventHandler(this.btnRenPosicaoOps_Click);
+            btnRenPosicaoOps.BackColor = Color.Salmon;
+            btnRenPosicaoOps.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            btnRenPosicaoOps.ForeColor = Color.DimGray;
+            btnRenPosicaoOps.Location = new Point(443, 387);
+            btnRenPosicaoOps.Margin = new Padding(2, 3, 2, 3);
+            btnRenPosicaoOps.Name = "btnRenPosicaoOps";
+            btnRenPosicaoOps.Size = new Size(210, 47);
+            btnRenPosicaoOps.TabIndex = 36;
+            btnRenPosicaoOps.Text = "Ren Mov Posicao OPs";
+            btnRenPosicaoOps.UseVisualStyleBackColor = false;
+            btnRenPosicaoOps.Click += btnRenPosicaoOps_Click;
             // 
             // btnInsertPosicaoOps
             // 
-            this.btnInsertPosicaoOps.BackColor = System.Drawing.Color.Salmon;
-            this.btnInsertPosicaoOps.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnInsertPosicaoOps.ForeColor = System.Drawing.Color.DimGray;
-            this.btnInsertPosicaoOps.Location = new System.Drawing.Point(443, 440);
-            this.btnInsertPosicaoOps.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.btnInsertPosicaoOps.Name = "btnInsertPosicaoOps";
-            this.btnInsertPosicaoOps.Size = new System.Drawing.Size(210, 47);
-            this.btnInsertPosicaoOps.TabIndex = 35;
-            this.btnInsertPosicaoOps.Text = "Insert Posicao OPs";
-            this.btnInsertPosicaoOps.UseVisualStyleBackColor = false;
-            this.btnInsertPosicaoOps.Click += new System.EventHandler(this.btnInsertPosicaoOps_Click);
+            btnInsertPosicaoOps.BackColor = Color.Salmon;
+            btnInsertPosicaoOps.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            btnInsertPosicaoOps.ForeColor = Color.DimGray;
+            btnInsertPosicaoOps.Location = new Point(443, 440);
+            btnInsertPosicaoOps.Margin = new Padding(2, 3, 2, 3);
+            btnInsertPosicaoOps.Name = "btnInsertPosicaoOps";
+            btnInsertPosicaoOps.Size = new Size(210, 47);
+            btnInsertPosicaoOps.TabIndex = 35;
+            btnInsertPosicaoOps.Text = "Insert Posicao OPs";
+            btnInsertPosicaoOps.UseVisualStyleBackColor = false;
+            btnInsertPosicaoOps.Click += btnInsertPosicaoOps_Click;
             // 
             // btnDelRecebimentos
             // 
-            this.btnDelRecebimentos.BackColor = System.Drawing.Color.LightSkyBlue;
-            this.btnDelRecebimentos.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnDelRecebimentos.ForeColor = System.Drawing.Color.DimGray;
-            this.btnDelRecebimentos.Location = new System.Drawing.Point(12, 668);
-            this.btnDelRecebimentos.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.btnDelRecebimentos.Name = "btnDelRecebimentos";
-            this.btnDelRecebimentos.Size = new System.Drawing.Size(210, 49);
-            this.btnDelRecebimentos.TabIndex = 40;
-            this.btnDelRecebimentos.Text = "Del recebimentos";
-            this.btnDelRecebimentos.UseVisualStyleBackColor = false;
-            this.btnDelRecebimentos.Click += new System.EventHandler(this.btnDelRecebimentos_Click);
+            btnDelRecebimentos.BackColor = Color.LightSkyBlue;
+            btnDelRecebimentos.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            btnDelRecebimentos.ForeColor = Color.DimGray;
+            btnDelRecebimentos.Location = new Point(12, 668);
+            btnDelRecebimentos.Margin = new Padding(2, 3, 2, 3);
+            btnDelRecebimentos.Name = "btnDelRecebimentos";
+            btnDelRecebimentos.Size = new Size(210, 49);
+            btnDelRecebimentos.TabIndex = 40;
+            btnDelRecebimentos.Text = "Del recebimentos";
+            btnDelRecebimentos.UseVisualStyleBackColor = false;
+            btnDelRecebimentos.Click += btnDelRecebimentos_Click;
             // 
             // btnRenRecebimentos
             // 
-            this.btnRenRecebimentos.BackColor = System.Drawing.Color.LightSkyBlue;
-            this.btnRenRecebimentos.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnRenRecebimentos.ForeColor = System.Drawing.Color.DimGray;
-            this.btnRenRecebimentos.Location = new System.Drawing.Point(12, 564);
-            this.btnRenRecebimentos.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.btnRenRecebimentos.Name = "btnRenRecebimentos";
-            this.btnRenRecebimentos.Size = new System.Drawing.Size(210, 47);
-            this.btnRenRecebimentos.TabIndex = 39;
-            this.btnRenRecebimentos.Text = "Ren Mov recebimentos";
-            this.btnRenRecebimentos.UseVisualStyleBackColor = false;
-            this.btnRenRecebimentos.Click += new System.EventHandler(this.btnRenRecebimentos_Click);
+            btnRenRecebimentos.BackColor = Color.LightSkyBlue;
+            btnRenRecebimentos.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            btnRenRecebimentos.ForeColor = Color.DimGray;
+            btnRenRecebimentos.Location = new Point(12, 564);
+            btnRenRecebimentos.Margin = new Padding(2, 3, 2, 3);
+            btnRenRecebimentos.Name = "btnRenRecebimentos";
+            btnRenRecebimentos.Size = new Size(210, 47);
+            btnRenRecebimentos.TabIndex = 39;
+            btnRenRecebimentos.Text = "Ren Mov recebimentos";
+            btnRenRecebimentos.UseVisualStyleBackColor = false;
+            btnRenRecebimentos.Click += btnRenRecebimentos_Click;
             // 
             // btnInsertRecebimentos
             // 
-            this.btnInsertRecebimentos.BackColor = System.Drawing.Color.LightSkyBlue;
-            this.btnInsertRecebimentos.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnInsertRecebimentos.ForeColor = System.Drawing.Color.DimGray;
-            this.btnInsertRecebimentos.Location = new System.Drawing.Point(12, 617);
-            this.btnInsertRecebimentos.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.btnInsertRecebimentos.Name = "btnInsertRecebimentos";
-            this.btnInsertRecebimentos.Size = new System.Drawing.Size(210, 47);
-            this.btnInsertRecebimentos.TabIndex = 38;
-            this.btnInsertRecebimentos.Text = "Insert recebimentos";
-            this.btnInsertRecebimentos.UseVisualStyleBackColor = false;
-            this.btnInsertRecebimentos.Click += new System.EventHandler(this.btnInsertRecebimentos_Click);
+            btnInsertRecebimentos.BackColor = Color.LightSkyBlue;
+            btnInsertRecebimentos.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            btnInsertRecebimentos.ForeColor = Color.DimGray;
+            btnInsertRecebimentos.Location = new Point(12, 617);
+            btnInsertRecebimentos.Margin = new Padding(2, 3, 2, 3);
+            btnInsertRecebimentos.Name = "btnInsertRecebimentos";
+            btnInsertRecebimentos.Size = new Size(210, 47);
+            btnInsertRecebimentos.TabIndex = 38;
+            btnInsertRecebimentos.Text = "Insert recebimentos";
+            btnInsertRecebimentos.UseVisualStyleBackColor = false;
+            btnInsertRecebimentos.Click += btnInsertRecebimentos_Click;
             // 
             // btnDelPedidoCompra
             // 
-            this.btnDelPedidoCompra.BackColor = System.Drawing.Color.Tan;
-            this.btnDelPedidoCompra.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnDelPedidoCompra.ForeColor = System.Drawing.Color.DimGray;
-            this.btnDelPedidoCompra.Location = new System.Drawing.Point(228, 314);
-            this.btnDelPedidoCompra.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.btnDelPedidoCompra.Name = "btnDelPedidoCompra";
-            this.btnDelPedidoCompra.Size = new System.Drawing.Size(210, 49);
-            this.btnDelPedidoCompra.TabIndex = 43;
-            this.btnDelPedidoCompra.Text = "Del Pedido Compra";
-            this.btnDelPedidoCompra.UseVisualStyleBackColor = false;
-            this.btnDelPedidoCompra.Click += new System.EventHandler(this.btnDelPedidoCompra_Click);
+            btnDelPedidoCompra.BackColor = Color.Tan;
+            btnDelPedidoCompra.Font = new Font("Microsoft Sans Serif", 7.8F, FontStyle.Bold, GraphicsUnit.Point);
+            btnDelPedidoCompra.ForeColor = Color.DimGray;
+            btnDelPedidoCompra.Location = new Point(228, 314);
+            btnDelPedidoCompra.Margin = new Padding(2, 3, 2, 3);
+            btnDelPedidoCompra.Name = "btnDelPedidoCompra";
+            btnDelPedidoCompra.Size = new Size(210, 49);
+            btnDelPedidoCompra.TabIndex = 43;
+            btnDelPedidoCompra.Text = "Del Pedido Compra";
+            btnDelPedidoCompra.UseVisualStyleBackColor = false;
+            btnDelPedidoCompra.Click += btnDelPedidoCompra_Click;
             // 
             // btnRenPedidoCompra
             // 
-            this.btnRenPedidoCompra.BackColor = System.Drawing.Color.Tan;
-            this.btnRenPedidoCompra.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnRenPedidoCompra.ForeColor = System.Drawing.Color.DimGray;
-            this.btnRenPedidoCompra.Location = new System.Drawing.Point(228, 210);
-            this.btnRenPedidoCompra.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.btnRenPedidoCompra.Name = "btnRenPedidoCompra";
-            this.btnRenPedidoCompra.Size = new System.Drawing.Size(210, 47);
-            this.btnRenPedidoCompra.TabIndex = 42;
-            this.btnRenPedidoCompra.Text = "Ren Pedido Compra";
-            this.btnRenPedidoCompra.UseVisualStyleBackColor = false;
-            this.btnRenPedidoCompra.Click += new System.EventHandler(this.btnRenPedidoCompra_Click);
+            btnRenPedidoCompra.BackColor = Color.Tan;
+            btnRenPedidoCompra.Font = new Font("Microsoft Sans Serif", 7.8F, FontStyle.Bold, GraphicsUnit.Point);
+            btnRenPedidoCompra.ForeColor = Color.DimGray;
+            btnRenPedidoCompra.Location = new Point(228, 210);
+            btnRenPedidoCompra.Margin = new Padding(2, 3, 2, 3);
+            btnRenPedidoCompra.Name = "btnRenPedidoCompra";
+            btnRenPedidoCompra.Size = new Size(210, 47);
+            btnRenPedidoCompra.TabIndex = 42;
+            btnRenPedidoCompra.Text = "Ren Pedido Compra";
+            btnRenPedidoCompra.UseVisualStyleBackColor = false;
+            btnRenPedidoCompra.Click += btnRenPedidoCompra_Click;
             // 
             // btnInsertPedidoCompra
             // 
-            this.btnInsertPedidoCompra.BackColor = System.Drawing.Color.Tan;
-            this.btnInsertPedidoCompra.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnInsertPedidoCompra.ForeColor = System.Drawing.Color.DimGray;
-            this.btnInsertPedidoCompra.Location = new System.Drawing.Point(228, 263);
-            this.btnInsertPedidoCompra.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.btnInsertPedidoCompra.Name = "btnInsertPedidoCompra";
-            this.btnInsertPedidoCompra.Size = new System.Drawing.Size(210, 47);
-            this.btnInsertPedidoCompra.TabIndex = 41;
-            this.btnInsertPedidoCompra.Text = "Insert Pedido Compra";
-            this.btnInsertPedidoCompra.UseVisualStyleBackColor = false;
-            this.btnInsertPedidoCompra.Click += new System.EventHandler(this.btnInsertPedidoCompra_Click);
+            btnInsertPedidoCompra.BackColor = Color.Tan;
+            btnInsertPedidoCompra.Font = new Font("Microsoft Sans Serif", 7.8F, FontStyle.Bold, GraphicsUnit.Point);
+            btnInsertPedidoCompra.ForeColor = Color.DimGray;
+            btnInsertPedidoCompra.Location = new Point(228, 263);
+            btnInsertPedidoCompra.Margin = new Padding(2, 3, 2, 3);
+            btnInsertPedidoCompra.Name = "btnInsertPedidoCompra";
+            btnInsertPedidoCompra.Size = new Size(210, 47);
+            btnInsertPedidoCompra.TabIndex = 41;
+            btnInsertPedidoCompra.Text = "Insert Pedido Compra";
+            btnInsertPedidoCompra.UseVisualStyleBackColor = false;
+            btnInsertPedidoCompra.Click += btnInsertPedidoCompra_Click;
             // 
-            // button1
+            // btnDelFinanceiroContasPagarGIJOE
             // 
-            this.button1.BackColor = System.Drawing.Color.Salmon;
-            this.button1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button1.ForeColor = System.Drawing.Color.DimGray;
-            this.button1.Location = new System.Drawing.Point(443, 668);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(210, 49);
-            this.button1.TabIndex = 46;
-            this.button1.Text = "----------";
-            this.button1.UseVisualStyleBackColor = false;
+            btnDelFinanceiroContasPagarGIJOE.BackColor = Color.Salmon;
+            btnDelFinanceiroContasPagarGIJOE.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            btnDelFinanceiroContasPagarGIJOE.ForeColor = Color.DimGray;
+            btnDelFinanceiroContasPagarGIJOE.Location = new Point(443, 668);
+            btnDelFinanceiroContasPagarGIJOE.Margin = new Padding(2, 3, 2, 3);
+            btnDelFinanceiroContasPagarGIJOE.Name = "btnDelFinanceiroContasPagarGIJOE";
+            btnDelFinanceiroContasPagarGIJOE.Size = new Size(210, 49);
+            btnDelFinanceiroContasPagarGIJOE.TabIndex = 46;
+            btnDelFinanceiroContasPagarGIJOE.Text = "Del Fin. C. Pagar GIJOE";
+            btnDelFinanceiroContasPagarGIJOE.UseVisualStyleBackColor = false;
+            btnDelFinanceiroContasPagarGIJOE.Click += btnDelFinanceiroContasPagarGIJOE_Click;
             // 
-            // button2
+            // btnRenFinanceiroContasPagarGIJOE
             // 
-            this.button2.BackColor = System.Drawing.Color.Salmon;
-            this.button2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button2.ForeColor = System.Drawing.Color.DimGray;
-            this.button2.Location = new System.Drawing.Point(443, 564);
-            this.button2.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(210, 47);
-            this.button2.TabIndex = 45;
-            this.button2.Text = "----------";
-            this.button2.UseVisualStyleBackColor = false;
+            btnRenFinanceiroContasPagarGIJOE.BackColor = Color.Salmon;
+            btnRenFinanceiroContasPagarGIJOE.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            btnRenFinanceiroContasPagarGIJOE.ForeColor = Color.DimGray;
+            btnRenFinanceiroContasPagarGIJOE.Location = new Point(443, 564);
+            btnRenFinanceiroContasPagarGIJOE.Margin = new Padding(2, 3, 2, 3);
+            btnRenFinanceiroContasPagarGIJOE.Name = "btnRenFinanceiroContasPagarGIJOE";
+            btnRenFinanceiroContasPagarGIJOE.Size = new Size(210, 47);
+            btnRenFinanceiroContasPagarGIJOE.TabIndex = 45;
+            btnRenFinanceiroContasPagarGIJOE.Text = "Ren Fin. C. Pagar GIJOE";
+            btnRenFinanceiroContasPagarGIJOE.UseVisualStyleBackColor = false;
+            btnRenFinanceiroContasPagarGIJOE.Click += btnRenFinanceiroContasPagarGIJOE_Click;
             // 
-            // button3
+            // btnInsertFinanceiroContasPagarGIJOE
             // 
-            this.button3.BackColor = System.Drawing.Color.Salmon;
-            this.button3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button3.ForeColor = System.Drawing.Color.DimGray;
-            this.button3.Location = new System.Drawing.Point(443, 617);
-            this.button3.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(210, 47);
-            this.button3.TabIndex = 44;
-            this.button3.Text = "----------";
-            this.button3.UseVisualStyleBackColor = false;
+            btnInsertFinanceiroContasPagarGIJOE.BackColor = Color.Salmon;
+            btnInsertFinanceiroContasPagarGIJOE.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            btnInsertFinanceiroContasPagarGIJOE.ForeColor = Color.DimGray;
+            btnInsertFinanceiroContasPagarGIJOE.Location = new Point(443, 617);
+            btnInsertFinanceiroContasPagarGIJOE.Margin = new Padding(2, 3, 2, 3);
+            btnInsertFinanceiroContasPagarGIJOE.Name = "btnInsertFinanceiroContasPagarGIJOE";
+            btnInsertFinanceiroContasPagarGIJOE.Size = new Size(210, 47);
+            btnInsertFinanceiroContasPagarGIJOE.TabIndex = 44;
+            btnInsertFinanceiroContasPagarGIJOE.Text = "Insert Fin. C. Pagar GIJOE";
+            btnInsertFinanceiroContasPagarGIJOE.UseVisualStyleBackColor = false;
+            btnInsertFinanceiroContasPagarGIJOE.Click += btnInsertFinanceiroContasPagarGIJOE_Click;
             // 
             // btnInsertDadosTeares
             // 
-            this.btnInsertDadosTeares.BackColor = System.Drawing.Color.Aquamarine;
-            this.btnInsertDadosTeares.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnInsertDadosTeares.ForeColor = System.Drawing.Color.DimGray;
-            this.btnInsertDadosTeares.Location = new System.Drawing.Point(657, 140);
-            this.btnInsertDadosTeares.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btnInsertDadosTeares.Name = "btnInsertDadosTeares";
-            this.btnInsertDadosTeares.Size = new System.Drawing.Size(208, 47);
-            this.btnInsertDadosTeares.TabIndex = 49;
-            this.btnInsertDadosTeares.Text = "Insert Dados Teares";
-            this.btnInsertDadosTeares.UseVisualStyleBackColor = false;
-            this.btnInsertDadosTeares.Click += new System.EventHandler(this.btnInsertDadosTeares_Click);
+            btnInsertDadosTeares.BackColor = Color.Aquamarine;
+            btnInsertDadosTeares.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            btnInsertDadosTeares.ForeColor = Color.DimGray;
+            btnInsertDadosTeares.Location = new Point(657, 140);
+            btnInsertDadosTeares.Margin = new Padding(3, 4, 3, 4);
+            btnInsertDadosTeares.Name = "btnInsertDadosTeares";
+            btnInsertDadosTeares.Size = new Size(208, 47);
+            btnInsertDadosTeares.TabIndex = 49;
+            btnInsertDadosTeares.Text = "Insert Dados Teares";
+            btnInsertDadosTeares.UseVisualStyleBackColor = false;
+            btnInsertDadosTeares.Click += btnInsertDadosTeares_Click;
             // 
             // btnRenDadosTeares
             // 
-            this.btnRenDadosTeares.BackColor = System.Drawing.Color.Aquamarine;
-            this.btnRenDadosTeares.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnRenDadosTeares.ForeColor = System.Drawing.Color.DimGray;
-            this.btnRenDadosTeares.Location = new System.Drawing.Point(657, 35);
-            this.btnRenDadosTeares.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btnRenDadosTeares.Name = "btnRenDadosTeares";
-            this.btnRenDadosTeares.Size = new System.Drawing.Size(208, 47);
-            this.btnRenDadosTeares.TabIndex = 48;
-            this.btnRenDadosTeares.Text = "Ren Mov DadosTeares";
-            this.btnRenDadosTeares.UseVisualStyleBackColor = false;
-            this.btnRenDadosTeares.Click += new System.EventHandler(this.btnRenDadosTeares_Click);
+            btnRenDadosTeares.BackColor = Color.Aquamarine;
+            btnRenDadosTeares.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            btnRenDadosTeares.ForeColor = Color.DimGray;
+            btnRenDadosTeares.Location = new Point(657, 35);
+            btnRenDadosTeares.Margin = new Padding(3, 4, 3, 4);
+            btnRenDadosTeares.Name = "btnRenDadosTeares";
+            btnRenDadosTeares.Size = new Size(208, 47);
+            btnRenDadosTeares.TabIndex = 48;
+            btnRenDadosTeares.Text = "Ren Mov DadosTeares";
+            btnRenDadosTeares.UseVisualStyleBackColor = false;
+            btnRenDadosTeares.Click += btnRenDadosTeares_Click;
             // 
             // btnDelDadosTeares
             // 
-            this.btnDelDadosTeares.BackColor = System.Drawing.Color.Aquamarine;
-            this.btnDelDadosTeares.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnDelDadosTeares.ForeColor = System.Drawing.Color.DimGray;
-            this.btnDelDadosTeares.Location = new System.Drawing.Point(657, 86);
-            this.btnDelDadosTeares.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btnDelDadosTeares.Name = "btnDelDadosTeares";
-            this.btnDelDadosTeares.Size = new System.Drawing.Size(208, 47);
-            this.btnDelDadosTeares.TabIndex = 47;
-            this.btnDelDadosTeares.Text = "Del Dados Teares";
-            this.btnDelDadosTeares.UseVisualStyleBackColor = false;
-            this.btnDelDadosTeares.Click += new System.EventHandler(this.btnDelDadosTeares_Click);
+            btnDelDadosTeares.BackColor = Color.Aquamarine;
+            btnDelDadosTeares.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            btnDelDadosTeares.ForeColor = Color.DimGray;
+            btnDelDadosTeares.Location = new Point(657, 86);
+            btnDelDadosTeares.Margin = new Padding(3, 4, 3, 4);
+            btnDelDadosTeares.Name = "btnDelDadosTeares";
+            btnDelDadosTeares.Size = new Size(208, 47);
+            btnDelDadosTeares.TabIndex = 47;
+            btnDelDadosTeares.Text = "Del Dados Teares";
+            btnDelDadosTeares.UseVisualStyleBackColor = false;
+            btnDelDadosTeares.Click += btnDelDadosTeares_Click;
             // 
             // UIPrincipal
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(887, 764);
-            this.Controls.Add(this.btnInsertDadosTeares);
-            this.Controls.Add(this.btnRenDadosTeares);
-            this.Controls.Add(this.btnDelDadosTeares);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.btnDelPedidoCompra);
-            this.Controls.Add(this.btnRenPedidoCompra);
-            this.Controls.Add(this.btnInsertPedidoCompra);
-            this.Controls.Add(this.btnDelRecebimentos);
-            this.Controls.Add(this.btnRenRecebimentos);
-            this.Controls.Add(this.btnInsertRecebimentos);
-            this.Controls.Add(this.btnDelPosicaoOps);
-            this.Controls.Add(this.btnRenPosicaoOps);
-            this.Controls.Add(this.btnInsertPosicaoOps);
-            this.Controls.Add(this.btnDelComercialVendas);
-            this.Controls.Add(this.btnRenComercialVendas);
-            this.Controls.Add(this.btnInsertComercialVendas);
-            this.Controls.Add(this.btnDelEstoqueRolos);
-            this.Controls.Add(this.btnRenEstoqueRolos);
-            this.Controls.Add(this.btnInsertEstoqueRolos);
-            this.Controls.Add(this.btnDelSaldosEstoque);
-            this.Controls.Add(this.btnRenSaldosEstoque);
-            this.Controls.Add(this.btnInsertSaldosEstoque);
-            this.Controls.Add(this.btnDelNotasFiscais);
-            this.Controls.Add(this.btnRenNotasFiscais);
-            this.Controls.Add(this.btnInsertNotasFiscais);
-            this.Controls.Add(this.btnDelCaixasFios);
-            this.Controls.Add(this.btnRenCaixasFios);
-            this.Controls.Add(this.btnInsertCaixasFios);
-            this.Controls.Add(this.btnDelContasPagas);
-            this.Controls.Add(this.btnRenContasPagas);
-            this.Controls.Add(this.btnInsertContasPagas);
-            this.Controls.Add(this.btnDelContasPagar);
-            this.Controls.Add(this.btnRenContasPagar);
-            this.Controls.Add(this.btnInsertContasPagar);
-            this.Controls.Add(this.btnDelContasReceber);
-            this.Controls.Add(this.btnRenContasReceber);
-            this.Controls.Add(this.btnInsertContasReceber);
-            this.Controls.Add(this.btnDelShiftReport);
-            this.Controls.Add(this.btnInsertDisplayOperacao);
-            this.Controls.Add(this.btnCopyDisplayOperacao);
-            this.Controls.Add(this.btnLerDisplayOperacao);
-            this.Controls.Add(this.btnDelProduction);
-            this.Controls.Add(this.btnRenShiftReport);
-            this.Controls.Add(this.btnRenProduction);
-            this.Controls.Add(this.btnProduction);
-            this.Controls.Add(this.btnShiftReport);
-            this.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.Name = "UIPrincipal";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "IntegraTêxtil";
-            this.Load += new System.EventHandler(this.UIPrincipal_Load);
-            this.ResumeLayout(false);
-
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(887, 764);
+            Controls.Add(btnInsertDadosTeares);
+            Controls.Add(btnRenDadosTeares);
+            Controls.Add(btnDelDadosTeares);
+            Controls.Add(btnDelFinanceiroContasPagarGIJOE);
+            Controls.Add(btnRenFinanceiroContasPagarGIJOE);
+            Controls.Add(btnInsertFinanceiroContasPagarGIJOE);
+            Controls.Add(btnDelPedidoCompra);
+            Controls.Add(btnRenPedidoCompra);
+            Controls.Add(btnInsertPedidoCompra);
+            Controls.Add(btnDelRecebimentos);
+            Controls.Add(btnRenRecebimentos);
+            Controls.Add(btnInsertRecebimentos);
+            Controls.Add(btnDelPosicaoOps);
+            Controls.Add(btnRenPosicaoOps);
+            Controls.Add(btnInsertPosicaoOps);
+            Controls.Add(btnDelComercialVendas);
+            Controls.Add(btnRenComercialVendas);
+            Controls.Add(btnInsertComercialVendas);
+            Controls.Add(btnDelEstoqueRolos);
+            Controls.Add(btnRenEstoqueRolos);
+            Controls.Add(btnInsertEstoqueRolos);
+            Controls.Add(btnDelSaldosEstoque);
+            Controls.Add(btnRenSaldosEstoque);
+            Controls.Add(btnInsertSaldosEstoque);
+            Controls.Add(btnDelNotasFiscais);
+            Controls.Add(btnRenNotasFiscais);
+            Controls.Add(btnInsertNotasFiscais);
+            Controls.Add(btnDelCaixasFios);
+            Controls.Add(btnRenCaixasFios);
+            Controls.Add(btnInsertCaixasFios);
+            Controls.Add(btnDelContasPagas);
+            Controls.Add(btnRenContasPagas);
+            Controls.Add(btnInsertContasPagas);
+            Controls.Add(btnDelContasPagar);
+            Controls.Add(btnRenContasPagar);
+            Controls.Add(btnInsertContasPagar);
+            Controls.Add(btnDelContasReceber);
+            Controls.Add(btnRenContasReceber);
+            Controls.Add(btnInsertContasReceber);
+            Controls.Add(btnDelShiftReport);
+            Controls.Add(btnInsertDisplayOperacao);
+            Controls.Add(btnCopyDisplayOperacao);
+            Controls.Add(btnLerDisplayOperacao);
+            Controls.Add(btnDelProduction);
+            Controls.Add(btnRenShiftReport);
+            Controls.Add(btnRenProduction);
+            Controls.Add(btnProduction);
+            Controls.Add(btnShiftReport);
+            ForeColor = SystemColors.ButtonHighlight;
+            Margin = new Padding(2, 3, 2, 3);
+            Name = "UIPrincipal";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "IntegraTêxtil";
+            Load += UIPrincipal_Load;
+            ResumeLayout(false);
         }
 
         #endregion
@@ -862,9 +864,9 @@
         private Button btnDelPedidoCompra;
         private Button btnRenPedidoCompra;
         private Button btnInsertPedidoCompra;
-        private Button button1;
-        private Button button2;
-        private Button button3;
+        private Button btnDelFinanceiroContasPagarGIJOE;
+        private Button btnRenFinanceiroContasPagarGIJOE;
+        private Button btnInsertFinanceiroContasPagarGIJOE;
         private Button btnInsertDadosTeares;
         private Button btnRenDadosTeares;
         private Button btnDelDadosTeares;

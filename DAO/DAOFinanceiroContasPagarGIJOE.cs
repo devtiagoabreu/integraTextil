@@ -23,9 +23,9 @@ namespace DAO
         public string NomeFornecedor { get; set; }
         public string TipoFornecedor { get; set; }
         public DateTime DataTransacao { get; set; }
-        public DateTime Previsao { get; set; }
+        public string Previsao { get; set; }
         public int Portador { get; set; }
-        public DateTime VencimentoOrig { get; set; }
+        public string VencimentoOrig { get; set; }
         public DateTime Vencimento { get; set; }
         public string Posicao { get; set; }
         public int NumContabil { get; set; }
@@ -43,7 +43,7 @@ namespace DAO
         public string CentroCusto { get; set; }
         public int CentroCustoPai { get; set; }
         public decimal ValorCcusto { get; set; }
-        public int CodContabilRateio { get; set; }
+        public string CodContabilRateio { get; set; }
         public string MesAnoVencimento { get; set; }
         public string Pd { get; set; }
         public string Previsao2 { get; set; }

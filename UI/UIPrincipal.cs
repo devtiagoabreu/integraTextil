@@ -42,7 +42,7 @@ namespace UI
 
         private void btnZipCsv_Click(object sender, EventArgs e)
         {
-            string data = DateTime.Now.ToString("dd-MM-yyyy HH-mm-ss" );
+            string data = DateTime.Now.ToString("dd-MM-yyyy HH-mm-ss");
             BLLFerramentas bllFerramentas = new BLLFerramentas();
             //bllFerramentas.CriarArquivoZip(bllFerramentas.PegarNomesArquivo(@"C:\Apache2\htdocs\tmsdata\xlsdata\", ".csv"), @"D:\Teares\coletas\" + data + ".zip");
         }
@@ -57,7 +57,7 @@ namespace UI
         private void btnLerDisplayOperacao_Click(object sender, EventArgs e)
         {
             BLLDisplayOperacao bllDisplayOperacao = new BLLDisplayOperacao();
-            
+
         }
 
         private void btnCopyDisplayOperacao_Click(object sender, EventArgs e)
@@ -83,7 +83,7 @@ namespace UI
         private void btnWebScrapingDisplayOperacao_Click(object sender, EventArgs e)
         {
             BLLDisplayOperacao bllDisplayOperacao = new BLLDisplayOperacao();
-            
+
         }
 
         private void timerWebScrapingGeral_Tick(object sender, EventArgs e)
@@ -123,7 +123,7 @@ namespace UI
             BLLContasPagar bllContasPagar = new BLLContasPagar();
 
             bllContasPagar.RenomearArquivo(bllContasPagar.PegarNomeArquivo(@"C:\integraTextil\relatorios\", "ROD"), "contas_pagar.csv", @"C:\integraTextil\relatorios\", @"C:\integraTextil\relatorios\contas_pagar\ren");
-        
+
         }
 
         private void btnInsertContasPagar_Click(object sender, EventArgs e)
@@ -131,7 +131,7 @@ namespace UI
             BLLContasPagar bllContasPagar = new BLLContasPagar();
 
             bllContasPagar.InserirDadosBD(bllContasPagar.LerCsv(@"C:\integraTextil\relatorios\contas_pagar\ren\contas_pagar.csv"));
-        
+
         }
 
         private void btnDelContasPagar_Click(object sender, EventArgs e)
@@ -146,7 +146,7 @@ namespace UI
             BLLContasPagas bllContasPagas = new BLLContasPagas();
 
             bllContasPagas.RenomearArquivo(bllContasPagas.PegarNomeArquivo(@"C:\integraTextil\relatorios\", "ROD"), "contas_pagas.csv", @"C:\integraTextil\relatorios\", @"C:\integraTextil\relatorios\contas_pagas\ren");
-        
+
         }
 
         private void btnInsertContasPagas_Click(object sender, EventArgs e)
@@ -154,7 +154,7 @@ namespace UI
             BLLContasPagas bllContasPagas = new BLLContasPagas();
 
             bllContasPagas.InserirDadosBD(bllContasPagas.LerCsv(@"C:\integraTextil\relatorios\contas_pagas\ren\contas_pagas.csv"));
-        
+
         }
 
         private void btnDelContasPagas_Click(object sender, EventArgs e)
@@ -162,7 +162,7 @@ namespace UI
             BLLContasPagas bllContasPagas = new BLLContasPagas();
 
             bllContasPagas.DeletarArquivos(@"C:\integraTextil\relatorios\contas_pagas\ren\");
-        
+
         }
 
         private void btnRenCaixasFios_Click(object sender, EventArgs e)
@@ -170,7 +170,7 @@ namespace UI
             BLLCaixasFios bllCaixasFios = new BLLCaixasFios();
 
             bllCaixasFios.RenomearArquivo(bllCaixasFios.PegarNomeArquivo(@"C:\integraTextil\relatorios\", "ROD"), "caixas_fios.csv", @"C:\integraTextil\relatorios\", @"C:\integraTextil\relatorios\caixas_fios\ren");
-        
+
         }
 
         private void btnInsertCaixasFios_Click(object sender, EventArgs e)
@@ -178,7 +178,7 @@ namespace UI
             BLLCaixasFios bllCaixasFios = new BLLCaixasFios();
 
             bllCaixasFios.InserirDadosBD(bllCaixasFios.LerCsv(@"C:\integraTextil\relatorios\caixas_fios\ren\caixas_fios.csv"));
-        
+
         }
 
         private void btnDelCaixasFios_Click(object sender, EventArgs e)
@@ -186,7 +186,7 @@ namespace UI
             BLLCaixasFios bllCaixasFios = new BLLCaixasFios();
 
             bllCaixasFios.DeletarArquivos(@"C:\integraTextil\relatorios\caixas_fios\ren\");
-        
+
         }
 
         private void btnRenNotasFiscais_Click(object sender, EventArgs e)
@@ -201,7 +201,7 @@ namespace UI
             BLLNotasFiscais bllNotasFiscais = new BLLNotasFiscais();
 
             bllNotasFiscais.InserirDadosBD(bllNotasFiscais.LerCsv(@"C:\integraTextil\relatorios\notas_fiscais\ren\notas_fiscais.csv"));
-        
+
         }
 
         private void btnDelNotasFiscais_Click(object sender, EventArgs e)
@@ -209,7 +209,7 @@ namespace UI
             BLLNotasFiscais bllNotasFiscais = new BLLNotasFiscais();
 
             bllNotasFiscais.DeletarArquivos(@"C:\integraTextil\relatorios\notas_fiscais\ren\");
-        
+
         }
 
         private void btnRenSaldosEstoque_Click(object sender, EventArgs e)
@@ -217,7 +217,7 @@ namespace UI
             BLLSaldosEstoque bllSaldosEstoque = new BLLSaldosEstoque();
 
             bllSaldosEstoque.RenomearArquivo(bllSaldosEstoque.PegarNomeArquivo(@"C:\integraTextil\relatorios\", "ROD"), "saldos_estoque.csv", @"C:\integraTextil\relatorios\", @"C:\integraTextil\relatorios\saldos_estoque\ren");
-        
+
         }
 
         private void btnInsertSaldosEstoque_Click(object sender, EventArgs e)
@@ -225,7 +225,7 @@ namespace UI
             BLLSaldosEstoque bllSaldosEstoque = new BLLSaldosEstoque();
 
             bllSaldosEstoque.InserirDadosBD(bllSaldosEstoque.LerCsv(@"C:\integraTextil\relatorios\saldos_estoque\ren\saldos_estoque.csv"));
-        
+
         }
 
         private void btnDelSaldosEstoque_Click(object sender, EventArgs e)
@@ -233,7 +233,7 @@ namespace UI
             BLLSaldosEstoque bllSaldosEstoque = new BLLSaldosEstoque();
 
             bllSaldosEstoque.DeletarArquivos(@"C:\integraTextil\relatorios\saldos_estoque\ren\");
-        
+
         }
 
         private void btnRenEstoqueRolos_Click(object sender, EventArgs e)
@@ -241,7 +241,7 @@ namespace UI
             BLLEstoqueRolos bllEstoqueRolos = new BLLEstoqueRolos();
 
             bllEstoqueRolos.RenomearArquivo(bllEstoqueRolos.PegarNomeArquivo(@"C:\integraTextil\relatorios\", "ROD"), "estoque_rolos.csv", @"C:\integraTextil\relatorios\", @"C:\integraTextil\relatorios\estoque_rolos\ren");
-        
+
         }
 
         private void btnInsertEstoqueRolos_Click(object sender, EventArgs e)
@@ -249,7 +249,7 @@ namespace UI
             BLLEstoqueRolos bllEstoqueRolos = new BLLEstoqueRolos();
 
             bllEstoqueRolos.InserirDadosBD(bllEstoqueRolos.LerCsv(@"C:\integraTextil\relatorios\estoque_rolos\ren\estoque_rolos.csv"));
-        
+
         }
 
         private void btnDelEstoqueRolos_Click(object sender, EventArgs e)
@@ -257,7 +257,7 @@ namespace UI
             BLLEstoqueRolos bllEstoqueRolos = new BLLEstoqueRolos();
 
             bllEstoqueRolos.DeletarArquivos(@"C:\integraTextil\relatorios\estoque_rolos\ren\");
-        
+
         }
 
         private void UIPrincipal_Load(object sender, EventArgs e)
@@ -384,7 +384,7 @@ namespace UI
 
             Application.Exit();
             */
-    }
+        }
 
         private void btnRenComercialVendas_Click(object sender, EventArgs e)
         {
@@ -440,7 +440,7 @@ namespace UI
 
             bllRecebimentos.RenomearArquivo(bllRecebimentos.PegarNomeArquivo(@"C:\integraTextil\relatorios\", "ROD"), "recebimentos.csv", @"C:\integraTextil\relatorios\", @"C:\integraTextil\relatorios\recebimentos\ren");
 
-        
+
         }
 
         private void btnInsertRecebimentos_Click(object sender, EventArgs e)
@@ -457,7 +457,7 @@ namespace UI
             BLLRecebimentos bllRecebimentos = new BLLRecebimentos();
 
             bllRecebimentos.DeletarArquivos(@"C:\integraTextil\relatorios\recebimentos\ren\");
-        
+
         }
 
         private void btnRenPedidoCompra_Click(object sender, EventArgs e)
@@ -492,7 +492,7 @@ namespace UI
             BLLDadosTeares bLLDadosTeares = new BLLDadosTeares();
             bLLDadosTeares.RenomearArquivo(bLLDadosTeares.PegarNomeArquivo(@"C:\TMSDATA\" + nomePasta + @"\daily", nomeArquivoCSV), "dadosTeares_" + nomeArquivoCSV + ".csv", @"C:\TMSDATA\" + nomePasta + @"\daily\", @"E:\Teares\dadosTearesRenomeada\");
         }
-        
+
         private void btnInsertDadosTeares_Click(object sender, EventArgs e)
         {
             string nomeArquivoCSV = DateTime.Now.AddDays(-1).ToString("yyyy-MM-dd");
@@ -507,6 +507,31 @@ namespace UI
             BLLDadosTeares bLLDadosTeares = new BLLDadosTeares();
 
             bLLDadosTeares.DeletarArquivos(@"E:\Teares\dadosTearesRenomeada\");
+        }
+
+        private void btnRenFinanceiroContasPagarGIJOE_Click(object sender, EventArgs e)
+        {
+            BLLFinanceiroContasPagarGIJOE bllFinanceiroContasPagarGIJOE = new BLLFinanceiroContasPagarGIJOE();
+
+            bllFinanceiroContasPagarGIJOE.RenomearArquivo(bllFinanceiroContasPagarGIJOE.PegarNomeArquivo(@"C:\integraTextil\relatorios\", "ROD"), "financeiro_contas_pagar_gijoe.csv", @"C:\integraTextil\relatorios\", @"C:\integraTextil\relatorios\financeiro_contas_pagar_gijoe\ren");
+
+
+        }
+
+        private void btnInsertFinanceiroContasPagarGIJOE_Click(object sender, EventArgs e)
+        {
+
+            BLLFinanceiroContasPagarGIJOE bllFinanceiroContasPagarGIJOE = new BLLFinanceiroContasPagarGIJOE();
+
+            bllFinanceiroContasPagarGIJOE.InserirDadosBD(bllFinanceiroContasPagarGIJOE.LerCsv(@"C:\integraTextil\relatorios\financeiro_contas_pagar_gijoe\ren\financeiro_contas_pagar_gijoe.csv"));
+
+        }
+
+        private void btnDelFinanceiroContasPagarGIJOE_Click(object sender, EventArgs e)
+        {
+            BLLFinanceiroContasPagarGIJOE bllFinanceiroContasPagarGIJOE = new BLLFinanceiroContasPagarGIJOE();
+
+            bllFinanceiroContasPagarGIJOE.DeletarArquivos(@"C:\integraTextil\relatorios\financeiro_contas_pagar_gijoe\ren\");
         }
     }
 }
