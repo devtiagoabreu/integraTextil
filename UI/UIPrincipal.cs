@@ -358,6 +358,17 @@ namespace UI
 
             //bllPedidoCompra.DeletarArquivos(@"C:\integraTextil\relatorios\pedido_compra\ren\");
 
+            //CONTAS A PAGAR GIJOE (CONTA A PAGAR COM DADOS DE CENTRO DE CUSTO PAI E VALOR CENTRO DE CUSTO RATEIO)
+            BLLFinanceiroContasPagarGIJOE bllFinanceiroContasPagarGIJOE = new BLLFinanceiroContasPagarGIJOE();
+
+            bllFinanceiroContasPagarGIJOE.RenomearArquivo(bllFinanceiroContasPagarGIJOE.PegarNomeArquivo(@"C:\integraTextil\relatorios\", "ROD"), "financeiro_contas_pagar_gijoe.csv", @"C:\integraTextil\relatorios\", @"C:\integraTextil\relatorios\financeiro_contas_pagar_gijoe\ren");
+
+            bllFinanceiroContasPagarGIJOE.InserirDadosBD(bllFinanceiroContasPagarGIJOE.LerCsv(@"C:\integraTextil\relatorios\financeiro_contas_pagar_gijoe\ren\financeiro_contas_pagar_gijoe.csv"));
+
+            bllFinanceiroContasPagarGIJOE.DeletarArquivos(@"C:\integraTextil\relatorios\financeiro_contas_pagar_gijoe\ren\");
+
+            Application.Exit();
+
 
             //dados teares
             /*
@@ -380,7 +391,7 @@ namespace UI
             {
                 MessageBox.Show("Não foi possível importar os dados dos teares!");
             }
-            
+
 
             Application.Exit();
             */
